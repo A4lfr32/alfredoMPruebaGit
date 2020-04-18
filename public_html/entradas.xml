@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<general>
+<entrada clases="opinion">
+        <!-- Blog Post -->
+
+          <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/12/13/10/41/fake-1903774_960_720.png" alt="Card image cap"> </img>
+          <div class="card-body">
+            <h2 class="card-title">Burbuja ideologica</h2>
+            <p class="card-text">Hora en tiempos del Covid-19, se observa como las personas tienen a buscar explicaciones y respuestas, a tal punto que la facilidad
+              mental termina eligiendo cualquier respuesta que a sus mentes suene prudente, sin siquiera cuestionarla. Si alguien propone algo que creían 
+              que podría a ser así, un video de cualquier persona termina convenciendoles que tenían razón.
+              </p>
+        <a href="https://hipertextual.com/2016/05/facebook-twitter-filtro-algoritmo">Los algoritmos de Facebook o Twitter, sin efectos de polarización en la sociedad</a>
+<p></p>
+            <div class="etiquetas" style="float:right;">
+            </div>
+            <a href="#" class="btn btn-primary">Leer más →
+            </a>
+          </div>
+          <div class="card-footer text-muted">
+            Publicado 06/04/2020 por
+            <a href="#">AlfredoMaussa</a>
+          </div>
+</entrada>
+
+<entrada clases="Sistemas_inteligentes Redes_neuronales">
+        <!-- Blog Post -->
+          <iframe class="card-img-top" width="560" height="315" src="https://www.youtube.com/embed/uHKBlm-ttR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+          </iframe>
+          <div class="card-body">
+            <h2 class="card-title">Redes neuronales para identificación de una planta</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <div class="etiquetas" style="float:right;">
+            </div>
+            <a href="https://academia.alfredomaussa.com/informatica/MATLAB/" class="btn btn-primary">Leer más →</a>
+          </div>
+          <div class="card-footer text-muted">
+            Publicado 10/04/2020 por
+            <a href="#">AlfredoMaussa</a>
+          </div>
+</entrada>
+
+<entrada clases="Javascript Robotica">
+        <!-- Blog Post -->
+        <img class="img-fluid rounded mb-3 mb-md-0" src="https://alfredomaussa.com/imagenes/robotCablesApp.PNG" alt="">
+         </img>
+          <div class="card-body">
+            <h2 class="card-title">Aplicación web de robot por cables</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <div class="etiquetas" style="float:right;">
+            </div>
+            <a href="https://proyectos.alfredomaussa.com/trabajodegrado/gradTheta.html" class="btn btn-primary">Leer más →</a>
+          </div>
+          <div class="card-footer text-muted">
+            Publicado 04/01/2020 por
+            <a href="#">AlfredoMaussa</a>
+          </div>
+</entrada>
+
+<entrada clases="Javascript Cursos">
+        <!-- Blog Post -->
+        <img class="img-fluid rounded mb-3 mb-md-0" src="https://alfredomaussa.com/imagenes/ContenidoAcademia.PNG" alt="">
+         </img>
+          <div class="card-body">
+            <h2 class="card-title">Contenido de academia</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <div class="etiquetas" style="float:right;">
+            </div>
+            <a href="https://academia.alfredomaussa.com/" class="btn btn-primary">Leer más →</a>
+          </div>
+          <div class="card-footer text-muted">
+            Publicado 04/01/2020 por
+            <a href="#">AlfredoMaussa</a>
+          </div>
+</entrada>
+
+
+<entrada clases="Javascript">
+        <!-- Blog Post -->
+        <img class="img-fluid rounded mb-3 mb-md-0" src="https://alfredomaussa.com/imagenes/CursoJavascript.png " alt="">
+         </img>
+          <div class="card-body">
+            <h2 class="card-title">Apuntes del curso: Javascript, Jquery, and JSON (Coursera: Universidad de Míchigan)</h2>
+            <p class="card-text">Comparto en esta entrada, los apuntes que he tomado en códigos</p>
+            <div class="etiquetas" style="float:right;">
+            </div>
+            <a href="https://academia.alfredomaussa.com/informatica/Javascript/" class="btn btn-primary">Leer más →</a>
+          </div>
+          <div class="card-footer text-muted">
+            Publicado 17/04/2020 por
+            <a href="#">AlfredoMaussa</a>
+          </div>
+</entrada>
+
+<entrada clases="Javascript">
+        <!-- Blog Post -->
+        <img class="img-fluid rounded mb-3 mb-md-0" src="https://academia.alfredomaussa.com/imagenes/codigo1.PNG" alt="">
+         </img>
+          <div class="card-body">
+            <h2 class="card-title">Asincronía</h2>
+            <p class="card-text">Aca podemos ver, como en dos snippets de scripr, estos se ejecutan independietemente de error que pueda tener el otro. Aunque no corre todo el snippet</p>
+            <div class="etiquetas" style="float:right;">
+            </div>
+            <a href="https://academia.alfredomaussa.com/informatica/Javascript/" class="btn btn-primary">Leer más →</a>
+          </div>
+          <div class="card-footer text-muted">
+            Publicado 18/04/2020 por
+            <a href="#">AlfredoMaussa</a>
+          </div>
+</entrada>
+
+<entrada clases="Sistemas_Inteligentes Matlab">
+        <!-- Blog Post -->
+        <img class="img-fluid rounded mb-3 mb-md-0" src="https://alfredomaussa.com/imagenes/C_baseradial.png" alt="">
+         </img>
+          <div class="card-body">
+            <h2 class="card-title">Red neuronal, Base radial (Animación)</h2>
+            <p class="card-text">Comparto en esta entrada, los apuntes que he tomado en códigos</p>
+            <div class="etiquetas" style="float:right;">
+            </div>
+            <a href="https://academia.alfredomaussa.com/informatica/MATLAB/" class="btn btn-primary">Leer más →</a>
+          </div>
+          <div class="card-footer text-muted">
+            Publicado 17/04/2020 por
+            <a href="#">AlfredoMaussa</a>
+          </div>
+</entrada>
+
+<entrada clases="CAD Robotica">
+        <!-- Blog Post -->
+        <img class="img-fluid rounded mb-3 mb-md-0" src="https://alfredomaussa.com/imagenes/SCARA_Captura.PNG" alt="">
+         </img>
+          <div class="card-body">
+            <h2 class="card-title">proyecto SCARA</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+            <div class="etiquetas" style="float:right;">
+            </div>
+            <a href="https://academia.alfredomaussa.com/mecanica/Inventor/" class="btn btn-primary">Leer más →</a>
+          </div>
+          <div class="card-footer text-muted">
+            Publicado 17/04/2020 por
+            <a href="#">AlfredoMaussa</a>
+          </div>
+</entrada>
+
+<entrada clases="CAD">
+        <!-- Blog Post -->
+        <img class="img-fluid rounded mb-3 mb-md-0" src="https://alfredomaussa.com/imagenes/Carrito_Captura.PNG" alt="">
+         </img>
+          <div class="card-body">
+            <h2 class="card-title">Carrito de control remoto</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+            <div class="etiquetas" style="float:right;">
+            </div>
+            <a href="https://academia.alfredomaussa.com/mecanica/Inventor/" class="btn btn-primary">Leer más →</a>
+          </div>
+          <div class="card-footer text-muted">
+            Publicado 17/04/2020 por
+            <a href="#">AlfredoMaussa</a>
+          </div>
+</entrada>
+
+
+
+</general>
