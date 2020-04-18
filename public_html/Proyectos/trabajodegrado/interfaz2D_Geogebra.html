@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163888921-1"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+     
+       gtag('config', 'UA-163888921-1');
+     </script>
+     
+</head>
+<body>
+<br>
+<br>
+<button class="btn btn-outline-secondary" onclick="history.back()" style="
+position: absolute;
+left: 18px;
+top: 12px;
+">Atrás</button>
+<div class="container">
+    <div class="row">
+        <div class="col-7" style="text-align: -webkit-center;">
+            <div class="row">
+        <div id="ggbApplet"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-10" style="padding-left: 100px;">
+        <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">X_1</span>
+                </div>
+                <input id="input1" type="text" class="form-control" placeholder="Coordenada x" aria-label="Username" aria-describedby="basic-addon1">
+                <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Y_1</span>
+                      </div>
+                      <input id="input2" type="text" class="form-control" placeholder="Coordenada x" aria-label="Username" aria-describedby="basic-addon1">
+                      
+                <div class="input-group-append">
+                        <button id="btn1" class="btn btn-outline-secondary" type="button">Actualizar</button>
+                      </div>
+              </div>
+
+        
+
+                  
+                    <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">X_2</span>
+                          </div>
+                          <input id="input3" type="text" class="form-control" placeholder="Coordenada x" aria-label="Username" aria-describedby="basic-addon1">
+                          <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1">Y_2</span>
+                                </div>
+                                <input id="input4" type="text" class="form-control" placeholder="Coordenada x" aria-label="Username" aria-describedby="basic-addon1">
+                                
+                          <div class="input-group-append">
+                                  <button id="btn2" class="btn btn-outline-secondary" type="button">Actualizar</button>
+                                </div>
+                        </div>
+            </div>
+          
+<button id="connect" type="button">Connect</button>
+
+<button id="disconnect" type="button">Disconnect</button>
+
+<div id="terminal"></div>
+
+<form id="send-form">
+    <input id="input" type="text">
+    <button type="submit">Send</button>
+</form>
+          </div>
+        </div>
+        <div class="col-5" style="text-align: center;align-self: center;">
+            <div class="row" style="justify-content: center;">
+            <img class="card" id="my_image" src="https://placehold.it/500x300" alt=""></div>
+            <br>
+        <div class="row">
+                <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">IP:</span>
+                        </div>
+                        <input id="inputIP" type="text" class="form-control" placeholder="Streamming..." aria-label="Username" aria-describedby="basic-addon1">                              
+                        <div class="input-group-append">
+                                <button id="btnIP" class="btn btn-outline-secondary" type="button">Cargar</button>
+                              </div>
+                      </div>
+        </div>
+    </div>
+
+        <br>
+
+
+                
+
+                
+        
+    </div>
+</div>
+            <script>
+var parameters = {
+"id": "ggbApplet",
+"width":600,
+"height":350,
+"showMenuBar":false,
+"showAlgebraInput":false,
+"showToolBar":false,
+"customToolBar":"0 77 73 62 | 1 501 67 , 5 19 , 72 75 76 | 2 15 45 , 18 65 , 7 37 | 4 3 8 9 , 13 44 , 58 , 47 | 16 51 64 , 70 | 10 34 53 11 , 24  20 22 , 21 23 | 55 56 57 , 12 | 36 46 , 38 49  50 , 71  14  68 | 30 29 54 32 31 33 | 25 17 26 60 52 61 | 40 41 42 , 27 28 35 , 6",
+"showToolBarHelp":true,
+"showResetIcon":false,
+"enableLabelDrags":false,
+"enableShiftDragZoom":true,
+"enableRightClick":false,
+"errorDialogsActive":false,
+"useBrowserForJS":false,
+"allowStyleBar":false,
+"preventFocus":false,
+"showZoomButtons":true,
+"capturingThreshold":3,
+// add code here to run when the applet starts
+"appletOnLoad":function(api){ /* api.evalCommand('Segment((1,2),(3,4))');*/ },
+"showFullscreenButton":true,
+"scale":1,
+"disableAutoScale":false,
+"allowUpscale":false,
+"clickToLoad":false,
+"appName":"classic",
+"showSuggestionButtons":true,
+"buttonRounding":0.7,
+"buttonShadows":false,
+"language":"es",
+// use this instead of ggbBase64 to load a material from geogebra.org
+// "material_id":"RHYH3UQ8",
+// use this instead of ggbBase64 to load a .ggb file
+// "filename":"myfile.ggb",
+"ggbBase64":"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",
+};
+// is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator DA=Data Analysis, FI=Function Inspector, macro=Macros
+var views = {'is3D': 0,'AV': 0,'SV': 0,'CV': 0,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
+var applet = new GGBApplet(parameters, '5.0', views);
+window.onload = function() {applet.inject('ggbApplet')};
+applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
+   
+
+                    parameters.appletOnLoad = function(api) {
+                      c_1_inicial = Math.round(ggbApplet.getValue("a_1"));
+                      c_2_inicial = Math.round(ggbApplet.getValue("b_1"));
+                      let c_1_actual = Math.round(ggbApplet.getValue("a_1"));
+                      let c_2_actual = Math.round(ggbApplet.getValue("b_1"));
+                      diff_c_1 = (c_1_actual-c_1_inicial);
+                      diff_c_2 = (c_2_actual-c_2_inicial);
+
+
+    ggbApplet.registerObjectUpdateListener("P_0",myAupdateListenerFunction);
+    ggbApplet.registerObjectUpdateListener("A",moverLazo2);
+    ggbApplet.registerObjectUpdateListener("S_1",SoporteUpdate);
+    ggbApplet.registerObjectUpdateListener("S_2",SoporteUpdate);
+    ggbApplet.registerObjectClickListener("A", TrayectoriaLinea);
+    
+    function TrayectoriaLinea() {
+      P_0_x =ggbApplet.getXcoord("P_0");
+      P_0_y =ggbApplet.getYcoord("P_0");
+      flagTrayectoria = 1;
+
+    }
+
+    function moverLazo2() {
+      //setCoords(P_0,x(P_0+0.01*(A-P_0)),y(P_0+0.01*(A-P_0)));
+      ggbApplet.setCoords('P_0',ggbApplet.getXcoord("P_0")+0.01*(ggbApplet.getXcoord("A")-ggbApplet.getXcoord("P_0")),ggbApplet.getYcoord("P_0")+0.01*(ggbApplet.getYcoord("A")-ggbApplet.getYcoord("P_0")));
+      //ggbApplet.setCoords('P_0',10,10);
+      //console.log(x(P_0+0.01*(A-P_0)));
+      //console.log(ggbApplet.getXcoord("P_0")+0.01*(ggbApplet.getXcoord("A")-ggbApplet.getXcoord("P_0")));
+      //console.log(ggbApplet.getXcoord("P_0")+0.01*(ggbApplet.getXcoord("A")-ggbApplet.getXcoord("P_0")));
+      //console.log(ggbApplet.getYcoord("P_0")+0.01*(ggbApplet.getYcoord("A")-ggbApplet.getYcoord("P_0")));
+    }
+
+    function SoporteUpdate() {
+      c_1_inicial = Math.round(ggbApplet.getValue("d"));
+      c_2_inicial = Math.round(ggbApplet.getValue("e"));
+    }
+    function myAupdateListenerFunction() {
+      c_1_actual = Math.round(ggbApplet.getValue("a_1"));
+      c_2_actual = Math.round(ggbApplet.getValue("b_1"));
+
+      diff_c_1 = (c_1_actual-c_1_inicial);
+      diff_c_2 = (c_2_actual-c_2_inicial);
+      if (flag == 0) {
+        flag=1;
+        console.log("encenderFlag");
+      send(new Uint8Array(dectobin(diff_c_1,163).concat(dectobin(diff_c_2,171)))); // Send text field contents
+      //send(new Uint8Array(dectobin(diff_c_1,163))); // Send text field contents
+    }
+  //console.log("C1: "+(diff_c_1)+", C2: "+(diff_c_2));
+  //console.log(dectobin(diff_c_1,163));
+  //console.log(dectobin(diff_c_2,171));
+  }
+
+
+    }
+  
+
+
+                    </script>
+
+
+<script>
+  var cont = 0;
+  var P_0_x;
+  var P_0_y;
+
+  var flagTrayectoria;
+var c_1_inicial;
+var c_2_inicial;
+
+var diff_c_1;
+var diff_c_2;
+var flag = 0;
+
+function dectobin(num,motor) {
+  var base2 = (num >>> 0).toString(2);
+  var hi = "0b"+base2.padStart(32, '0');
+
+  return bytes = [motor,
+    (hi >> 24) & 0xFF,
+    (hi >> 16) & 0xFF,
+    (hi >> 8) & 0xFF,
+    hi & 0xFF,
+    motor+1
+];
+console.log(bytes);
+
+}
+
+   // function appletOnLoad(api){ api.evalCommand('Segment((1,2),(3,4))'); alert("asfre");}
+   // ggbApplet.appletOnLoad(api) {
+  //alert("asfre");
+//}
+
+
+$(document).ready(function(){
+
+
+
+
+
+  $("#btn1").click(function(){
+      var x1 = $(input1).val();
+      var y1 = $(input2).val();
+      ggbApplet.setCoords('S_1',x1,y1);
+
+  });
+  $("#btn2").click(function(){
+      var x2 = $(input3).val();
+      var y2 = $(input4).val();
+      ggbApplet.setCoords('S_2',x2,y2);
+
+  });
+
+  $("#btnIP").click(function(){
+    var IP = $(inputIP).val();
+    alert(IP+":81\/stream");
+    $("#my_image").attr("src",IP+":81\/stream");
+  });
+  
+
+});
+
+
+</script>
+
+
+<script>
+
+// Get references to UI elements
+let connectButton = document.getElementById('connect');
+let disconnectButton = document.getElementById('disconnect');
+let terminalContainer = document.getElementById('terminal');
+let sendForm = document.getElementById('send-form');
+let inputField = document.getElementById('input');
+
+// Connect to the device on Connect button click
+connectButton.addEventListener('click', function() {
+  connect();
+});
+
+// Disconnect from the device on Disconnect button click
+disconnectButton.addEventListener('click', function() {
+  disconnect();
+});
+
+// Handle form submit event
+sendForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form sending
+ // console.log("7: "+diff_c_1);
+if (flag==0) {
+  console.log("AAA");
+  flag = 1;
+  send(new Uint8Array(dectobin(diff_c_1,163).concat(dectobin(diff_c_2,171)))); // Send text field contents
+ 
+  // inputField.value = '';  // Zero text field
+  //inputField.focus();     // Focus on text field
+}
+});
+
+// Selected device object cache
+let deviceCache = null;
+
+// Characteristic object cache
+let characteristicCache = null;
+
+// Intermediate buffer for incoming data
+let readBuffer = '';
+
+// Launch Bluetooth device chooser and connect to the selected
+function connect() {
+  return (deviceCache ? Promise.resolve(deviceCache) :
+      requestBluetoothDevice()).
+      then(device => connectDeviceAndCacheCharacteristic(device)).
+      then(characteristic => startNotifications(characteristic)).
+      catch(error => log(error));
+}
+
+function requestBluetoothDevice() {
+  //log('Requesting bluetooth device...');
+
+  return navigator.bluetooth.requestDevice({
+    filters: [{services: [0xFFE0]}],
+  }).
+      then(device => {
+    //    log('"' + device.name + '" bluetooth device selected');
+        deviceCache = device;
+        deviceCache.addEventListener('gattserverdisconnected',
+            handleDisconnection);
+
+        return deviceCache;
+      });
+}
+
+function handleDisconnection(event) {
+  let device = event.target;
+
+//  log('"' + device.name +
+ //     '" bluetooth device disconnected, trying to reconnect...');
+
+  connectDeviceAndCacheCharacteristic(device).
+      then(characteristic => startNotifications(characteristic)).
+      catch(error => log(error));
+}
+
+// Connect to the device specified, get service and characteristic
+function connectDeviceAndCacheCharacteristic(device) {
+  if (device.gatt.connected && characteristicCache) {
+    return Promise.resolve(characteristicCache);
+  }
+
+  //log('Connecting to GATT server...');
+
+  return device.gatt.connect().
+      then(server => {
+      //  log('GATT server connected, getting service...');
+
+        return server.getPrimaryService(0xFFE0);
+      }).
+      then(service => {
+     //   log('Service found, getting characteristic...');
+
+        return service.getCharacteristic(0xFFE1);
+      }).
+      then(characteristic => {
+       // log('Characteristic found');
+        characteristicCache = characteristic;
+
+        return characteristicCache;
+      });
+}
+
+// Enable the characteristic changes notification
+function startNotifications(characteristic) {
+  //log('Starting notifications...');
+
+  return characteristic.startNotifications().
+      then(() => {
+    //    log('Notifications started');
+        characteristic.addEventListener('characteristicvaluechanged',
+            handleCharacteristicValueChanged);
+      });
+}
+
+// Data receiving
+function handleCharacteristicValueChanged(event) {
+  let value = new TextDecoder().decode(event.target.value);
+
+  for (let c of value) {
+    if (c === '\n') {
+      let data = readBuffer.trim();
+      readBuffer = '';
+
+      if (data) {
+        receive(data);
+      }
+    }
+    else {
+      readBuffer += c;
+    }
+  }
+}
+
+// Received data handling
+function receive(data) {
+  log(data, 'in');
+}
+
+// Output to terminal
+function log(data, type = '') {
+ // terminalContainer.insertAdjacentHTML('beforeend',
+   //   '<div' + (type ? ' class="' + type + '"' : '') + '>' + data + '</div>');
+  //    console.log("3: "+data);
+
+}
+
+// Disconnect from the connected device
+function disconnect() {
+  if (deviceCache) {
+    log('Disconnecting from "' + deviceCache.name + '" bluetooth device...');
+    deviceCache.removeEventListener('gattserverdisconnected',
+        handleDisconnection);
+
+    if (deviceCache.gatt.connected) {
+      deviceCache.gatt.disconnect();
+      log('"' + deviceCache.name + '" bluetooth device disconnected');
+    }
+    else {
+      log('"' + deviceCache.name +
+          '" bluetooth device is already disconnected');
+    }
+  }
+
+  if (characteristicCache) {
+    characteristicCache.removeEventListener('characteristicvaluechanged',
+        handleCharacteristicValueChanged);
+    characteristicCache = null;
+  }
+
+  deviceCache = null;
+}
+
+// Send data to the connected device
+function send(data) {
+//  console.log("1: "+data);
+//  console.log("6: "+data.buffer);
+  //data = String(data);
+  if (!data || !characteristicCache) {
+    return;
+  }
+
+  //data += '\n';
+
+  if (data.length > 20) {
+    let chunks = data.match(/(.|[\r\n]){1,20}/g);
+
+    writeToCharacteristic(characteristicCache, chunks[0]);
+
+    for (let i = 1; i < chunks.length; i++) {
+      setTimeout(() => {
+        writeToCharacteristic(characteristicCache, chunks[i]);
+      }, i * 100);
+    }
+  }
+  else {
+  //  console.log("2: "+data);
+
+    writeToCharacteristic(characteristicCache, data);
+  }
+
+  log(data, 'out');
+}
+
+function writeToCharacteristic(characteristic, data) {
+ // console.log("5: "+ (data.buffer));
+ // console.log("4: "+ (data));
+
+  characteristic.writeValue(data);
+}
+
+
+$(function(){
+setInterval(oneSecondFunction, 200);
+});
+
+function oneSecondFunction() {
+  console.log("c1_I: "+c_1_inicial+" c2_I: "+c_2_inicial);
+
+  console.log("apagar Flag");
+flag = 0;
+
+if (flagTrayectoria==1){
+
+      ggbApplet.setCoords('P_0',P_0_x+cont*0.01*(ggbApplet.getXcoord("A")-P_0_x),P_0_y+cont*0.01*(ggbApplet.getYcoord("A")-P_0_y));
+cont++; 
+
+if (cont == 10) {
+flagTrayectoria = 0;
+cont=0;
+}
+}
+
+}
+</script>
+</body>
+</html>

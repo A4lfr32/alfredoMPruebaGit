@@ -1,0 +1,951 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Congga</title>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163888921-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-163888921-1');
+  </script>
+
+<script>// Material Select Initialization
+    $(document).ready(function() {
+    $('.mdb-select').materialSelect();
+    });</script> 
+<style>
+.w3-hide-small {
+    display: block!important;
+}
+    #demo, #demo2, #demo3 {
+        transition: height 1s ease 0s;
+
+    }
+    .show {
+        max-height: 10000px!important;
+        
+    }
+    .collapse {
+        max-height: 100px;
+    }
+    .show #demo2 {
+        width: 100%;
+    }
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #e9ecef;
+    font-size: 20px;
+    z-index: 1;
+}
+
+ul::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+ul::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+ul::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 5px rgba(73, 73, 73, 0.151);
+	background-color: #555;
+}
+
+body::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 5px rgba(73, 73, 73, 0.151);
+	background-color: #555;
+}
+
+    .w3-bar {overflow: visible;
+        min-width: fit-content;
+        }
+
+    tbody, ul {
+        width: 100%;
+        display:inline-flex;
+        overflow-y: overlay;
+    }
+
+   
+h1, p, h3 {   
+text-align: center;
+}
+html {
+  overflow-y: overlay;
+}
+
+.jumbotron {
+  border-bottom: 10px solid #d0d0d0;
+  position: relative;
+  transition: height 5s;
+}
+.jumbotron footer {
+  position: absolute;
+  bottom: -18px;
+  width: 94.5%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.jumbotron footer .dot {
+  height: 25px;
+  width: 25px;
+  background-color: #89859663;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+</style>
+
+<style>        /* Add a black background color to the top navigation */
+    .topnav {
+      overflow: hidden;
+      width: 60%;
+      align-items: flex-end;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav div {
+      position: absolute;
+      right: -15%;
+      top: -5%;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+            </style>
+
+<style> 
+    input[type=text] {
+      width: 130px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url('searchicon.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+    
+    input[type=text]:focus {
+      width: 80%;
+    }
+    </style>
+
+
+<style>
+    
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+      background-color: #555;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 280px;
+    }
+    
+    /* The popup form - hidden by default */
+    .form-popup {
+      display: none;
+      position: fixed;
+      bottom: 140px;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    /* Add styles to the form container */
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: white;
+    }
+    
+    /* Full-width input fields */
+    .form-container input[type=text], .form-container input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    /* When the inputs get focus, do something */
+    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: red;
+    }
+    
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+    </style>
+
+<style>
+        .scrollmenu {
+          overflow: auto;
+          white-space: nowrap;
+        }
+        
+        .scrollmenu li {
+          display: inline-block;
+          text-align: center;
+          padding: 14px;
+          text-decoration: none;
+        }
+        
+        .scrollmenu li:hover {
+          background-color: rgba(133, 132, 132, 0.493);
+        }
+        </style>
+</head>
+<body>
+  <!-- Page Content -->
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+<div style="position: fixed;">
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+</div>
+
+<!--INICIO Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-animate-left" style="display: none;z-index: 5;top: 0px;" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large w3-gray" onclick="w3_close()">Cerrar &times;</button>
+    <a href="#" class="w3-bar-item w3-button">Filas</a>
+    <a href="#" class="w3-bar-item w3-button">Bancos</a>
+    <a href="#" class="w3-bar-item w3-button w3-red">Restaurantes</a>
+    <a href="#" class="w3-bar-item w3-button">Pedidos a congga</a>
+    <a href="#" class="w3-bar-item w3-button">Pedicure & Manicure</a>
+    <a href="#" class="w3-bar-item w3-button">Arreglos varios</a>
+  </div>
+<!--FIN Sidebar -->
+  <div class="container" style="margin-top: 20px;">
+
+
+
+
+
+
+    <div class="row" style="
+  justify-content: flex-end;
+">
+      <nav class="topnav" style="width: fit-content;padding-right: 30px;">
+        <a href="/">Blog</a>
+        <a href="perfil.html">Sobre nosotros</a>
+        <a onclick="openForm2()"">Registrar</a>
+        <a onclick="openForm()">Ingresar</a>
+
+      </nav>
+    </div>
+
+
+
+    <div class="jumbotron" style="margin-bottom: 25px;padding-bottom: 5px;padding-top: 5px;">
+        <div id="fijar" class="sticky" style="padding-top: 55px;">
+      <h1>Restaurantes</h1>
+      <p>Solicite nuestros servicios!</p>
+      <form style="text-align: -webkit-center;">
+          <input type="text" name="search" placeholder="Buscar..." id="myInput" onkeyup="myFunction()">
+      </form>
+      <hr>
+    </div>
+    
+      <footer data-toggle="collapse" data-target="#demo"><span class="dot"><i class="fa fa-chevron-down"></i></span></footer>
+     
+      <div id="demo" class="collapse">
+  <!-- Related Projects Row -->
+  <h3 class="my-4">Comidas</h3>
+
+  <div class="row">
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#" data-toggle="modal" data-target="#myModal3">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+          </a>
+    </div>
+
+  </div>
+  <div class="row">
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+              </a>
+        </div>
+    
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+              </a>
+        </div>
+    
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+              </a>
+        </div>
+    
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+              </a>
+        </div>
+    
+      </div>
+                  <h3>Restaurantes</h2>
+                    <ul class="w3-ul w3-card-2 scrollmenu" id="myTable">
+                            <li class="w3-bar">
+                              <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                              <img src="https://www.w3schools.com/w3css/img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                              <div class="w3-bar-item">
+                                <span class="w3-large">Mike</span><br>
+                                <span>Web Designer</span>
+                              </div>
+                            </li>
+                        
+                            <li class="w3-bar">
+                              <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                              <img src="https://www.w3schools.com/w3css/img_avatar5.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                              <div class="w3-bar-item">
+                                <span class="w3-large">Jill</span><br>
+                                <span>Support</span>
+                              </div>
+                            </li>
+                        
+                            <li class="w3-bar">
+                              <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                              <img src="https://www.w3schools.com/w3css/img_avatar6.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                              <div class="w3-bar-item">
+                                <span class="w3-large">Jane</span><br>
+                                <span>Accountant</span>
+                              </div>
+                            </li>
+                            <li class="w3-bar">
+                                    <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                                    <img src="https://www.w3schools.com/w3css/img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                    <div class="w3-bar-item">
+                                      <span class="w3-large">Maria</span><br>
+                                      <span>contador</span>
+                                    </div>
+                                  </li>
+                                  <li class="w3-bar">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                                        <img src="https://www.w3schools.com/w3css/img_avatar1.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                        <div class="w3-bar-item">
+                                          <span class="w3-large">Alfredo</span><br>
+                                          <span>Accountant</span>
+                                        </div>
+                                      </li><li class="w3-bar">
+                              <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                              <img src="https://www.w3schools.com/w3css/img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                              <div class="w3-bar-item">
+                                <span class="w3-large">Mike</span><br>
+                                <span>Web Designer</span>
+                              </div>
+                            </li>
+                        
+                            <li class="w3-bar">
+                              <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                              <img src="https://www.w3schools.com/w3css/img_avatar5.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                              <div class="w3-bar-item">
+                                <span class="w3-large">Jill</span><br>
+                                <span>Support</span>
+                              </div>
+                            </li>
+                        
+                            <li class="w3-bar">
+                              <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                              <img src="https://www.w3schools.com/w3css/img_avatar6.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                              <div class="w3-bar-item">
+                                <span class="w3-large">Jane</span><br>
+                                <span>Accountant</span>
+                              </div>
+                            </li>
+                            <li class="w3-bar">
+                                    <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                                    <img src="https://www.w3schools.com/w3css/img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                    <div class="w3-bar-item">
+                                      <span class="w3-large">Maria</span><br>
+                                      <span>contador</span>
+                                    </div>
+                                  </li>
+                                  <li class="w3-bar">
+                                        <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                                        <img src="https://www.w3schools.com/w3css/img_avatar1.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                        <div class="w3-bar-item">
+                                          <span class="w3-large">Alfredo</span><br>
+                                          <span>Accountant</span>
+                                        </div>
+                                      </li>
+                                      <li class="w3-bar">
+                                            <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                                            <img src="https://www.w3schools.com/w3css/img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                            <div class="w3-bar-item">
+                                              <span class="w3-large">Mike</span><br>
+                                              <span>Web Designer</span>
+                                            </div>
+                                          </li>
+                                      
+                                          <li class="w3-bar">
+                                            <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                                            <img src="https://www.w3schools.com/w3css/img_avatar5.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                            <div class="w3-bar-item">
+                                              <span class="w3-large">Jill</span><br>
+                                              <span>Support</span>
+                                            </div>
+                                          </li>
+                                      
+                                          <li class="w3-bar">
+                                            <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                                            <img src="https://www.w3schools.com/w3css/img_avatar6.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                            <div class="w3-bar-item">
+                                              <span class="w3-large">Jane</span><br>
+                                              <span>Accountant</span>
+                                            </div>
+                                          </li>
+                                          <li class="w3-bar">
+                                                  <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                                                  <img src="https://www.w3schools.com/w3css/img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                                  <div class="w3-bar-item">
+                                                    <span class="w3-large">Maria</span><br>
+                                                    <span>contador</span>
+                                                  </div>
+                                                </li>
+                                                <li class="w3-bar">
+                                                      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-xlarge w3-right">×</span>
+                                                      <img src="https://www.w3schools.com/w3css/img_avatar1.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                                                      <div class="w3-bar-item">
+                                                        <span class="w3-large">Alfredo</span><br>
+                                                        <span>Accountant</span>
+                                                      </div>
+                                                    </li>
+                          </ul>
+          </div> 
+          
+  
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="jumbotron">
+          <div class="row" style="align-items: center;text-align: center;">
+      <div class="col">
+          <h1>Regristrar oferta de servicio</h1>
+          <p>Inscribirme como prestad@r</p>
+        </div>
+        <div class="col">
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Crear
+              </button>
+            </div>
+
+        </div>
+
+        <!--footer data-toggle="collapse" data-target="#demo2_off"><span class="dot"><i class="fa fa-chevron-down"></i></span></footer-->
+        <div id="demo2" >
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+              </div>
+              
+              <label for="basic-url">Your vanity URL</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                </div>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+              </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+              
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">With textarea</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+                </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="jumbotron">
+            <div class="row" style="align-items: center;text-align: center;">
+                <div class="col">
+
+          <h1>Pedir una cita de servicio</h1>
+          <p>Pedir el servicio</p>
+        </div>
+        <div class="col">
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+            Unirme
+          </button>
+        </div>
+
+      </div>
+      <!--footer data-toggle="collapse" data-target="#demo3"><span class="dot"><i class="fa fa-chevron-down"></i></span></footer-->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+              </div>
+              
+              <label for="basic-url">Your vanity URL</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                </div>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+              </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+              
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">With textarea</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+    </div>
+      </div>
+    </div>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://alfredomaussa.com"> AlfredoMaussa.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+  </div>
+
+
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal2">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Uniendose a unasdf Fila</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend" placeholder="Nombre de la Fila">
+                    <span class="input-group-text">Fila:</span>
+                  </div>
+                  <select class="form-control" data-live-search="true">
+                      <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                      <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                      <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                    </select>
+                    
+                    <select class="mdb-select md-form" searchable="Search here..">
+                        <option value="" disabled selected>Choose your country</option>
+                        <option value="1">USA</option>
+                        <option value="2">Germany</option>
+                        <option value="3">France</option>
+                        <option value="3">Poland</option>
+                        <option value="3">Japan</option>
+                      </select>
+                      <label class="mdb-main-label">Label example</label>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Nombre tuyo</span>
+                    </div>
+                    <input type="text" class="form-control">
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Teléfono: (+57))</span>
+                      </div>
+                      <input type="text" class="form-control">
+                    </div>
+  
+
+              </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal: Servicios -->
+<div class="modal" id="myModal3">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Hamburgesa</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+          <form>
+<div style="text-align: center;">
+            <img src="http://via.placeholder.com/250x200" alt="">
+            <br>
+            <hr>
+          </div>
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Nombre tuyo</span>
+                  </div>
+                  <input type="text" class="form-control">
+                </div>
+                
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Teléfono: (+57))</span>
+                    </div>
+                    <input type="text" class="form-control">
+                  </div>
+
+
+            </form>
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- FIN The Modal: Servicios -->
+
+  <!-- The Modal: estilista -->
+  <div class="modal" id="myModal4">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">John maclonk</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+              <form>
+    <div style="text-align: center;">
+                <img src="http://via.placeholder.com/250x200" alt="">
+                <br>
+                <hr>
+              </div>
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Nombre tuyo</span>
+                      </div>
+                      <input type="text" class="form-control">
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Teléfono: (+57))</span>
+                        </div>
+                        <input type="text" class="form-control">
+                      </div>
+    
+    
+                </form>
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- FIN The Modal: estilista -->
+
+        <!-- Login pup up -->
+        <div class="form-popup" id="myForm2" style="top: 90px;left: 949px;right: 100px;">
+            <form class="form-container" action="registrar.php" method="POST">
+              
+                  <label for="email"><b>Correo electrónico</b></label>
+                  <input type="text" placeholder="Correo electrónico" name="email" required>
+              
+                  <label for="psw"><b>Contraseña</b></label>
+                  <input type="password" placeholder="Ingrese la contraseña" name="psw" required>
+              
+                  <label for="psw-repeat"><b>Repita la contraseña</b></label>
+                  <input type="password" placeholder="Repita la contraseña" name="psw-repeat" required>
+              
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Recordar sesión
+                  </label>
+              
+                  <p>Al crear una cuenta estás aceptando nuestros <a href="#" style="color:dodgerblue">Terminos y Condiciones</a>.</p>
+              
+                  <div class="clearfix">
+                    <button type="button" class="btn cancel" onclick="closeForm2()">Cancelar</button>
+                    <button type="submit" class="btn">Registrarme</button>
+                  </div>
+              </form>
+           
+          </div>
+
+
+  <div class="form-popup" id="myForm">
+      <form action="/ingresar.php" class="form-container"  method="POST">
+        <h1>Ingresar sesión</h1>
+    
+        <label for="email"><b>Correo electrónico</b></label>
+        <input type="text" placeholder="Correo electrónico" name="email" required>
+    
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" placeholder="Introduzca una contraseña" name="psw" required>
+    
+        <button type="submit" class="btn">Ingresar</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+      </form>
+    </div>
+        <!-- FIN Login pup up -->
+
+        <!-- script barra lateral -->
+  <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+      
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+      </script>
+        <!-- FIN script barra lateral -->
+
+        <!-- script login -->
+
+        <script>
+            function openForm2() {
+              document.getElementById("myForm2").style.display = "block";
+            }
+            
+            function closeForm2() {
+              document.getElementById("myForm2").style.display = "none";
+            }
+
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+        <!-- FIN script login -->
+
+
+        <!-- script buscar en tabla -->
+
+        <script>
+            
+                function myFunction() {
+                  var input, filter, table, li, td, i;
+                  input = document.getElementById("myInput");
+                  filter = input.value.toUpperCase();
+                  table = document.getElementById("myTable");
+                  li = table.getElementsByTagName("li");
+                  
+                  for (i = 0; i < li.length; i++) {
+                    
+                      txtValue = li[i].textContent || li[i].innerText;
+                      
+                      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                      } else {
+                        li[i].style.display = "none";}
+                      
+                    
+                  }
+                }
+                </script>
+                <!-- FIN script buscar en tabla -->
+
+  <!--  sticky-->
+
+                <!--script>
+                        window.onscroll = function() {myFunction()};
+                        
+                        var navbar = document.getElementById("fijar");
+                        var sticky = navbar.offsetTop;
+                        
+                        function myFunction() {
+                          if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                          } else {
+                            navbar.classList.remove("sticky");
+                          }
+                        }
+                        </script-->
+  <!-- FIN sticky-->
+
+</body>
+</html>

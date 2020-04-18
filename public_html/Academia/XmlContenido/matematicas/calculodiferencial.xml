@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contenido>
+
+<encabezado>
+<titulo>Cálculo diferencial</titulo>
+<autor>Alfredo Maussa</autor>
+<fecha>Publicado en Junio 13, 2019 a las 10:00 AM</fecha>
+
+</encabezado>
+
+<cuerpo>
+
+<temario>
+    <tema titulo="Simplificación de expresiones">Simplificar expresiones analíticas.</tema>
+    <tema titulo="Funciones">Qué son las funciones.</tema>
+    <tema titulo="Funciones trascendentales">Funciones trascendentales.</tema>
+    <tema titulo="Límite, y derivada">Conceptos de límite y derivada.</tema>
+    <tema titulo="Derivada y aplicaciones">Derivada y sus aplicaciones.</tema>
+
+</temario>
+
+
+<parrafo>Hola esto es un texto de prueba</parrafo>
+
+
+<referencias>
+<basica>Referencia 1 </basica>
+<complementarias>Referencia 2 </complementarias>
+<complementarias>Referencia 3 </complementarias>
+</referencias>
+
+
+
+</cuerpo>
+  
+</contenido>

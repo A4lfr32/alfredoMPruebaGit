@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+     crossorigin="anonymous">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Inventor</title>
+
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163888921-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163888921-1');
+</script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <style>    #mySidenav a {
+      position: fixed;
+      left: -110px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 135px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+    }
+    
+    #mySidenav a:hover {
+      left: 0 !important;
+    }
+    
+    #Blog {
+      top: 70px;
+      background-color: rgb(218, 218, 218);
+    }
+    
+    #Academia {
+      top: 130px;
+      background-color: rgb(104, 156, 104);
+      left: -80px !important;
+    }
+    
+    #Proyectos {
+      top: 190px;
+      background-color: #3d3d3d;
+    }
+
+    </style>
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="https://alfredomaussa.com/" id="Blog">Blog</a>
+    <a href="" id="Academia">Academia</a>
+    <a href="https://proyectos.alfredomaussa.com/" id="Proyectos">Proyectos</a>
+  </div>
+
+
+      <!-- Navigation -->
+      <button class="btn btn-outline-secondary" onclick="history.back()" style="
+      position: fixed;
+      left: 18px;
+      top: 12px;
+      ">Atrás</button>
+            <!-- Place this tag where you want the button to render. -->
+<a style="
+position: absolute;
+right: 2%;
+top: 2%;
+" class="btn btn-dark" href="https://grabcad.com/alfredo.maussa-1" data-size="large" aria-label="Follow @a4lfr32 on GitHub"><b> GRAB<span style="color: red;">CAD</span></b></a>
+
+
+    <!-- Page Content -->
+<div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <h1 class="my-4">Autodesk Inventor
+          <small>CADs</small>
+        </h1>
+      
+
+        <!-- /.row -->
+      
+      
+   
+<hr style="border: 5px solid #717171;
+border-radius: 5px;">
+  <!-- Project One -->
+  <br>
+  <article>
+  <div class="row">
+    <div class="col-md-5">
+      <div class="card" id="SCARA_stl" style="width:400px;height:200px;margin:0 auto;"></div>
+
+        <!--img class="img-fluid rounded mb-3 mb-md-0" src="../../../imagenes/C_baseradial.png" alt=""-->
+    </div>
+    <div class="col-md-7">
+      <h3>proyecto SCARA</h3> <small>17/04/2020</small>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+      <a class="btn btn-outline-primary" href="#">Ver más</a>
+      <div style="float: right;" class="row">
+      <span>tags: </span>
+    <div class="card text-white bg-dark m-1">Matemáticas </div>
+    <div class="card text-white bg-dark m-1">matemáticas </div>
+    </div>
+    </div>
+  </div>
+</article>
+  <!-- /.row -->
+  <hr>
+
+  <!-- Project Two -->
+  <br>
+  <div class="row">
+   
+    <div class="col-md-7">
+      <h3>Carrito de control remoto</h3><small>17/04/2020</small>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+      <a class="btn btn-outline-primary" href="#">Ver más</a>
+    </div>
+    <div class="col-md-5">
+      <div class="card" id="Carrito_stl" style="width:400px;height:200px;margin:0 auto;"></div>
+
+    </div>
+  </div>
+  <!-- /.row -->
+  <hr>
+  <!-- Project One -->
+  <br>
+  <article>
+  <div class="row">
+    <div class="col-md-5">
+      <a href="#">
+        <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/CursoJavascript.PNG" alt="">
+      </a>
+    </div>
+    <div class="col-md-7">
+      <h3>Apuntes del curso: Javascript, Jquery, and JSON (Coursera: Universidad de Míchigan)</h3> <small>17/04/2020</small>
+      <p>Comparto en esta entrada, los apuntes que he tomado en códigos </p>
+      <a class="btn btn-outline-primary" href="#">Ver más</a>
+    </div>
+  </div>
+</article>
+<hr>
+<br>
+  <!-- /.row -->
+      </div>
+      <!-- /.container -->
+
+      <script src="stl_viewer/stl_viewer.min.js"></script>        
+      <script>
+        //Modelo de SCARA
+          var stl_viewer=new StlViewer
+          (
+              document.getElementById("SCARA_stl"),
+              {
+                  models:
+                  [
+                      {filename:"SCARA2.stl",rotationx:0.0, rotationy:-0.9,rotationz:-1.5, view_edges:true, animation:{delta:{rotationy:-1, msec:5000, loop:true,rotationz:-1, msec:5000, loop:true}}}
+                  ]
+              }
+          );
+
+          // modelo de CANSAT
+          var stl_viewer2=new StlViewer
+          (
+              document.getElementById("Carrito_stl"),
+              {
+                  models:
+                  [
+                      {filename:"Carrito.stl",rotationx:0.0, rotationy:-0.9,rotationz:1.5, view_edges:true,scale:2, animation:{delta:{rotationy:-0.9, msec:5000, loop:true}}}
+                  ]
+              }
+          );
+
+          // modelo de TRTH
+          var stl_viewer3=new StlViewer
+          (
+              document.getElementById("stl_cont3"),
+              {
+                  models:
+                  [
+                      {filename:"SCARA2.stl",rotationx:0.0, rotationy:-0.9,rotationz:-1.5, view_edges:true, animation:{delta:{rotationy:-1, msec:5000, loop:true,rotationz:-1, msec:5000, loop:true}}}
+                  ]
+              }
+          );
+      </script>
+
+      <footer style="
+      text-align: -webkit-center;
+      background-color: darkgray;
+  ">
+  <hr>
+  Esto es un footer
+  <br>
+  <br>
+</footer>
+</body>
+
+</html>

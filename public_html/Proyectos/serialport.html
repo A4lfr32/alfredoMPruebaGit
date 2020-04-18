@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <h1>hola</h1>
+<select name="portList2" id="portList">
+        <option value="volvorf">Volvo</option>
+    </select>
+    <button id="open">asd</button>
+    <script>
+    
+    var connectionId;
+
+$(document).ready(function() {
+    var onGetDevices = function(ports) {
+  for (var i=0; i<ports.length; i++) {
+    console.log(ports[i].path);
+  }
+}
+chrome.serial.getDevices(onGetDevices);
+});
+    </script>
+</body>
+</html>

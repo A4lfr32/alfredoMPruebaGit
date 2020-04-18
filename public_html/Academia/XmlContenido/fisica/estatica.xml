@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contenido>
+
+<encabezado>
+<titulo>Física estática</titulo>
+<autor>Alfredo Maussa</autor>
+<fecha>Publicado en Junio 13, 2019 a las 5:17 PM</fecha>
+</encabezado>
+
+<cuerpo>
+
+<temario>
+    <tema titulo="Equilibrio de un particula y de un cuerpo rígido">wrfrf1</tema>
+    <tema titulo="Sistemas de fuerzas y sus efectos en cuerpos rígidos">wrfrf1</tema>
+    <tema titulo="Análisis de estructuras">wrfrf1</tema>
+    <tema titulo="Fuerzas de rozamiento">wrfrf1</tema>
+
+</temario>
+
+
+<parrafo>Hola esto es un texto de prueba</parrafo>
+
+
+<referencias>
+<basica>Referencia 1 </basica>
+<complementarias>Referencia 2 </complementarias>
+<complementarias>Referencia 3 </complementarias>
+</referencias>
+
+
+
+</cuerpo>
+  
+</contenido>
