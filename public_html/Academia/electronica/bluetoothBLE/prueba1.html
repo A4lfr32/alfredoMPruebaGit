@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="onButtonClick();">Suscribirse a notificaciones</button>
+    <button onclick="onDisconnectButtonClick();">aca</button>
+
+
+    <script>
+/*
+function onButtonClick() {
+
+  let options = {};
+    options.acceptAllDevices = true;
+
+  console.log('Requesting Bluetooth Device...');
+  console.log('with ' + JSON.stringify(options));
+  navigator.bluetooth.requestDevice(options)
+  .then(device => {
+    console.log('> Name:             ' + device.name);
+    console.log('> Id:               ' + device.id);
+    console.log('> Connected:        ' + device.gatt.connected);
+  })
+  .catch(error => {
+    console.log('Argh! ' + error);
+  });
+}*/
+var bluetoothDevice;
+var aux;
+function onButtonClick() {
+  log('Requesting Bluetooth Device...');
+  navigator.bluetooth.requestDevice({
+  acceptAllDevices:true,
+  optionalServices: ['0000ffe0-0000-1000-8000-00805f9b34fb']
+})
+  .then(device => {
+    bluetoothDevice = device;
+    log('Connecting to GATT Server...');
+    return device.gatt.connect();
+  })
+  .then(server => {
+    log('Getting Battery Service...');
+    return server.getPrimaryService('0000ffe0-0000-1000-8000-00805f9b34fb');
+  })
+  .then(service => {
+    log('Getting Battery Level Characteristic...');
+    return service.getCharacteristic('0000ffe1-0000-1000-8000-00805f9b34fb');
+  })
+  .then(characteristic => {
+    log('Reading Battery Level...');
+    myCharacteristic = characteristic;
+    return myCharacteristic.startNotifications()
+    .then(_ => {
+      log('> Notifications started');
+      myCharacteristic.addEventListener('characteristicvaluechanged',
+          handleNotifications);
+    });
+   // return characteristic.readValue();
+  })
+  /*.then(value => {
+    let batteryLevel = value.getUint8(0);
+    log('> Battery Level is ' + batteryLevel + '%');
+  })*/
+  .catch(error => {
+    log('Argh! ' + error);
+  });
+}
+function handleNotifications(event) {
+  let valor_notificacion = event.target.value.getUint8(0);
+  log('Valor obtenido: ' + valor_notificacion);
+}
+
+function log(data) {
+    console.log(data)
+}
+
+
+
+
+
+
+
+
+
+function onDisconnectButtonClick() {
+  if (!bluetoothDevice) {
+    return;
+  }
+  log('Disconnecting from Bluetooth Device...');
+  if (bluetoothDevice.gatt.connected) {
+    bluetoothDevice.gatt.disconnect();
+  } else {
+    log('> Bluetooth Device is already disconnected');
+  }}
+
+  
+    </script>
+</body>
+</html>

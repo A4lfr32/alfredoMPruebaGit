@@ -15,7 +15,7 @@ $( document ).ready(function() {
             myFunction(this);
           }
         };
-        xmlhttp.open("GET", "../../entradas.xml", true);
+        xmlhttp.open("GET", "https://www.alfredomaussa.com/entradas.xml", true);
         xmlhttp.send();
       }
       function myFunction(xml) {

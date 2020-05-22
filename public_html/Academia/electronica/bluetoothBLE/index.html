@@ -9,7 +9,7 @@
      crossorigin="anonymous">
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Javascript</title>
+    <title>Bluetooth low energy</title>
 
          <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163888921-1"></script>
@@ -46,7 +46,6 @@
     #Academia {
       top: 130px;
       background-color: rgb(104, 156, 104);
-      left: -80px !important;
     }
     
     #Proyectos {
@@ -83,8 +82,8 @@ top: 2%;
 <div class="container">
 
         <!-- Portfolio Item Heading -->
-        <h1 class="my-4">Javascript
-          <small>códigos</small>
+        <h1 class="my-4">Bluetooth
+          <small>4.0</small>
         </h1>
       
 
@@ -98,14 +97,14 @@ border-radius: 5px;">
   <br>
   <article>
   <div class="row">
-    <div class="col-md-5" style="text-align-last: center;">
+    <div class="col-md-5">
       <a href="#">
-        <img class="img-fluid rounded mb-3 mb-md-0" src="../../../imagenes/codigo1.PNG" alt="">
+        <img class="img-fluid rounded mb-3 mb-md-0" src="../../../imagenes/C_baseradial.png" alt="">
       </a>
     </div>
     <div class="col-md-7">
-      <h3>Asincronía</h3> <small>18/04/2020</small>
-      <p>Aca podemos ver, como en dos snippets de scripr, estos se ejecutan independietemente de error que pueda tener el otro. Aunque no corre todo el snippet</p>
+      <h3>Aplicacion web</h3> <small>21/04/2020</small>
+      <p><a href="https://loginov.rocks/Web-Bluetooth-Terminal/">Chat local con bluetooth</a>, este ejemplo es explicado en -> <a href="https://medium.com/@loginov_rocks/how-to-make-a-web-app-for-your-own-bluetooth-low-energy-device-arduino-2af8d16fdbe8">este blog</a> y tiene github en <a href="https://github.com/loginov-rocks/bluetooth-terminal">aca</a>. te puedes guiar sobre webs progresivas <a href="https://web.dev/progressive-web-apps/">aca</a>.  Aca puedes ver la diferencia entre GAP(conexión central-preriferico) y GATT (profile) <a href="https://learn.adafruit.com/introduction-to-bluetooth-low-energy/introduction">link</a>. Aca <a href="https://developer.chrome.com/apps/bluetooth">Libreria o algo así de Chrome</a>. Esta otra es una <a href="https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web">guia</a>. para ver dispositivos "chrome://bluetooth-internals/#devices".   <a href="https://randomnerdtutorials.com/esp32-bluetooth-low-energy-ble-arduino-ide/">totorial de esp32 BLE</a></p>
       <a class="btn btn-primary" href="#">Ver más</a>
       <div style="float: right;" class="row">
       <span>tags: </span>
@@ -124,7 +123,7 @@ border-radius: 5px;">
    
     <div class="col-md-7">
       <h3>Contenido de academia</h3><small>04/01/2020</small>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+      <p><a href="https://youtu.be/2mePPqiocUE?t=544">Este video, explica cambiar servicio en esp32</a>. Con esto logré enviar datos desde el ESP32 a la página web(Terminal app) -> aunque pareciera que no recive siempre es por que no envía /r/n. me tocó olvidar bluetooth. no me apoye de esta, pero es muy ilustrativa: <a href="https://randomnerdtutorials.com/esp32-bluetooth-low-energy-ble-arduino-ide/">aca</a></p>
       <a class="btn btn-primary" href="#">Ver más</a>
     </div>
     <div class="col-md-5">
@@ -146,28 +145,11 @@ border-radius: 5px;">
     </div>
     <div class="col-md-7">
       <h3>Apuntes del curso: Javascript, Jquery, and JSON (Coursera: Universidad de Míchigan)</h3> <small>17/04/2020</small>
-      <p>Comparto en esta entrada, los apuntes que he tomado en códigos </p>
+      <p>a <a href="https://developer.chrome.com/apps/app_bluetooth">este no le encontrè mucha utilidad</a>. Creo que esto me permite crear peripheral en webserver <a href="https://github.com/beaufortfrancois/sandbox/tree/gh-pages/web-bluetooth/bluetooth-developer-studio-plugin">Este es</a>
+      <a href="https://github.com/WebBluetoothCG/web-bluetooth/issues/231">Este es exactamente lo que estaba buscando (foro)</a>, de aca saco: <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1018925">genial</a> esto otro  <a href="https://github.com/search?q=bluetoothLowEnergy.createService&type=Code">acaaaaaaa</a>. Libreria <a href="https://github.com/google/eddystone/tree/master/libraries/javascript/eddystone-advertising">Eddystone parece muy util</a>. aca habla de eddyston, los <a href="http://www.usingbeacons.com/eddystone-de-google-nuevas-posibilidades-para-la-tecnologia-beacon/">comentarios son empresarios</a>. no se pero <a href="https://kontakt.io/blog/what-is-eddystone/">esto parece util</a>. <a href="https://developers.google.com/beacons/eddystone">Google developers</a>. Aca tiene <a href="https://blog.beaconstac.com/2016/03/8-ways-eddystone-and-the-physical-web-can-make-your-daily-life-easier/">unas aplicaciones muy buenas</a>. depronto sirva <a href="http://forum.espruino.com/conversations/298636/">para conectar varios bluetooth</a></p>
       <a class="btn btn-primary" href="#">Ver más</a>
     </div>
   </div>
-</article>
-
-
-<br>
-<article>
-<div class="row">
-  <div class="col-md-5">
-    <a href="#">
-      <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/CursoJavascript.PNG" alt="">
-    </a>
-  </div>
-  <div class="col-md-7">
-    <h3>Diseño de juegos con phaser y otros</h3> <small>21/04/2020</small>
-    <p><a href="https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser/Initialize_the_framework">Initialize the framework
-    </a> . juego con three js <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Building_up_a_basic_demo_with_Three.js">Building up a basic demo with Three.js</a>. Tutorial basico de 1 juego famoso con javascript puro <a href="https://developer.mozilla.org/es/docs/Games/Workflows/Famoso_juego_2D_usando_JavaScript_puro">Famoso juego 2D usando JavaScript puro</a>. Guia básica de la lógica en 3D <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Basic_theory">Explaining basic 3D theory</a>. Librerioa para graficas en 2d: <a href="https://two.js.org/#introduction">Two js</a></p>
-    <a class="btn btn-primary" href="#">Ver más</a>
-  </div>
-</div>
 </article>
 <hr>
 <br>

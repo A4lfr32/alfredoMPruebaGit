@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <title>Esp32- Página web</title>
+
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163888921-1"></script>
+         <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+         
+           gtag('config', 'UA-163888921-1');
+         </script>
+</head>
+<body>
+    <button class="btn btn-outline-secondary" onclick="history.back()" style="
+position: absolute;
+left: 18px;
+top: 12px;
+">Atrás</button>
+    
+
+<div class="container" style="text-align: -webkit-center">
+    <br>
+    <canvas id="myCanvas" width="800" height="400" style="background: #eee;"></canvas>
+
+    <div style="
+    position: absolute;
+    right: 2%;
+    top: 2%;
+">          
+<button id="connect" type="button" class="btn btn-outline-primary">Conectar <i class="fa fa-bluetooth"></i></button>
+
+<button id="disconnect" type="button" class="btn btn-outline-danger">Desconectar <i class="fa fa-bluetooth"></i></button>
+
+<div id="terminal"></div>
+
+<form id="send-form">
+    <input id="input" type="text">
+    <button type="submit">Send</button>
+</form>
+          </div>
+</div>
+
+
+<script>
+    var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var ballRadius = 10;
+var x = canvas.width/2;
+var y = canvas.height/2;
+var dx = 2;
+var dy = -2;
+var paddleHeight = 10;
+var paddleWidth = 75;
+var paddleX = (canvas.width-paddleWidth)/2;
+var rightPressed = false;
+var leftPressed = false;
+var upKey = false;
+var downKey = false;
+
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+
+function keyDownHandler(e) {
+    if(e.keyCode == 39) {
+        rightPressed = true;
+    }
+    else if(e.keyCode == 37) {
+        leftPressed = true;
+    }
+    else if(e.keyCode == 38) {
+        upKey = true;
+    }
+    else if(e.keyCode == 40) {
+        downKey = true;
+    }
+}
+function keyUpHandler(e) {
+    if(e.keyCode == 39) {
+        rightPressed = false;
+    }
+    else if(e.keyCode == 37) {
+        leftPressed = false;
+    }
+    else if(e.keyCode == 38) {
+        upKey = false;
+    }
+    else if(e.keyCode == 40) {
+        downKey = false;
+    }
+}
+
+function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+}
+function drawPaddle() {
+    ctx.beginPath();
+    ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+}
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBall();
+    //drawPaddle();
+    
+    if(rightPressed) {
+        x += 1;
+    }
+    else if(leftPressed) {
+        x -= 1;
+    }
+    if(upKey) {
+        y -= 1;
+    }
+    else if(downKey) {
+        y += 1;
+    }
+    
+  
+}
+
+setInterval(draw, 10);
+</script>
+
+
+
+<script>
+
+    // Get references to UI elements
+    let connectButton = document.getElementById('connect');
+    let disconnectButton = document.getElementById('disconnect');
+    let terminalContainer = document.getElementById('terminal');
+    let sendForm = document.getElementById('send-form');
+    let inputField = document.getElementById('input');
+    
+    // Connect to the device on Connect button click
+    connectButton.addEventListener('click', function() {
+      connect();
+    });
+    
+    // Disconnect from the device on Disconnect button click
+    disconnectButton.addEventListener('click', function() {
+      disconnect();
+    });
+    
+    // Handle form submit event
+    sendForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form sending
+     // console.log("7: "+diff_c_1);
+    if (flag==0) {
+      console.log("AAA");
+      flag = 1;
+     // send(new Uint8Array(dectobin(diff_c_1,163).concat(dectobin(diff_c_2,171)))); // Send text field contents
+      send("1"); // Send text field contents
+      
+      // inputField.value = '';  // Zero text field
+      //inputField.focus();     // Focus on text field
+    }
+    });
+    
+    // Selected device object cache
+    let deviceCache = null;
+    
+    // Characteristic object cache
+    let characteristicCache = null;
+    
+    // Intermediate buffer for incoming data
+    let readBuffer = '';
+    
+    // Launch Bluetooth device chooser and connect to the selected
+    function connect() {
+      return (deviceCache ? Promise.resolve(deviceCache) :
+          requestBluetoothDevice()).
+          then(device => connectDeviceAndCacheCharacteristic(device)).
+          then(characteristic => startNotifications(characteristic)).
+          catch(error => log(error));
+    }
+    
+    function requestBluetoothDevice() {
+      //log('Requesting bluetooth device...');
+    
+      return navigator.bluetooth.requestDevice({
+        filters: [{services: [0xFFE0]}],
+      }).
+          then(device => {
+        //    log('"' + device.name + '" bluetooth device selected');
+            deviceCache = device;
+            deviceCache.addEventListener('gattserverdisconnected',
+                handleDisconnection);
+    
+            return deviceCache;
+          });
+    }
+    
+    function handleDisconnection(event) {
+      let device = event.target;
+    
+    //  log('"' + device.name +
+     //     '" bluetooth device disconnected, trying to reconnect...');
+    
+      connectDeviceAndCacheCharacteristic(device).
+          then(characteristic => startNotifications(characteristic)).
+          catch(error => log(error));
+    }
+    
+    // Connect to the device specified, get service and characteristic
+    function connectDeviceAndCacheCharacteristic(device) {
+      if (device.gatt.connected && characteristicCache) {
+        return Promise.resolve(characteristicCache);
+      }
+    
+      //log('Connecting to GATT server...');
+    
+      return device.gatt.connect().
+          then(server => {
+          //  log('GATT server connected, getting service...');
+    
+            return server.getPrimaryService(0xFFE0);
+          }).
+          then(service => {
+         //   log('Service found, getting characteristic...');
+    
+            return service.getCharacteristic(0xFFE1);
+          }).
+          then(characteristic => {
+           // log('Characteristic found');
+            characteristicCache = characteristic;
+    
+            return characteristicCache;
+          });
+    }
+    
+    // Enable the characteristic changes notification
+    function startNotifications(characteristic) {
+      //log('Starting notifications...');
+    
+      return characteristic.startNotifications().
+          then(() => {
+        //    log('Notifications started');
+            characteristic.addEventListener('characteristicvaluechanged',
+                handleCharacteristicValueChanged);
+          });
+    }
+    
+    // Data receiving
+    function handleCharacteristicValueChanged(event) {
+      let value = new TextDecoder().decode(event.target.value);
+    
+      for (let c of value) {
+        if (c === '\n') {
+          let data = readBuffer.trim();
+          readBuffer = '';
+    
+          if (data) {
+            receive(data);
+          }
+        }
+        else {
+          readBuffer += c;
+        }
+      }
+    }
+    
+    // Received data handling
+    function receive(data) {
+      console.log("Dato recibido: "+data)
+        //log(data, 'in');
+    }
+    
+    // Output to terminal
+    function log(data, type = '') {
+     // terminalContainer.insertAdjacentHTML('beforeend',
+       //   '<div' + (type ? ' class="' + type + '"' : '') + '>' + data + '</div>');
+      //    console.log("3: "+data);
+    
+    }
+    
+    // Disconnect from the connected device
+    function disconnect() {
+      if (deviceCache) {
+        log('Disconnecting from "' + deviceCache.name + '" bluetooth device...');
+        deviceCache.removeEventListener('gattserverdisconnected',
+            handleDisconnection);
+    
+        if (deviceCache.gatt.connected) {
+          deviceCache.gatt.disconnect();
+          log('"' + deviceCache.name + '" bluetooth device disconnected');
+        }
+        else {
+          log('"' + deviceCache.name +
+              '" bluetooth device is already disconnected');
+        }
+      }
+    
+      if (characteristicCache) {
+        characteristicCache.removeEventListener('characteristicvaluechanged',
+            handleCharacteristicValueChanged);
+        characteristicCache = null;
+      }
+    
+      deviceCache = null;
+    }
+    
+    // Send data to the connected device
+    function send(data) {
+    //  console.log("1: "+data);
+    //  console.log("6: "+data.buffer);
+      //data = String(data);
+      if (!data || !characteristicCache) {
+        return;
+      }
+    
+      //data += '\n';
+    
+      if (data.length > 20) {
+        let chunks = data.match(/(.|[\r\n]){1,20}/g);
+        console.log(/(.|[\r\n]){1,20}/g);
+        writeToCharacteristic(characteristicCache, chunks[0]);
+    
+        for (let i = 1; i < chunks.length; i++) {
+            console.log("enviandox1")
+          setTimeout(() => {
+            writeToCharacteristic(characteristicCache, chunks[i]);
+          }, i * 100);
+        }
+      }
+      else {
+      //  console.log("2: "+data);
+    
+        writeToCharacteristic(characteristicCache, data);
+      }
+    
+      log(data, 'out');
+    }
+    
+    function writeToCharacteristic(characteristic, data) {
+     // console.log("5: "+ (data.buffer));
+     // console.log("4: "+ (data));
+    
+      characteristic.writeValue(data);
+    }
+    
+    
+    //setInterval(oneSecondFunction, 1000);
+    
+    function oneSecondFunction() {
+      console.log("c1_I: "+c_1_inicial+" c2_I: "+c_2_inicial);
+    
+      console.log("apagar Flag");
+    flag = 0;
+    
+    if (flagTrayectoria==1){
+    
+          //ggbApplet.setCoords('P_0',P_0_x+cont*0.01*(ggbApplet.getXcoord("A")-P_0_x),P_0_y+cont*0.01*(ggbApplet.getYcoord("A")-P_0_y));
+    cont++; 
+    
+    if (cont == 10) {
+    flagTrayectoria = 0;
+    cont=0;
+    }
+    }
+    
+    }
+    </script>
+    
+</body>
+</html>

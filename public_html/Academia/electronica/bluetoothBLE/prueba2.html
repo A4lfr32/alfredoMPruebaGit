@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="conectar_bluetooth();">Conectar bluetooth</button>
+    <button onclick="activar_notificaciones();">Suscribirse a notificaciones</button>
+    <button onclick="escribir_mensaje();">enviar caracter</button>
+    <button onclick="onDisconnectButtonClick();">desconectar</button>
+
+
+    <script>
+var cont=0;
+var bluetoothDevice;
+var aux;
+var caracteristica_enviar;
+
+// se ejecuta 1 vez, primero conectar, se ejecuta cuando presiono el botón conectar
+function conectar_bluetooth() {
+  log('Buscando servicios de bluetooth...');
+    servicio=requestDevice();  // guardo el DOM servicio del bluetooth
+    conectar_a_enviar();
+
+}
+
+// se ejecuta 1 vez, guardo DOM de característica a la cual escribir
+function conectar_a_enviar(){
+    caracteristica_enviar=servicio
+    .then(service => {
+    log('Obteniendo caracteristicas 2...');
+    return service.getCharacteristic('0000ffe2-0000-1000-8000-00805f9b34fb');
+  })
+    
+}
+
+// al presionar el botón enviar, envia un caracter
+function escribir_mensaje(){
+    return caracteristica_enviar    
+  .then(characteristic => {
+    log('Writing Heart Rate Control Point Characteristic...');
+
+    // Writing 1 is the signal to reset energy expended.
+    let resetEnergyExpended = Uint8Array.of(cont);
+    return characteristic.writeValue(resetEnergyExpended);
+  }).then(_ => {
+    log('> Energy expended has been reset.');
+  })
+  .catch(error => {
+    log('Argh! ' + error);
+  });
+}
+
+// activa notificaciones, solo se ejecuta una vez -> faltaria notificacionSTOP
+function activar_notificaciones(){
+    return servicio
+  .then(service => {
+    log('Getting Battery Level Characteristic...');
+    return service.getCharacteristic('0000ffe1-0000-1000-8000-00805f9b34fb');
+  })
+  .then(characteristic => {
+    log('Reading Battery Level...');
+    myCharacteristic = characteristic;
+    return myCharacteristic.startNotifications()
+    .then(_ => {
+      log('> Notifications started');
+      myCharacteristic.addEventListener('characteristicvaluechanged',
+          handleNotifications);
+    });
+  })
+  .catch(error => {
+    log('Argh! ' + error);
+  });
+
+}
+
+// evento de ejecución: cuando recibe una notificación.
+function handleNotifications(event) {
+  let valor_notificacion = event.target.value.getUint8(0);
+  log('Valor obtenido: ' + valor_notificacion);
+  cont++;
+}
+
+function log(data) {
+    console.log(data)
+}
+
+
+
+
+
+
+
+
+
+function onDisconnectButtonClick() {
+  if (!bluetoothDevice) {
+    return;
+  }
+  log('Desconectando dispositivo bluetooth...');
+  if (bluetoothDevice.gatt.connected) {
+    bluetoothDevice.gatt.disconnect();
+  } else {
+    log('> El dispositivo bluetooth ya ha sido desconectado');
+  }}
+
+
+
+
+  function requestDevice() {
+  log('Requesting any Bluetooth Device...');
+  return navigator.bluetooth.requestDevice({
+   // filters: [...] <- Prefer filters to save energy & show relevant devices.
+      acceptAllDevices: true,
+      optionalServices: ['0000ffe0-0000-1000-8000-00805f9b34fb']})
+  .then(device => {
+    bluetoothDevice = device;
+    bluetoothDevice.addEventListener('gattserverdisconnected', onDisconnected);
+    log('Conectando al servidor GATT...');
+    return device.gatt.connect()
+    .then(server => {
+    log('Getting Battery Service...');
+     
+    return server.getPrimaryService('0000ffe0-0000-1000-8000-00805f9b34fb');;
+  });
+  });
+}
+
+
+
+function onDisconnected() {
+  log('> Bluetooth Device disconnected');
+  connectDeviceAndCacheCharacteristics()
+  .catch(error => {
+    log('Argh! ' + error);
+  });
+}
+
+function connectDeviceAndCacheCharacteristics() {
+  if (bluetoothDevice.gatt.connected) {
+    return new Error("Whoops!");
+    
+  }else{return Promise.resolve();}
+  }
+    </script>
+</body>
+</html>
+

@@ -22,7 +22,7 @@
 <style>
     #mySidenav a {
       position: fixed;
-      left: -120px;
+      left: -110px;
       transition: 0.3s;
       padding: 15px;
       width: 135px;
@@ -39,18 +39,20 @@
     #Blog {
       top: 70px;
       background-color: rgb(218, 218, 218);
+      z-index: 1;
     }
     
     #Academia {
       top: 130px;
       background-color: rgb(104, 156, 104);
-      left: -110px !important;
+      z-index: 1;
 
     }
     
     #Proyectos {
       top: 190px;
       background-color: #3d3d3d;
+      z-index: 1;
     }
 
     </style>
@@ -91,9 +93,7 @@
           <div class="col-lg-6 col-md-4 col-sm-6 mb-4">
             <div class="card h-10">
               <a href="matematicas/"><img class="card-img-top" src="matematica.PNG" height="300px" width="700px" alt="Identidad de Euler"></a>
-              <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseMatematica" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Expandir
-              </a>
+            
               <div class="card-body collapse" id="collapseMatematica">
                 <!--h4 class="card-title">
                   <a href="/matematicas/">Matemática</a>
@@ -118,12 +118,14 @@
 
 </div>
               </div>
+              <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseMatematica" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Expandir
+              </a>
             </div>
           </div>
           <div class="col-lg-6 col-md-4 col-sm-6 mb-4">
             <div class="card h-10">
               <a href="fisica"><img class="card-img-top" src="fisica.PNG" height="300px" width="700px" alt="Modelo de calor"></a>
-              <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseFisica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
                 <!--h4 class="card-title">
                   <a href="fisica">Física</a>
                 </h4---->
@@ -136,6 +138,8 @@
                 <a href="fisica/ondas.html" class="list-group-item list-group-item-action"><span>Ondas</span></a>
             <a></a>
           </div>
+          <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseFisica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+
             </div>
           </div>
 
@@ -143,7 +147,6 @@
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
               <a href="mecanica"><img class="card-img-top" src="mecanica.PNG" height="90" alt=""></a>
-              <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseMecanica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
                 <div class="list-group list-group-flush collapse" id="collapseMecanica">
                 <!--h4 class="card-title">
@@ -157,12 +160,13 @@
                 <a href="mecanica/mecanicadelagrangeyhamilton.html" class="list-group-item list-group-item-action">Mecánica lagrange y Hamilton</a>
             <a></a>
           </div>
+          <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseMecanica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card h-100">
               <a href="informatica"><img class="card-img-top" src="informatica.PNG" height="90" alt=""></a>
-              <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseInformatica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
                 <div class="list-group list-group-flush collapse" id="collapseInformatica">
                 <!--h4 class="card-title">
@@ -173,12 +177,13 @@
             <a href="informatica/paginasweb.html" class="list-group-item list-group-item-action">Páginas web</a>
             <a></a>
               </div>
+              <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseInformatica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card h-100">
               <a href="electronica"><img class="card-img-top" src="electronica.PNG" height="90" alt=""></a>
-              <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseElectronica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
               <div class="list-group list-group-flush collapse" id="collapseElectronica">
                 <!--h4 class="card-title">
@@ -189,12 +194,13 @@
                 <a href="electronica/electronicadigital.html" class="list-group-item list-group-item-action">Electrónica digital</a>
             <a></a>
           </div>
+          <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseElectronica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card h-100">
               <a href="control"><img class="card-img-top" src="control.PNG" width="100" height="90" alt=""></a>
-              <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseControl" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
               <div class="list-group list-group-flush collapse" id="collapseControl">
                 <!--h4 class="card-title">
@@ -208,6 +214,8 @@
                 <a href="control/sistemasinteligentes.html" class="list-group-item list-group-item-action">Sistemas inteligentes</a>
             <a></a>
           </div>
+          <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseControl" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+
             </div>
           </div>
         </div>
@@ -227,7 +235,6 @@
 <h3>Otros cursos</h3>
 
 <br></span>
-<a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseOtros" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
             <div class="list-group list-group-flush collapse" id="collapseOtros">
             <!--h4 class="card-title">
               <a href="/informatica">Informática</a>
@@ -237,8 +244,19 @@
         <a href="#" class="list-group-item list-group-item-action">Clasificación de imágenes: ¿cómo reconocer el contenido de una imagen?</a>
         <a href="./otros/BlockChain.html" class="list-group-item list-group-item-action">BlockChain</a>
         <a href="./otros/Javascript.html" class="list-group-item list-group-item-action">Javascript, JQuey, and JSON</a>
+        <a href="https://www.coursera.org/learn/fitting-statistical-models-data-python/home/welcome" class="list-group-item list-group-item-action">Fitting Statistical Models to Data with Python</a>
+        <a href="https://www.coursera.org/learn/deep-neural-networks-with-pytorch/home/welcome" class="list-group-item list-group-item-action">Deep Neural Networks with PyTorch</a>
+        <a href="https://www.edx.org/es/professional-certificate/ibm-deep-learning" class="list-group-item list-group-item-action">Professional Certificate en Deep Learning</a>
+        <a href="https://courses.edx.org/courses/course-v1:IBM+DL0110EN+3T2019/course/" class="list-group-item list-group-item-action">Deep Learning with Python and PyTorch</a>
+        <a href="https://www.coursera.org/learn/data-analysis-with-python" class="list-group-item list-group-item-action">Análisis de datos con Python</a>
+        <a href="https://www.coursera.org/learn/introduction-to-deep-learning-with-keras/home/welcome" class="list-group-item list-group-item-action">Introduction to Deep Learning & Neural Networks with Keras</a>
+        <a href="https://www.coursera.org/professional-certificates/ai-engineer#courses" class="list-group-item list-group-item-action">Certificado profesional de IBM AI Engineering</a>
+        <a href="https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome" class="list-group-item list-group-item-action">Neural Networks and Deep Learning</a>
+        <a href="" class="list-group-item list-group-item-action"></a>
         <a></a>
           </div>
+<a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseOtros" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+
         </div>
 
         <!-- Page Heading -->
@@ -361,8 +379,10 @@
         
             <div class="row">
                 <!-- /.row -->
-                <div class="card col align-self-center col-md-12">
-                    <iframe src="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=e2f2b709-0311-47da-a4fa-a8dcde209e5a"></iframe> 
+                <div class="card col align-self-center col-md-6 h-100">
+                    <!--iframe src="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=e2f2b709-0311-47da-a4fa-a8dcde209e5a"></iframe--> 
+                    <img class="card-img-top" src="Matlab1.png" alt="Card image cap">
+                    
                     <div class="card-body">
                       <h5 class="card-title">Matlab Onramp</h5>
                       <p class="card-text">Certificado uso de Matlab. <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=e2f2b709-0311-47da-a4fa-a8dcde209e5a">Click</a></p>
@@ -371,8 +391,9 @@
                   </div>
 
 
-                <div class="card col align-self-center col-md-12">
-                    <iframe src="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=4a480e10-e108-4b74-a381-ddb63ed0cfa4"></iframe> 
+                <div class="card col align-self-center col-md-6 h-100">
+                    <!--iframe src="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=4a480e10-e108-4b74-a381-ddb63ed0cfa4"></iframe--> 
+                    <img class="card-img-top" src="simulink.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Simulink Onramp</h5>
                       <p class="card-text">Certificado uso de Simulink. <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=4a480e10-e108-4b74-a381-ddb63ed0cfa4">Click</a></p>
@@ -380,15 +401,33 @@
                     </div>
                   </div>
                  
-                  <div class="card col align-self-center col-md-12">
-                      <img class="card-img-top" src="780x180ImageBoostrap.svg" alt="Card image cap">
+                  <div class="card col align-self-center col-md-6 h-100">
+                      <img class="card-img-top" src="C_Python.png" alt="Card image cap">
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title">Micro-curso de python en Kaggle</h5>
+                        <p class="card-text">Curso introductorio que ofrece</p>
+                        <p class="card-text"><small class="text-muted">Última subida: 22/04/2020</small></p>
                       </div>
                     </div>
+                    
 
+                    <div class="card col align-self-center col-md-6 h-100">
+                      <img class="card-img-top" src="Intro to Machine Learning.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Introdución al Machine Learning en Kaggle</h5>
+                        <p class="card-text">Curso introductorio que ofrece</p>
+                        <p class="card-text"><small class="text-muted">Última subida: 22/04/2020</small></p>
+                      </div>
+                    </div>
+                    
+                    <div class="card col align-self-center col-md-6 h-100">
+                      <img class="card-img-top" src="Data Visualization.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Visualización de datos en Kaggle</h5>
+                        <p class="card-text">Curso introductorio que ofrece</p>
+                        <p class="card-text"><small class="text-muted">Última subida: 22/04/2020</small></p>
+                      </div>
+                    </div>
                       </div>
                     
                 
@@ -407,7 +446,7 @@
 
 
         <!-- Pagination -->
-        <ul class="pagination justify-content-center">
+        <ul hidden class="pagination justify-content-center">
           <li class="page-item">
             <a class="page-link" href="#" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>

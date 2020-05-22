@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <general>
-<entrada clases="opinion">
+<!--entrada clases="opinion">
         <!-- Blog Post -->
 
           <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/12/13/10/41/fake-1903774_960_720.png" alt="Card image cap"> </img>
@@ -21,7 +21,7 @@
             Publicado 06/04/2020 por
             <a href="#">AlfredoMaussa</a>
           </div>
-</entrada>
+</entrada-->
 
 <entrada clases="Sistemas_inteligentes Redes_neuronales">
         <!-- Blog Post -->
