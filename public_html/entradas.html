@@ -199,29 +199,14 @@
         <!-- Categories Widget -->
         <div class="card my-4">
           <h5 class="card-header">Categorias</h5>
-          <div class="card">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a class="list-group-item list-group-item-action" href="#" onclick="$('div#contenidoEntradas > div').filter('.opinion').toggle();;$(this).toggleClass('active');">opinión</a>
-                  </li>
-                  <li>
-                    <a class="list-group-item list-group-item-action" href="#" onclick="$('div#contenidoEntradas > div').filter('.Javascript').toggle();;$(this).toggleClass('active');">Javascript</a>
-                  </li>
-                  <li>
-                    <a class="list-group-item list-group-item-action" href="#" onclick="$('div#contenidoEntradas > div').filter('.Robotica').toggle();;$(this).toggleClass('active');">Robótica</a>
-                  </li>
-             
-                  <li>
-                    <a class="list-group-item list-group-item-action" href="#" onclick="$('div#contenidoEntradas > div').filter('.Sistemas_inteligentes').toggle();;$(this).toggleClass('active');">Sistemas inteligentes</a>
-                  </li>
-                  <li>
-                    <a class="list-group-item list-group-item-action" href="#" onclick="$('div#contenidoEntradas > div').filter('.Redes_neuronales').toggle();;$(this).toggleClass('active');">Redes neuronales</a>
-                  </li>
-                  <li>
-                    <a class="list-group-item list-group-item-action" href="#">Tutorials</a>
-                  </li>
-                </ul>
-            </div>
+          <div class="list-group-flush">
+            <a class="list-group-item list-group-item-action" href="#" onclick="$('div#contenidoEntradas > div').filter('.opinion').toggle();;$(this).toggleClass('active');">opinión</a>
+            <a class="list-group-item list-group-item-action" href="#" onclick="$('div#contenidoEntradas > div').filter('.Javascript').toggle();;$(this).toggleClass('active');">Javascript</a>
+            <a class="list-group-item list-group-item-action" href="#" onclick="$('div#contenidoEntradas > div').filter('.Robotica').toggle();;$(this).toggleClass('active');">Robótica</a>
+            <a class="list-group-item list-group-item-action" href="#" onclick="$('div#contenidoEntradas > div').filter('.Sistemas_inteligentes').toggle();;$(this).toggleClass('active');">Sistemas inteligentes</a>
+            <a class="list-group-item list-group-item-action" href="#" onclick="$('div#contenidoEntradas > div').filter('.Redes_neuronales').toggle();;$(this).toggleClass('active');">Redes neuronales</a>
+            <a class="list-group-item list-group-item-action" href="#">Tutorials</a>
+          </div>
         </div>
 
         <!-- Side Widget -->
@@ -270,7 +255,7 @@ bottom: 0;">
         xmlhttp.send();
       }
       function myFunction(xml) {
-
+console.log(xml)
   var i;
   xmlDoc = xml.responseXML;
   var entradaXML=xmlDoc.childNodes[0];

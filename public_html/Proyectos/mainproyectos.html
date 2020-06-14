@@ -69,7 +69,7 @@
     .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  height: 450px;
+  /* height: 450px; */
 
 }
 
@@ -115,10 +115,12 @@
   </h1>
 
   <!-- Portfolio Item Row -->
-  <div class="row" onclick="location.href='./trabajodegrado';" style="cursor: pointer;">
-
+  <div class="row"  style="cursor: pointer;">
+    <!-- onclick="location.href='./trabajodegrado';" -->
     <div class="card-text col-md-8">
-      <img class="img-fluid card-img-left" src="Presentacion.jpg" alt="">
+      <!-- <img class="img-fluid card-img-left" src="Presentacion.jpg" alt=""> -->
+      <iframe style="width: -webkit-fill-available;
+      height: 100%;" src="https://www.youtube.com/embed/kMVvjO18S4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="card-body col-md-4">
@@ -131,7 +133,8 @@
         <li>Interfaz de usuario</li>
         <li>Construcción de prototipo</li>
       </ul>
-      <a href="https://www.patreon.com/bePatron?u=14550760" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>  
+      <a class="btn btn-info" href="./trabajodegrado" style="float: right;">Ver más</a>
+      <!-- <a href="https://www.patreon.com/bePatron?u=14550760" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>   -->
     </div>
 
   </div>
@@ -146,11 +149,9 @@
     <div class="col-md-6 col-sm-6 mb-4">
   <div class="card">
       <a href="./scara.html">
-            <img class="img-fluid" src="/imagenes/SCARA.jpg" width="500" height="500" alt="">
+            <!-- <img class="img-fluid" src="/imagenes/SCARA.jpg" width="500" height="500" alt=""> -->
           </a>
-          <hr>
           <h3>Scara</h3>
-          <p>yhtybtgb</p>
     </div>
   </div>
 
@@ -160,9 +161,8 @@
       <div class="card">
 
       <a href="./cansat.html">
-          <h5 class="text-center">Cansat</h5>
-
-            <img class="img-fluid" src="/imagenes/Cansat.PNG" width="500" height="500" alt="">
+          <h3 class="text-center">Cansat</h3>
+            <!-- <img class="img-fluid" src="/imagenes/Cansat.PNG" width="500" height="500" alt=""> -->
           </a>
     </div>
     </div>
@@ -171,10 +171,8 @@
     <div class="col-md-6 col-sm-6 mb-4" onclick="document.getElementById('id01').style.display='block'">
         <div class="card">
 <a>
-  
-  <img class="img-fluid" src="https://static.vecteezy.com/system/resources/previews/000/093/047/non_2x/claw-machine-vectors.jpg" width="300" height="500" alt="">
+  <!-- <img class="img-fluid" src="https://static.vecteezy.com/system/resources/previews/000/093/047/non_2x/claw-machine-vectors.jpg" width="300" height="500" alt=""> -->
 </a>
-<hr>
 <h3 class="text-center">Máquina de garra (ilustracion)</h3>
 
         </div>
@@ -184,9 +182,8 @@
     <div class="col-md-6 col-sm-6 mb-4" onclick="document.getElementById('id02').style.display='block'">
         <div class="card">
 <a>
-  <img class="img-fluid" src="https://cdn.instructables.com/FZW/AJZN/JFSTJCQQ/FZWAJZNJFSTJCQQ.LARGE.jpg" width="300" height="500" alt="">
+  <!-- <img class="img-fluid" src="https://cdn.instructables.com/FZW/AJZN/JFSTJCQQ/FZWAJZNJFSTJCQQ.LARGE.jpg" width="300" height="500" alt=""> -->
 </a>
-<hr>
 <h3>Carrito a control remoto</h3>
           </div>
     </div>
@@ -195,8 +192,8 @@
     <div class="col-md-6 col-sm-6 mb-4" onclick="document.getElementById('id02').style.display='block'">
         <div class="card">
 <a href="serialport.html">
-            <h5>Comunicacion serial html5</h5>
-            <img class="img-fluid" src="https://placehold.it/500x300" width="300" height="500" alt="">
+            <h3>Comunicacion serial html5</h3>
+            <!-- <img class="img-fluid" src="https://placehold.it/500x300" width="300" height="500" alt=""> -->
           </a>
           </div>
     </div>
@@ -205,8 +202,8 @@
 <div class="col-md-6 col-sm-6 mb-4" onclick="document.getElementById('id02').style.display='block'">
     <div class="card">
 <a href="bluetoothBLE.html">
-        <h5>Bluetooth BLE</h5>
-        <img class="img-fluid" src="https://placehold.it/500x300" width="300" height="500" alt="">
+        <h3>Bluetooth BLE</h3>
+        <!-- <img class="img-fluid" src="https://placehold.it/500x300" width="300" height="500" alt=""> -->
       </a>
       </div>
 </div>
@@ -214,8 +211,8 @@
 <div class="col-md-6 col-sm-6 mb-4">
   <div class="card">
     <a href="Esp32_bluetoothBLE.html">
-      <h5>Esp32 comunicación BLE-Página web</h5>
-      <img class="img-fluid" src="https://placehold.it/500x300" width="300" height="500" alt="">
+      <h3>Esp32 comunicación BLE-Página web</h3>
+      <!-- <img class="img-fluid" src="https://placehold.it/500x300" width="300" height="500" alt=""> -->
     </a>
   </div>
 </div>

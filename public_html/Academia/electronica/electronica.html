@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
      crossorigin="anonymous">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Electrónica</title>
 
          <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -16,85 +18,103 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-163888921-1');
+
+  
 </script>
+<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <style>    #mySidenav a {
+      position: fixed;
+      left: -110px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 135px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+    }
+    
+    #mySidenav a:hover {
+      left: 0 !important;
+    }
+    
+    #Blog {
+      top: 70px;
+      background-color: rgb(218, 218, 218);
+    }
+    
+    #Academia {
+      top: 130px;
+      background-color: rgb(104, 156, 104);
+     
+    }
+    
+    #Proyectos {
+      top: 190px;
+      background-color: #3d3d3d;
+    }
+
+    </style>
 </head>
 <body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="https://alfredomaussa.com/" id="Blog">Blog</a>
+    <a href="" id="Academia">Academia</a>
+    <a href="https://proyectos.alfredomaussa.com/" id="Proyectos">Proyectos</a>
+  </div>
+
+
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-    <button class="btn" onclick="history.back()">Atrás</button>
-
-            <div class="container">
-              <a class="navbar-brand" href="http://www.alfredomaussa.xyz">Alfredo José Maussa Caballero</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-              <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/sobremi.html">Conóceme</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/servicios.html">Servicios
-                      <span class="sr-only">(current)</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-          <!-- Full Page Image Header with Vertically Centered Content -->
-<header class="masthead">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-12 text-center">
-              <h1 class="font-weight-light">¿Estás listo?</h1>
-              <p class="lead">Proyectos de vida</p>
-            </div>
-          </div>
-        </div>
-      </header>
-
+      <button class="btn btn-outline-secondary" onclick="history.back()" style="
+      position: fixed;
+      left: 18px;
+      top: 12px;
+      ">Atrás</button>
+            <!-- Place this tag where you want the button to render. -->
+<a style="
+position: absolute;
+right: 2%;
+top: 2%;
+" class="btn btn-dark" href="https://github.com/a4lfr32" data-size="large" aria-label="Follow @a4lfr32 on GitHub"><i class="fa fa-github" style="font-size:45px;"></i></a>
 
 
     <!-- Page Content -->
 <div class="container">
 
         <!-- Portfolio Item Heading -->
-        <h1 class="my-4">Matemática
-          <small>Secondary Text</small>
+        <h1 class="my-4">Electrónica
+          <small>Lenguajes y códigos</small>
         </h1>
       
         <!-- Portfolio Item Row -->
         <div class="row">
       
           <div class="col-md-8">
-            <img class="img-fluid" src="https://www.mathsisfun.com/algebra/images/euler-formula-circle.svg" alt="">
+            <img class="img-fluid" src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt="">
           </div>
       
           <div class="col-md-4">
             <h3 class="my-3">Descripción</h3>
-<p>Es útil para-...</p>
+<p>La programación es la esencia de los dispositivos actuales, tal de que estos cumplan con una lógica de funcionamiento flexible a cambios</p>
 
             
             <h3 class="my-3">Contenido</h3>
             <ul>
-                    <li>Algebra lineal</li>
-                    <li>Análisis numérico</li>
-                    <li>Cálculo diferencial</li>
-                    <li>Cálculo integral</li>
-                    <li>Cálculo varias variables</li>
-                    <li>Ecuaciones diferenciales</li>
-                    <li>Geometría</li>
-                    <li>Matemáticas especiales</li>
-                    <li>Probabilidad y estadistica</li>
+                    <li>Sistemas de tiempo real</li>
+                    <li>Modelo OSI</li>
+                    <li>Matlab</li>
+                    <li>Simulink</li>
+                    <li>Microcontroladores PIC</li>
+                    <li>Raspberry pi</li>
+                    <li>Linux</li>
+                    <li>Páginas web</li>
+                    <li>Visual basic studio</li>
             </ul>
+            <span id="tag" class="badge badge-secondary m-1">Sistemas_Inteligentes</span>
+
           </div>
       
         </div>
@@ -105,34 +125,122 @@
       
         <div class="row">
       
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-                  <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-                </a>
+
+
+        <!-- Entradas del blog -->
+
+
+          <div class="card col-md-3 col-sm-6 mb-4" onclick="location.href='MATLAB';">
+                  <span style="
+    background-color: #272728;
+    color: white;
+    text-align: -webkit-center;
+    height: 210pp;
+    color: #dadada;
+    border-radius: 3px;
+    cursor: pointer;
+"><br>
+<h3>MATLAB</h3>
+
+<br></span>
           </div>
       
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-                  <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-                </a>
+          <div class="card col-md-3 col-sm-6 mb-4">
+              <span style="
+              background-color: #272728;
+              color: white;
+              text-align: -webkit-center;
+              height: 210pp;
+              color: #dadada;
+              border-radius: 3px;
+              cursor: pointer;
+          "><br>
+          <h3>Arduino</h3>
+          
+          <br></span>
           </div>
       
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-                  <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-                </a>
+          <div class="card col-md-3 col-sm-6 mb-4" onclick="location.href='Javascript';">
+            <span style="
+            background-color: #272728;
+            color: white;
+            text-align: -webkit-center;
+            height: 210pp;
+            color: #dadada;
+            border-radius: 3px;
+            cursor: pointer;
+        "><br>
+        <h3>Javascript</h3>
+        
+        <br></span>
           </div>
       
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-                  <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-                </a>
+          <div class="card col-md-3 col-sm-6 mb-4" onclick="location.href='Tensorflow';">
+            <span style="
+            background-color: #272728;
+            color: white;
+            text-align: -webkit-center;
+            height: 210pp;
+            color: #dadada;
+            border-radius: 3px;
+            cursor: pointer;
+        "><br>
+        <h3>Tensorflow js</h3>
+        
+        <br></span>
           </div>
       
         </div>
         <!-- /.row -->
-      
+<hr style="border: 5px solid #717171;
+border-radius: 5px;">
+      <!-- Page Heading -->
+<h1 class="my-4">Entradas
+  <small>Vue js</small>
+</h1>
+
+  <!-- Project One -->
+  <br>
+  <article>
+  <div class="row">
+    <div class="col-md-5">
+      <a href="#">
+        <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/robotCablesApp.PNG" alt="">
+      </a>
+    </div>
+    <div class="col-md-7">
+      <h3>Aplicación web de robot por cables</h3> <small>04/01/2020</small>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+      <a class="btn btn-primary" href="#">Ver más</a>
+      <div style="float: right;" class="row">
+      <span>tags: </span>
+    <div class="card text-white bg-dark m-1">Matemáticas </div>
+    <div class="card text-white bg-dark m-1">matemáticas </div>
+    </div>
+    </div>
+  </div>
+</article>
+  <!-- /.row -->
+  <hr>
+
+<div id="contenidoEntradas"></div>
+
+  <!-- /.row -->
       </div>
       <!-- /.container -->
+      
+
+      <footer style="
+      text-align: -webkit-center;
+      background-color: darkgray;
+  ">
+  <hr>
+  Esto es un footer
+  <br>
+  <br>
+</footer>
+<script src="../cargarEntradasNivel2.js"></script>
+
 </body>
+
 </html>
