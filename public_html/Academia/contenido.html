@@ -65,6 +65,18 @@
       border-top-left-radius: 0%;
       border-top-right-radius: 0%;
     }
+
+    .certificado{
+      position: relative;
+      top: -100px;
+      transition: top 0.5s, clip-path 0.5s;
+    clip-path: inset(100px 0px 160px 0px);
+    }
+    .certificado:hover{
+      top: -0px;
+
+clip-path: inset(0px 0px 0px 0px);
+}
     </style>
     
     <title>Academia</title>
@@ -83,23 +95,38 @@
       
     <!-- Page Content -->
 <div class="container">
-
+<div>
         <!-- Page Heading -->
-        <h1 class="my-4">Mecatrónica
+        <h1 class="my-4" style="position: sticky;top: 0;z-index: 1;background-color: white;">Mecatrónica
           <small>Contenido</small>
+          <hr>
         </h1>
       
         <div class="row">
           <div class="col-lg-6 col-md-4 col-sm-6 mb-4">
             <div class="card h-10">
-              <a href="matematicas/"><img class="card-img-top" src="matematica.PNG" height="300px" width="700px" alt="Identidad de Euler"></a>
-            
+              <span style="
+              background-color: #272728;
+              color: white;
+              text-align: -webkit-center;
+              height: 210pp;
+              color: #dadada;
+              border-radius: 3px;
+              cursor: pointer;
+              
+    font-family: initial;
+    font-size: xx-large;
+
+          " onclick="window.location = 'matematicas';"><br>
+          <h1 style="font-size: larger;">Matemática</h1>
+          
+          <br></span>
               <div class="card-body collapse" id="collapseMatematica">
                 <!--h4 class="card-title">
                   <a href="/matematicas/">Matemática</a>
                 </h4------>
                 <div class="row">
-                <div class="col list-group list-group-flush">
+                <div class="col-6 list-group-flush card-body ">
 
 <a href="matematicas/algebralineal.html" class="list-group-item list-group-item-action">Algebra lineal</a>
 <a href="matematicas/analisisnumerico.html" class="list-group-item list-group-item-action">Análisis numérico</a>
@@ -107,13 +134,12 @@
 <a href="matematicas/calculointegral.html" class="list-group-item list-group-item-action">Cálculo integral</a>
 <a href="matematicas/calculovariasvariables.html" class="list-group-item list-group-item-action">Cálculo varias variables</a>
 </div>
-<div class="col list-group list-group-flush">
+<div class="col-6 list-group-flush card-body ">
 
 <a href="matematicas/ecuacionesdiferenciales.html" class="list-group-item list-group-item-action">Ecuaciones diferenciales</a>
 <a href="matematicas/geometria.html" class="list-group-item list-group-item-action">Geometría</a>
 <a href="matematicas/matematicasespeciales.html" class="list-group-item list-group-item-action">Matemáticas especiales</a>
 <a href="matematicas/probabilidadyestadistica.html" class="list-group-item list-group-item-action">Probabilidad y estadistica</a>
-<a></a>
 </div>
 
 </div>
@@ -125,8 +151,22 @@
           </div>
           <div class="col-lg-6 col-md-4 col-sm-6 mb-4">
             <div class="card h-10">
-              <a href="fisica"><img class="card-img-top" src="fisica.PNG" height="300px" width="700px" alt="Modelo de calor"></a>
-                <!--h4 class="card-title">
+              <span style="
+              background-color: #272728;
+              color: white;
+              text-align: -webkit-center;
+              height: 210pp;
+              color: #dadada;
+              border-radius: 3px;
+              cursor: pointer;
+              
+    font-family: initial;
+    font-size: xx-large;
+
+          " onclick="window.location = 'fisica';"><br>
+          <h1 style="font-size: larger;">Física</h1>
+          
+          <br></span>               <!--h4 class="card-title">
                   <a href="fisica">Física</a>
                 </h4---->
 
@@ -146,9 +186,23 @@
           <br>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <a href="mecanica"><img class="card-img-top" src="mecanica.PNG" height="90" alt=""></a>
+              <span style="
+              background-color: #272728;
+              color: white;
+              text-align: -webkit-center;
+              height: 210pp;
+              color: #dadada;
+              border-top-right-radius:3px;
+              border-top-left-radius:3px;
+              cursor: pointer;
+              
+    font-family: initial;
+    /* font-size: -webkit-xxx-large; */
 
-                <div class="list-group list-group-flush collapse" id="collapseMecanica">
+          "  onclick="window.location = 'mecanica';"><br>
+          <h1>Mecánica</h1>
+          
+          <br></span>               <div class="list-group list-group-flush collapse" id="collapseMecanica">
                 <!--h4 class="card-title">
                   <a href="/mecanica">Mecánica</a>
                 </h4---->
@@ -165,9 +219,24 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="card h-100">
-              <a href="informatica"><img class="card-img-top" src="informatica.PNG" height="90" alt=""></a>
+            <div class="card">
+              <span style="
+              background-color: #272728;
+              color: white;
+              text-align: -webkit-center;
+              height: 210pp;
+              color: #dadada;
+              border-top-right-radius:3px;
+              border-top-left-radius:3px;
+              cursor: pointer;
+              
+    font-family: initial;
+    /* font-size: -webkit-xxx-large; */
 
+          " onclick="window.location = 'informatica';"><br>
+          <h1>Informática</h1>
+          
+          <br></span>   
                 <div class="list-group list-group-flush collapse" id="collapseInformatica">
                 <!--h4 class="card-title">
                   <a href="/informatica">Informática</a>
@@ -182,9 +251,24 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="card h-100">
-              <a href="electronica"><img class="card-img-top" src="electronica.PNG" height="90" alt=""></a>
+            <div class="card">
+              <span style="
+              background-color: #272728;
+              color: white;
+              text-align: -webkit-center;
+              height: 210pp;
+              color: #dadada;
+              border-top-right-radius:3px;
+              border-top-left-radius:3px;
+              cursor: pointer;
+              
+    font-family: initial;
+    /* font-size: -webkit-xxx-large; */
 
+          " onclick="window.location = 'electronica';"><br>
+          <h1>Electrónica</h1>
+          
+          <br></span> 
               <div class="list-group list-group-flush collapse" id="collapseElectronica">
                 <!--h4 class="card-title">
                   <a href="/electronica">Electrónica</a>
@@ -199,9 +283,24 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="card h-100">
-              <a href="control"><img class="card-img-top" src="control.PNG" width="100" height="90" alt=""></a>
+            <div class="card">
+              <span style="
+              background-color: #272728;
+              color: white;
+              text-align: -webkit-center;
+              height: 210pp;
+              color: #dadada;
+              border-top-right-radius:3px;
+              border-top-left-radius:3px;
+              cursor: pointer;
+              
+    font-family: initial;
+    /* font-size: -webkit-xxx-large; */
 
+          " onclick="window.location = 'control';"><br>
+          <h1>Control</h1>
+          
+          <br></span> 
               <div class="list-group list-group-flush collapse" id="collapseControl">
                 <!--h4 class="card-title">
                   <a href="/control">Control</a>
@@ -221,7 +320,7 @@
         </div>
         <!-- /.row -->
  
-        <div class="card h-100 card-img-top">
+        <div class="card">
           <!--a href=""><img class="card-img-top" src="" height="90" alt=""></a-->
           <span style="
     background-color: #272728;
@@ -231,7 +330,8 @@
     color: #dadada;
     border-radius: 3px;
     cursor: pointer;
-"><br>
+    font-family: initial;
+" onclick="window.location = 'otros';"><br>
 <h3>Otros cursos</h3>
 
 <br></span>
@@ -258,18 +358,21 @@
 <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseOtros" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
         </div>
+        <hr>
+      </div>
 
+      <div>
         <!-- Page Heading -->
-
-        <h1 class="my-4" id="herramientas">Herramientas
+        <h1 class="my-4" id="herramientas" style="position: sticky;top: 0;z-index: 1;background-color: white;">Herramientas
                 <small>Programas y software</small>
+                <hr>
               </h1>
               <h3>Programación</h3>
             
               <div class="row">
 
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
+                <div class="card">
                   <a href="informatica/MATLAB"><img class="card-img-top" src="https://d1d1c1tnh6i0t6.cloudfront.net/wp-content/uploads/2018/01/matlab-logo.jpg" width="100" height="143" alt=""></a>
                   <div hidden class="card-body">
                     <!--h4 class="card-title">
@@ -280,7 +383,7 @@
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
+                <div class="card">
                   <a href="#"><img class="card-img-top" src="https://udemy-images.udemy.com/course/480x270/2005152_6ac1_2.jpg" width="100" height="143" alt=""></a>
                   <div hidden class="card-body">
                     <!--h4 class="card-title">
@@ -291,7 +394,7 @@
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                  <div class="card h-100">
+                  <div class="card">
                     <a href="#"><img class="card-img-top" src="https://www.digiajay.com/wp-content/uploads/2017/12/LabVIEW-Logo.jpg" width="100" height="143" alt=""></a>
                     <div hidden class="card-body">
                       <!--h4 class="card-title">
@@ -302,7 +405,7 @@
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card h-100">
+                    <div class="card">
                       <a href="#"><img class="card-img-top" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/108415327/original/473a755f7bc410fa441c8d0e5299623cc6b3a10b/make-assignments-in-microsoft-visual-basic-and-c-sharp.jpg" width="100" height="143" alt=""></a>
                       <div hidden class="card-body">
                         <!--h4 class="card-title">
@@ -322,7 +425,7 @@
         <!-- /.row -->
 
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
+                <div class="card">
                   <a href="mecanica/Inventor"><img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1880/7891/products/DigitalCovers_INV_2017_7cdf320f-ff2a-499d-908f-c92c033bd861_1024x1024.png?v=1507048797" width="100" height="143" alt=""></a>
                   <div hidden class="card-body">
                     <!--h4 class="card-title">
@@ -333,7 +436,7 @@
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
+                <div class="card">
                   <a href="mecanica/Inventor"><img class="card-img-top" src="https://ingemetrica.com/en/wp-content/uploads/sites/2/2016/02/02_logo_NX.jpg" width="100" height="143" alt=""></a>
                   <div hidden class="card-body">
                     <!--h4 class="card-title">
@@ -345,7 +448,7 @@
               </div>
 
               <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                  <div class="card h-100">
+                  <div class="card">
                     <a href="mecanica/Inventor"><img class="card-img-top" src="https://www.gerotordesignstudio.com/wp-content/uploads/2018/08/solid_edge_logo_1.jpg" width="100" height="143" alt=""></a>
                     <div hidden class="card-body">
                       <!--h4 class="card-title">
@@ -357,7 +460,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card h-100">
+                    <div class="card">
                       <a href="mecanica/Inventor"><img class="card-img-top" src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/112012/solidworks_0.png?itok=2Iq-ZAmC" width="100" height="143" alt=""></a>
                       <div hidden class="card-body">
                         <!--h4 class="card-title">
@@ -371,17 +474,21 @@
 
               </div>
         <!-- /.row -->
+      </div>
 
 
-        <h3 id="certificados">Certificados</h3>
+      <div>
+        <h1 id="certificados" style="position: sticky;top: 0;z-index: 1;background-color: white;">Certificados
+          <hr>
+        </h1>
             
       
         
             <div class="row">
                 <!-- /.row -->
-                <div class="card col align-self-center col-md-6 h-100">
+                <div class="card col align-self-center col-md-6">
                     <!--iframe src="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=e2f2b709-0311-47da-a4fa-a8dcde209e5a"></iframe--> 
-                    <img class="card-img-top" src="Matlab1.png" alt="Card image cap">
+                    <img class="card-img-top certificado" src="Matlab1.png" alt="Card image cap">
                     
                     <div class="card-body">
                       <h5 class="card-title">Matlab Onramp</h5>
@@ -391,9 +498,9 @@
                   </div>
 
 
-                <div class="card col align-self-center col-md-6 h-100">
+                <div class="card col align-self-center col-md-6">
                     <!--iframe src="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=4a480e10-e108-4b74-a381-ddb63ed0cfa4"></iframe--> 
-                    <img class="card-img-top" src="simulink.png" alt="Card image cap">
+                    <img class="card-img-top certificado" src="simulink.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Simulink Onramp</h5>
                       <p class="card-text">Certificado uso de Simulink. <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=4a480e10-e108-4b74-a381-ddb63ed0cfa4">Click</a></p>
@@ -401,7 +508,7 @@
                     </div>
                   </div>
                  
-                  <div class="card col align-self-center col-md-6 h-100">
+                  <div class="card col align-self-center col-md-6">
                       <img class="card-img-top" src="C_Python.png" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Micro-curso de python en Kaggle</h5>
@@ -411,7 +518,7 @@
                     </div>
                     
 
-                    <div class="card col align-self-center col-md-6 h-100">
+                    <div class="card col align-self-center col-md-6">
                       <img class="card-img-top" src="Intro to Machine Learning.png" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Introdución al Machine Learning en Kaggle</h5>
@@ -420,7 +527,7 @@
                       </div>
                     </div>
                     
-                    <div class="card col align-self-center col-md-6 h-100">
+                    <div class="card col align-self-center col-md-6">
                       <img class="card-img-top" src="Data Visualization.png" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Visualización de datos en Kaggle</h5>
@@ -429,7 +536,7 @@
                       </div>
                     </div>
 
-                    <div class="card col align-self-center col-md-6 h-100">
+                    <div class="card col align-self-center col-md-6">
                       <img class="card-img-top" src="C_pandas.png" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Manejo de bases de datos con Panda</h5>
@@ -438,7 +545,7 @@
                       </div>
                     </div>
 
-                    <div class="card col align-self-center col-md-6 h-100">
+                    <div class="card col align-self-center col-md-6">
                       <img class="card-img-top" src="C_ML2.png" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Machine learning intermedio</h5>
@@ -448,7 +555,7 @@
                     </div>
                     
                     
-                    <div class="card col align-self-center col-md-6 h-100">
+                    <div class="card col align-self-center col-md-6">
                       <img class="card-img-top" src="DLearning.png" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Deep learning</h5>
@@ -473,7 +580,7 @@
                 
             <!-- /.row -->
 
-
+          </div>
 
 
         <!-- Pagination -->
@@ -503,5 +610,22 @@
       
       </div>
       <!-- /.container -->
+
+
+      <script>
+        
+        function addElement () { 
+        // crea un nuevo div 
+        // y añade contenido 
+        var newDiv = document.createElement("a"); 
+        var newContent = document.createTextNode("Hola!¿Qué tal?"); 
+        newDiv.appendChild(newContent); //añade texto al div creado. 
+
+        // añade el elemento creado y su contenido al DOM 
+        // var currentDiv = document.getElementById("div1"); 
+        // document.body.insertBefore(newDiv, currentDiv); 
+}
+
+      </script>
 </body>
 </html>
