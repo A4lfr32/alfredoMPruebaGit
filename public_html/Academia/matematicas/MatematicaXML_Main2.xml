@@ -199,14 +199,14 @@ border-radius: 5px;"></hr>
 
  <subcontenido id="Cálculo diferencial_3"> 
 <ul>
-  <li>1</li>
+  <li>3</li>
 </ul>
  </subcontenido>
 
  
  <subcontenido id="Cálculo integral_4"> 
 <ul>
-  <li>1</li>
+  <li>4</li>
 </ul>
  </subcontenido>
 
@@ -214,35 +214,74 @@ border-radius: 5px;"></hr>
  
  <subcontenido id="Cálculo de varias variables_5"> 
 <ul>
-  <li>1</li>
+  <li>5</li>
 </ul>
  </subcontenido>
 
  
  <subcontenido id="Ecuaciones diferenciales_6"> 
 <ul>
-  <li>1</li>
+  <li>6</li>
 </ul>
  </subcontenido>
 
  
  <subcontenido id="Geometría_7"> 
 <ul>
-  <li>1</li>
+  <li>7</li>
 </ul>
  </subcontenido>
 
 
  <subcontenido id="Matemáticas especiales_8"> 
 <ul>
-  <li>1</li>
+  <li>Función de variable compleja</li>
+  <li>Diferenciación e integración de funciones de variable compleja.</li>
+  <li>El teorema del residuo y series complejas</li>
+  <li>Mapeos conformes y sus aplicaciones</li>
+  <li>Series y transformadas de Fourier</li>
+  <li>Serie trigonométrica y compleja de Fourier de tiempo continuo. </li>
+  <li>Transformada Continúa de Fourier. </li>
+  <li> El teorema de Parseval</li>
+  <li> Análisis en frecuencia </li>
+  <li>Solución de las ecuaciones diferenciales en derivadas parciales.</li>
+  <li>Ecuación del calor</li>
+  <li>Ecuación de la onda</li>
+  <li>El Laplaciano</li>
+  <li>La ecuación de Poisön</li>
+  <li>La transformada Z. </li>
+  <li>La transformada rápida de Fourier.</li>
 </ul>
+
+<h3>Bibliografía</h3>
+<p>CHURCHILL, Ruel V, BROWN, James W. Variable compleja y aplicaciones. Séptima edición.
+McGraw-Hill. España, 2004.</p>
+<p>Goerge B. Arfken, Hans J. Weber. Mathematical Methods for Physicists. Fifth Edition. Harcourt-Adademic Press, San Diego. USA, 2001.</p>
+<p>Alan V. Oppenheim. Sistemas y Señales. Quinta Edición, Pearson Education, México, 1998. </p>
+<p>HSU, Hwi P. Análisis de Fourier. México : Addison Wesley Iberoamericana, Delawere, 1987. 
+</p>
+<p>JAMES, Glyn. Matemáticas avanzadas para ingeniería. 2 ed. Prentice Hall, 2002.</p>
+<p>KREYSZIG, Erwin. Matemáticas avanzadas para ingeniería.3 ed. Limusa. México. 2003.</p>
+<p>O.Neal, Peter. Matemáticas avanzadas para ingeniería. 6 ed. Cengage Learnig, 2008. </p>
  </subcontenido>
 
  
  <subcontenido id="Probabilidad y estadística_9"> 
 <ul>
-  <li>1</li>
+  <li>Introducción</li>
+  <p>Estadística</p>
+  <p>Probabilidad</p>
+  <p>Variables aleatorias y distribuciones de probabilidad</p>
+  <p>Esperanza matemática</p>
+  <p>Variables aleatorias: discretas, continuas  y funciones de variables aleatorias</p>
+  <p>Distribuciones de muestreo</p>
+  <p>Estimacion de 1 o 2 muestras</p>
+  <p>Prueba de hipotesis de 1 o 2 muestras</p>
+  <p>Regresiones: lineal, multi lineal y no lineal</p>
+  <p>Experimentos de un solo factor, y factoriales (dos o mas)</p>
+  <p>Estadìstica no paramétrica</p>
+  <p>Control estadístico de calidad</p>
+  <p>Estadística bayesiana</p>
 </ul>
  </subcontenido>
 

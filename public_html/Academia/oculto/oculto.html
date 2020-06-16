@@ -71,15 +71,18 @@ top: 2%;
     <!-- Page Content -->
     
     <!-- Portfolio Item Heading -->
-<h1 class="my-4 container">Mecánica
+<h1 class="my-4 container">Cursos de relleno
   <small> <select class="custom-select col-md-3" id="mySelect" style="border: aliceblue;border-bottom: inset;" onchange="SelectChanged(this.value)">
     <option selected value="0">Abrir opciones</option>
-    <option value="1">Ciencia de los materiales</option>
-    <option value="2">Mecánica de materiales</option>
+    <option value="1">Administración general</option>
+    <option value="2">Análisis numérico</option>
     <option value="3">Procesos de transformación industrial</option>
-    <option value="4">Sistemas mecánicos</option>
-    <option value="5">Mecánica clásica</option>
-    <option value="6">Mecánica de Lagrange y Hamilton</option>
+    <option value="4">Cálculo integral</option>
+    <option value="5">Cálculo de varias variables</option>
+    <option value="6">Ecuaciones diferenciales</option>
+    <option value="7">Geometría</option>
+    <option value="8">Matemáticas especiales</option>
+    <option value="9">Probabilidad y estadísticas</option>
   </select>   </small>
   
 </h1>
@@ -123,7 +126,7 @@ window.onload = function() {
         myFunction(this,tag);
       }
     };
-    xmlhttp.open("GET", "Mecanica.xml", true);
+    xmlhttp.open("GET", "oculto.xml", true);
     xmlhttp.send();
   }
   function myFunction(xml,tag) {

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <contenido> 
+ <subcontenido id='Main_0'>
+ </subcontenido>
+
+ <subcontenido id="Algebra lineal_1"> 
+<ul>
+  <li>Contexto de la Administración</li>
+  <li>Direccionamiento estratégico</li>
+  <li>Diseño y estructura organizacional</li>
+  <li>Dirección</li>
+  <li>Control organizacional</li>
+  <li>Cambio y cultura organizacional</li>
+</ul>
+
+<h3>Texto guia</h3>
+<p>ROBBINS, Stephen. DECENZO, David. COULTER, Mary. Fundamentos de Administración.
+Conceptos esenciales y aplicaciones. 8 ed. San Diego: Pearson, 2013.
+</p>
+
+<h3>Complementarios</h3>
+<p>HELLRIEGEL, Don. JACKSON, Susan. SLOCUM, John. Administración: un enfoque basado en competencias.
+11 ed. México. D.F: Cengage Learning Editores S.A.</p><p>
+BOTERO, Rubén. Dirección Estratégica. Escuela de Ingeniería de Antioquia. 2010</p><p>
+KOONTZ, Harold. Administración una perspectiva global. 12 ed. México: McGraw-Hill, 2004. (658.01/K79a).
+DAFT, Richard L. Administración. Madrid: CENGAGE, 2004.</p><p>
+PORTER, Michael. Estrategia competitiva: técnicas para el análisis de los sectores industriales y de la
+competencia. México: Cecsa, 2006. (658/P844).</p><p>
+HILL, Charles W.L. Administración estratégica: un enfoque integrado. 6 ed. México: MCGRAW-HILL, 2004.
+(658.4012/H645a/6 ed.).</p><p>
+BERNAL, Cesar. Introducción a la administración de las organizaciones. New Jersey: Prentice Hall : Pearson
+Education, 2007. (658.02/B517).</p><p>
+CHIAVENATO, Idalberto. Introducción a la teoría general de la administración: Mc Graw-Hill, 2004.
+(658/Ch532/7ed).</p><p>
+JOHNSON, Gerry, SCHOLIES, Kevan y WHITTINGTON, Richard. Dirección estratégica. 7 ed. Madrid:
+PEARSON, 2006. (658.4012/J67/7ed).</p><p>
+GARRIDO BUJ, Santiago. Dirección estratégica. 2 ed. México: McGraw Hill, 2006. (658.4012/G241/2ed.).
+FRANCES, Antonio. Estrategia y planes para la empresa con el cuadro de mando integral. New Jersey:
+Prentice Hall: Pearson Education, 2006. (658.4012/F826).</p><p>
+TZU, Sun. El arte de la guerra ilustrado. Madrid: Edaf, 2001. (355.6/S957).
+</p>
+<h3>Revistas especializadas, sitios web y bases de datos</h3>
+<p>Harvard Business Review: Harvard Business School Publishing Corporation. (Disponible en biblioteca).</p><p>
+Gestión. Bogotá: Casa Editorial El Tiempo. (Disponible en biblioteca).</p><p>
+Dinero. Bogotá: Publicaciones Dinero Ltda. (Disponible en biblioteca).</p><p>
+Portafolio: El portal de economía y negocios. [En línea] 2009. [Citado el: 01 de agosto de 2009.] (Disponible en
+biblioteca). http://www.portafolio.com.co/.</p><p>
+Base de datos Business Source Premier. [En línea] 2013. [Citado el: 05 de diciembre de 2013.] (Disponible en
+internet). http://biblioteca.eia.edu.co/basesdatos.htm</p>
+ </subcontenido>
+
+ <subcontenido id="Análisis numérico_2"> 
+<ul>
+    <li>Teoría de Errores y Programación en MATLAB (OCTAVE)</li>
+    <li>Solución de ecuaciones no lineales (repaso).</li>
+    <li>Solución de sistemas de ecuaciones.</li>
+    <li>Interpolación numérica e Integración numérica.</li>
+    <li>Métodos de Runge-Kutta e Introducción al Método de los Elementos Finitos (MEF). </li>
+    <li>Método de Euler, método de Runge-Kutta 4, método de diferencias finitas, método de los elementos finitos.</li>
+</ul>
+ </subcontenido>
+
+
+ <subcontenido id="Cálculo diferencial_3"> 
+<ul>
+  <li>Introducción a la manufactura</li>
+  <li>Soldadura</li>
+  <li>Modelo por fundición</li>
+  <li>Conformación por deformación plástica</li>
+  <li>Conformación por arranque de material</li>
+  <li>Manufactura de materiales no metálicos</li>
+  <li>Producción de prototipos rápidos</li>
+</ul>
+<h3>Libros</h3>
+<p>GROOVER, MIKELL P. Fundamentos de Manufactura Moderna: Materiales Procesos y Sistemas. PrenticeHall Hispanoamericana. 1ª. Edición. México, 1997.</p>
+<p>KALPAJIAN S, SCHMIT S, Manufactura, Tecnología e Ingeniería. 4ta ed. Prentice-Hall, Pearson Mexico
+2008</p>
+<p>MARTIN, LISSAMAN BLACK &amp; CHILES, Principios de Ingeniería de Manufactura, CECSA, 1ª Edición, México
+1999 </p>
+<p>AMSTEAD, B. H. Procesos de Manufactura versión SI. Compañía Editorial Continental, Mexico 1981 11 ed.
+DOYLE. Materiales y Procesos de Manufactura para Ingenieros. Prentice Hall Interamericana</p>
+<h3>Apoyo</h3>
+<p>HIBBELER R.C. Mecánica de Materiales Ed. Pretince Hall Hispanoameraicana S.A. Naucalpan de Juarez,
+Mexico, 1997</p>
+<p>MOTT Robert Diseño de Elementos de Máquinas Pearson 2006</p>
+<p>NORTON, Robert L. Diseño de máquinas; Pretince Hall, 2003. </p>
+<p>SHIGLEY, J. Diseño en Ingeniería Mecánica; McGraw Hill 1989</p>
+<p>ASKELAND, D. The Science and Engineering of Materials. 2a Ed. Chapman &amp; Hall, USA. 1990.
+</p>
+
+ </subcontenido>
+
+ 
+ <subcontenido id="Cálculo integral_4"> 
+<ul>
+  <li>4</li>
+</ul>
+ </subcontenido>
+
+
+ 
+ <subcontenido id="Cálculo de varias variables_5"> 
+<ul>
+  <li>5</li>
+</ul>
+ </subcontenido>
+
+ 
+ <subcontenido id="Ecuaciones diferenciales_6"> 
+<ul>
+  <li>6</li>
+</ul>
+ </subcontenido>
+
+ 
+ <subcontenido id="Geometría_7"> 
+<ul>
+  <li>7</li>
+</ul>
+ </subcontenido>
+
+
+ <subcontenido id="Matemáticas especiales_8"> 
+<ul>
+  <li>8</li>
+</ul>
+ </subcontenido>
+
+ 
+ <subcontenido id="Probabilidad y estadística_9"> 
+<ul>
+  <li>Introducción</li>
+  <p>Estadística</p>
+  <p>Probabilidad</p>
+  <p>Variables aleatorias y distribuciones de probabilidad</p>
+  <p>Esperanza matemática</p>
+  <p>Variables aleatorias: discretas, continuas  y funciones de variables aleatorias</p>
+  <p>Distribuciones de muestreo</p>
+  <p>Estimacion de 1 o 2 muestras</p>
+  <p>Prueba de hipotesis de 1 o 2 muestras</p>
+  <p>Regresiones: lineal, multi lineal y no lineal</p>
+  <p>Experimentos de un solo factor, y factoriales (dos o mas)</p>
+  <p>Estadìstica no paramétrica</p>
+  <p>Control estadístico de calidad</p>
+  <p>Estadística bayesiana</p>
+</ul>
+ </subcontenido>
+
+ </contenido> 

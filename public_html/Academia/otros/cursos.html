@@ -1,25 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-     crossorigin="anonymous">
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>MATLAB</title>
-
-         <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163888921-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-163888921-1');
-</script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+     <title>Matemáticas</title>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <style>    #mySidenav a {
@@ -80,85 +69,29 @@ top: 2%;
 
 
     <!-- Page Content -->
-<div class="container">
-
-        <!-- Portfolio Item Heading -->
-        <h1 class="my-4">MATLAB
-          <small>códigos</small>
-        </h1>
-      
-
-        <!-- /.row -->
-      
-      
-   
-<hr style="border: 5px solid #717171;
-border-radius: 5px;">
-  <!-- Project One -->
-  <br>
-  <article>
-  <div class="row">
-    <div class="col-md-5">
-      <a href="#">
-        <img class="img-fluid rounded mb-3 mb-md-0" src="../../../imagenes/C_baseradial.png" alt="">
-      </a>
-    </div>
-    <div class="col-md-7">
-      <h3>Red neuronal, Base radial (Animación)</h3> <small>04/01/2020</small>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-      <a class="btn btn-primary" href="#">Ver más</a>
-      <div style="float: right;" class="row">
-      <span>tags: </span>
-    <div class="card text-white bg-dark m-1">Matemáticas </div>
-    <div class="card text-white bg-dark m-1">matemáticas </div>
-    </div>
-    </div>
-  </div>
-</article>
-  <!-- /.row -->
-  <hr>
-
-  <!-- Project Two -->
-  <br>
-  <div class="row">
-   
-    <div class="col-md-7">
-      <h3>Contenido de academia</h3><small>04/01/2020</small>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-      <a class="btn btn-primary" href="#">Ver más</a>
-    </div>
-    <div class="col-md-5">
-      <a href="#">
-        <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/ContenidoAcademia.PNG" alt="">
-      </a>
-    </div>
-  </div>
-  <!-- /.row -->
-  <hr>
-  <!-- Project One -->
-  <br>
-  <article>
-  <div class="row">
-    <div class="col-md-5">
-      <a href="#">
-        <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/CursoJavascript.PNG" alt="">
-      </a>
-    </div>
-    <div class="col-md-7">
-      <h3>Apuntes del curso: Javascript, Jquery, and JSON (Coursera: Universidad de Míchigan)</h3> <small>17/04/2020</small>
-      <p>Comparto en esta entrada, los apuntes que he tomado en códigos </p>
-      <a class="btn btn-primary" href="#">Ver más</a>
-    </div>
-  </div>
-</article>
-<hr>
-<br>
-  <!-- /.row -->
-      </div>
+    
+    <!-- Portfolio Item Heading -->
+<h1 class="my-4 container">Inteligencia artificial
+  <small> <select class="custom-select col-md-3" id="mySelect" style="border: aliceblue;border-bottom: inset;" onchange="SelectChanged(this.value)">
+    <option selected value="0">Abrir opciones</option>
+    <option value="1">Aprendizaje automático</option>
+    <option value="2">Análisis numérico</option>
+    <option value="3">Cálculo diferencial</option>
+    <option value="4">Cálculo integral</option>
+    <option value="5">Cálculo de varias variables</option>
+    <option value="6">Ecuaciones diferenciales</option>
+    <option value="7">Geometría</option>
+    <option value="8">Matemáticas especiales</option>
+    <option value="9">Probabilidad y estadísticas</option>
+  </select>   </small>
+  
+</h1>
+        
+<div class="container" id="Main"></div>
       <!-- /.container -->
       
 
-      <footer style="
+      <footer class="footer absolute-bottom" style="
       text-align: -webkit-center;
       background-color: darkgray;
   ">
@@ -167,6 +100,44 @@ border-radius: 5px;">
   <br>
   <br>
 </footer>
+
+
+<script>
+  function SelectChanged(tag) {
+    // alert(tag)
+    // var x = document.getElementById("mySelect").value;
+    document.getElementById("Main").innerHTML = loadXMLDoc(tag);
+  }
+  </script>
+
+
+<script>
+
+window.onload = function() {
+  loadXMLDoc(0);
+};
+
+  var xmlDoc;
+  var para;
+  function loadXMLDoc(tag) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        myFunction(this,tag);
+      }
+    };
+    xmlhttp.open("GET", "Inteligencia_artificial.xml", true);
+    xmlhttp.send();
+  }
+  function myFunction(xml,tag) {
+console.log(xml)
+xmlDoc = xml.responseXML;
+console.log(tag)
+document.getElementById("Main").innerHTML=xmlDoc.children[0].children[tag].innerHTML;
+
+}
+</script>
+
 </body>
 
 </html>
