@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163888921-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'UA-163888921-1');
+      </script>
+     
+</head>
+
+<body>
+  <br>
+  <!-- Botón de ir atrás -->
+  <button class="btn btn-outline-secondary" onclick="history.back()" style="position: absolute;left: 18px;top: 12px;">Atrás</button>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="text-align: -webkit-center;">
+        <br>  
+        <br>  
+        <div id="ggbApplet"></div>
+      </div>
+      <br>
+      <div style="position: absolute;right: 2%;top: 2%;">          
+        <button id="connect" type="button"  class="btn btn-outline-primary">Conectar <i class="fa fa-bluetooth"></i></button>
+        <button id="disconnect" type="button" class="btn btn-outline-danger">Desconectar <i class="fa fa-bluetooth"></i></button>
+        <div id="terminal"></div>
+        <form hidden id="send-form">
+            <input id="input" type="text">
+            <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <!-- Botones de entrada -->
+      <div hidden>
+        <h3>Datos de entrada y salida</h3>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Fuerza 1 [N]</span>
+          </div>
+          <input id="inputF1" type="text" class="form-control" placeholder="Fuerza en newtons" aria-label="Username" aria-describedby="basic-addon1">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Fuerza 2 [N]</span>
+          </div>
+          <input id="inputF2" type="text" class="form-control" placeholder="Fuerza en newtons" aria-label="Username" aria-describedby="basic-addon1">
+                
+          <div class="input-group-append">
+            <button id="btn3" class="btn btn-outline-secondary" type="button">Actualizar</button>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <h4 class="col-4">Actualizar direcciones</h2>
+            <button class="btn btn-outline-secondary col-2" id="btnActuDir" type="button">Actualizar dirección</button>
+            
+            <hr>
+            <h4 class="col-4">Actualizar magnitudes</h2>
+            <button class="btn btn-outline-secondary col-2" id="btnActuMag" type="button">Actualizar magnitud</button>
+          </div>  
+        </div>
+        <br>
+      </div>
+  <!-- Cierro: botones de entrada -->
+      
+  </div>
+  <script src="apple_geogebra.js"></script>
+  <script src="autocalibration.js"></script>
+  <script src="bluetooth_handdle.js"></script>
+</body>
+</html>
