@@ -9,7 +9,6 @@
      crossorigin="anonymous">
      <link rel="stylesheet" type="text/css" href="style.css">
      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">     
-     
      <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163888921-1"></script>
 <script>
@@ -115,7 +114,7 @@
   </h1>
 
   <!-- Portfolio Item Row -->
-  <div class="row"  style="cursor: pointer;">
+  <div class="row">
     <!-- onclick="location.href='./trabajodegrado';" -->
     <div class="card-text col-md-8">
       <!-- <img class="img-fluid card-img-left" src="Presentacion.jpg" alt=""> -->
@@ -133,13 +132,29 @@
         <li>Interfaz de usuario</li>
         <li>Construcción de prototipo</li>
       </ul>
-      <a class="btn btn-info" href="./trabajodegrado" style="float: right;">Ver más</a>
+      <div class="card">
+                  <a href="trabajodegrado/gradTheta.html" class="list-group-item list-group-item-action">App web: Geogebra 2D</a>
+              </div>
+
+      <a hidden class="btn btn-info" href="./trabajodegrado" style="float: right;">Ver más</a>
       <!-- <a href="https://www.patreon.com/bePatron?u=14550760" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>   -->
+    </div>
+    <div class="col-6">
+    <br>
+      <h3 style="text-align: center;">Diseño planar</h3>
+      <div class="card" id="Planar_CAD" style="height:180px;margin:0 auto;"></div>
+    </div>
+    <div class="col-6">
+    <br>
+
+      <h3 style="text-align: center;">Diseño espacial</h3>
+      <div class="card" id="Spatial_CAD" style="height:180px;margin:0 auto;"></div>
     </div>
 
   </div>
   <!-- /.row -->
-
+<hr style="border: 5px solid #717171;
+border-radius: 5px;">
   <!-- Related Projects Row -->
   <h3 class="my-4">Otros proyectos</h3>
 
@@ -282,6 +297,32 @@
 </div>
 
 
+
+      <script src="stl_viewer.min.js"></script>        
+      <script>
+
+          // modelo de TRTH
+          var stl_viewer0=new StlViewer
+          (
+              document.getElementById("Planar_CAD"),
+              {
+                  models:
+                  [
+                      {filename:"Ensamblaje67.stl",rotationx:0.0, rotationy:0,rotationz:0, view_edges:true, animation:{delta:{rotationy:-1, msec:5000, loop:true,rotationy:-1.01, msec:7000, loop:true}}}
+                  ]
+              }
+          );
+          var stl_viewer1=new StlViewer
+          (
+              document.getElementById("Spatial_CAD"),
+              {
+                  models:
+                  [
+                      {filename:"Armazon3D.stl",rotationx:0.0, rotationy:0,rotationz:-0.22, view_edges:true, animation:{delta:{rotationy:-1, msec:5000, loop:true,rotationy:-1.01, msec:7000, loop:true}}}
+                  ]
+              }
+          );
+      </script>
 </body>
 </html>
 
