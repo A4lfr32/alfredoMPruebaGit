@@ -8,7 +8,7 @@
 
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="timeline7.css">
+    <link rel="stylesheet" href="timeline8.css">
     <title>Historial</title>
 
          <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -41,6 +41,7 @@
     #Blog {
       top: 70px;
       background-color: rgb(218, 218, 218);
+      z-index: 10;
     }
     
     #Academia {
@@ -163,36 +164,13 @@
   }
   </style>
 
-  <style>
-      .circle {
-        position: fixed;
-        cursor:pointer;
-        top: 300px;
-        left: -50px;
-        height: 80px;
-        width: 80px;
-        background-color: #555;
-        border-radius: 50%;
-      }
 
-      .element12 {
-      left: 55px;
-      top: 28px;
-  }
-      </style>
 
 </head>
 <body class="w3-light-gray">
-    <div id="mySidenav2" class="sidenav2">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
 
+  
 
-      <div id="main">
     <!-- Navigation -->
 
 
@@ -202,11 +180,12 @@
           <a href="http://Proyectos.alfredomaussa.com/" id="Proyectos">Proyectos</a>
         </div>
       
-      <header>
+    <header id="header2" style="padding-top: 15px; transition: top 0.5s; background: #f1f1f1; position: sticky;z-index: 1;">
           <div class="container">
               <div class="row">
+                <div class="col-sm-4">
                   <h1 class="col-sm">Alfredo Maussa</h1>
-    
+                </div>
                   <div class="col-sm" style="text-align: -webkit-right;">
                       <nav class="topnav" style="width: fit-content;">
                         <a href="./">Blog</a>
@@ -217,10 +196,10 @@
                 </nav>
               </div>
               </div>
+              <hr>
                  
               </div>
   
-  <hr>
             
         </header>
   
@@ -228,7 +207,6 @@
  <!-- Page Content -->
  <div class="container">
    <div class="row">
-      <div class="circle" onclick="openNav()"><i class="arrow right element12"></i></div>
         
         
         <div class="timeline">
@@ -278,25 +256,25 @@
                         <div class="content">
                             <h3>Actualización</h3>
                             <p>He mejorado la plantilla de "informática", y he puesto las pestañas de informatica>matlab
-                              Y la de mecanica>inventor con stl usando:  <a href="https://www.viewstl.com/plugin/#m_setscale">Link</a></p>
+                              Y la de mecanica>inventor con stl usando:  <a href="https://www.viewstl.com/plugin/#m_setscale">View STL</a></p>
               
                         </div>
                         <div class="time">
                             <h4>17  Abril 2020</h4>
                         </div> 
                     </li>
-                    <!--li>
-                        <div class="content">
-                            <h3>What is a lorem</h3>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-              
-                        </div>
-                        <div class="time">
-                            <h4>January 2018</h4>
-                        </div> 
-                    </li>
                     <li>
                         <div class="content">
+                            <h3>Sin trabajo, ¿Qué viene ahora?</h3>
+                            <p>Tomé una decisión difícil, sobretodo por que nadie me respaldó ni apoyó. Aunque supongo que desde hace mucho camino solo, de ahora en adelante procuraré encontrar un motivo o mas bien de construirlo para complir los deseos que alguna vez he tenido sin tratar de buscarle peros a los sueños.</p>
+              
+                        </div>
+                        <div class="time">
+                            <h4>Julio 2020</h4>
+                        </div> 
+                    </li>
+                    <!-- <li>
+                        <div class="content">
                             <h3>What is a lorem</h3>
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
               
@@ -304,7 +282,7 @@
                         <div class="time">
                             <h4>January 2018</h4>
                         </div> 
-                    </li-->
+                      </li> -->
                   <div style="clear: both;"></div>
                 </ul>
               </div>
@@ -319,24 +297,25 @@
 
   
 
-</div>
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
+  <footer class="page-footer font-small blue" style="left: 40%;
+  bottom: 0;">
+  <br>
+  <br>
+  <hr>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://alfredomaussa.com"> AlfredoMaussa.com</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
 
-  <script>
-function openNav() {
-  document.getElementById("mySidenav2").style.width = "500px";
-  document.getElementById("main").style.marginLeft = "500px";
-}
 
-function closeNav() {
-  document.getElementById("mySidenav2").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-      </script>
 
 
 </body>

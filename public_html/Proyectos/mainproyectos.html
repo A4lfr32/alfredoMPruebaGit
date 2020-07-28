@@ -157,6 +157,29 @@
 <hr style="border: 5px solid #717171;
 border-radius: 5px;">
   <!-- Related Projects Row -->
+
+
+<article>
+  <div class="row">
+    <div class="col-md-5">
+      <div class="card" id="SCARA_stl" style="height:195px;margin:0 auto;"></div>
+
+        <!--img class="img-fluid rounded mb-3 mb-md-0" src="../../../imagenes/C_baseradial.png" alt=""-->
+    </div>
+    <div class="col-md-7">
+      <h3>proyecto SCARA</h3> <small>17/04/2020</small>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+      <a class="btn btn-outline-primary" href="#">Ver más</a>
+      <div style="float: right;" class="row">
+      <span>tags: </span>
+    <div class="card text-white bg-dark m-1">Matemáticas </div>
+    <div class="card text-white bg-dark m-1">matemáticas </div>
+    </div>
+    </div>
+  </div>
+</article>
+
+
   <h3 class="my-4">Otros proyectos</h3>
 
   <div class="row" id="cartas">
@@ -323,6 +346,18 @@ border-radius: 5px;">
                   ]
               }
           );
+
+                    var stl_viewer2=new StlViewer
+          (
+              document.getElementById("SCARA_stl"),
+              {
+                  models:
+                  [
+                      {filename:"SCARA2.stl",rotationx:-1.5708, rotationy:-1.5708,rotationz:-0.26, view_edges:true, animation:{delta:{rotationy:-1, msec:5000, loop:true,rotationz:0, msec:5000, loop:true}}}
+                  ]
+              }
+          );
+          console.log("Cargados")
       </script>
 </body>
 </html>
