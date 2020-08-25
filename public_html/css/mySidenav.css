@@ -1,0 +1,31 @@
+#mySidenav a {
+    position: fixed;
+    left: -110px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 135px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    z-index: 2;
+  }
+  
+  #mySidenav a:hover {
+    left: 0!important;
+  }
+  
+  #Blog {
+    top: 70px;
+    background-color: rgb(218, 218, 218);
+  }
+  
+  #Academia {
+    top: 130px;
+    background-color: rgb(104, 156, 104);
+  }
+  
+  #Proyectos {
+    top: 190px;
+    background-color: #3d3d3d;
+  }

@@ -20,151 +20,10 @@
 
   gtag('config', 'UA-163888921-1');
 </script>
-<style>
 
-#mySidenav a {
-      position: fixed;
-      left: -110px;
-      transition: 0.3s;
-      padding: 15px;
-      width: 135px;
-      text-decoration: none;
-      font-size: 20px;
-      color: white;
-      border-radius: 0 5px 5px 0;
-    }
-    
-    #mySidenav a:hover {
-      left: 0;
-    }
-    
-    #Blog {
-      top: 70px;
-      background-color: rgb(218, 218, 218);
-      z-index: 10;
-    }
-    
-    #Academia {
-      top: 130px;
-      background-color: rgb(104, 156, 104);
-    }
-    
-    #Proyectos {
-      top: 190px;
-      background-color: #3d3d3d;
-    }
-    
-    </style>
-
-<style>
-    
-    .sidenav2 {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
-    
-    .sidenav2 a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-    
-    .sidenav2 a:hover {
-      color: #f1f1f1;
-    }
-    
-    .sidenav2 .closebtn {
-      position: absolute;
-      top: 45px;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-    
-    #main {
-      transition: margin-left .5s;
-      padding: 16px;
-    }
-    
-    @media screen and (max-height: 450px) {
-      .sidenav2 {padding-top: 15px;}
-      .sidenav2 a {font-size: 18px;}
-    }
-    </style>
-
-    <style>
-        /* Add a black background color to the top navigation */
-        .topnav {
-  overflow: hidden;
-  width: 60%;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-</style>
-
-<style>
-  i {
-    position: relative;
-    z-index: 100;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-  }
-  
-  .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
-  
-  .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
-  
-  .up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-  }
-  
-  .down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-  </style>
-
-
+<link rel="stylesheet" href="css/mySidenav.css">
+<link rel="stylesheet" href="css/topNav.css">
+<link rel="stylesheet" href="css/Chip.css">
 
 </head>
 <body class="w3-light-gray">
@@ -174,12 +33,8 @@
     <!-- Navigation -->
 
 
-      <div id="mySidenav" class="sidenav">
-        <a href="./" id="Blog">Blog</a>
-          <a href="http://Academia.alfredomaussa.com/" id="Academia">Academia</a>
-          <a href="http://Proyectos.alfredomaussa.com/" id="Proyectos">Proyectos</a>
-        </div>
-      
+    <?php require 'mySidenav.php' ?>
+
     <header id="header2" style="padding-top: 15px; transition: top 0.5s; background: #f1f1f1; position: sticky;z-index: 1;">
           <div class="container">
               <div class="row">
@@ -191,8 +46,8 @@
                         <a href="./">Blog</a>
                         <a hidden href="entradas.html">Entradas</a>
                         <!--a href="perfil.html">Perfil</a-->
-                  <a href="Historial.html">Historial</a>
-                  <a href="publicaciones.html">Publicaciones</a>
+                  <a class="active" href="Historial">Historial</a>
+                  <a href="Publicaciones">Publicaciones</a>
                 </nav>
               </div>
               </div>
@@ -302,18 +157,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
-  <footer class="page-footer font-small blue" style="left: 40%;
-  bottom: 0;">
-  <br>
-  <br>
-  <hr>
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://alfredomaussa.com"> AlfredoMaussa.com</a>
-      </div>
-      <!-- Copyright -->
-    
-    </footer>
+<?php require 'footerphp.php' ?>
 
 
 

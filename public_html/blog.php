@@ -22,149 +22,21 @@
   gtag('config', 'UA-163888921-1');
 </script>
 
+<link rel="stylesheet" href="css/mySidenav.css">
+<link rel="stylesheet" href="css/topNav.css">
+<link rel="stylesheet" href="css/Chip.css">
 
-<style>
-
-    #mySidenav a {
-          position: fixed;
-          left: -110px;
-          transition: 0.3s;
-          padding: 15px;
-          width: 135px;
-          text-decoration: none;
-          font-size: 20px;
-          color: white;
-          border-radius: 0 5px 5px 0;
-          z-index: 2;
-        }
-        
-        #mySidenav a:hover {
-          left: 0!important;
-        }
-        
-        #Blog {
-          top: 70px;
-          background-color: rgb(218, 218, 218);
-        }
-        
-        #Academia {
-          top: 130px;
-          background-color: rgb(104, 156, 104);
-        }
-        
-        #Proyectos {
-          top: 190px;
-          background-color: #3d3d3d;
-        }
-        
-        #Aux11 #Aux12 {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  left: 30px;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
- 
-
-
-        /* Add a black background color to the top navigation */
-.topnav {
-  overflow: hidden;
-  width: 60%;
-  align-items: flex-end;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav div {
-  position: absolute;
-  right: -15%;
-  top: -5%;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-   background-color: #ddd;
-  /*  color: black;
-    border-radius: 30px;
-    border-left-style: dotted */
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-   background-color: rgb(218, 218, 218);
-  /*  color: black;
-    border-left: solid;
-    border-radius: 30px; */
-}
-
-
-.chip {
-    position: fixed;
-  left: -8%;
-  top:87%;
-  z-index: 1;
-  
-  padding: 0 25px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 50px;
-  border-radius: 5px;
-  background-color: #888888;
-  cursor: pointer;
-  transition: 0.6s;
-
-}
-
-.chip:hover {
-  transition: 0.6s;
-  left: -1%;
-  /* margin: 0 10px 0 -25px; */
-}
-
-.chip:hover span {
-  transition: 1.7s;
-  /* display: inline-block; */
-}
-
-.chip img {
-  float: right;
-  margin: 0 -25px 0 15px;
-  height: 50px;
-  width: 50px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  transition: 0.4s;
-}
-        </style>
 
 
 </head>
 <body class="w3-light-gray">
-    <div id="mySidenav" class="sidenav no-print">
+    <!-- <div id="mySidenav" class="sidenav no-print">
       <a href="" id="Blog">Blog</a>
       <a href="https://academia.alfredomaussa.com/" id="Academia">Academia</a>
       <a href="https://proyectos.alfredomaussa.com/" id="Proyectos">Proyectos</a>
-    </div>
+    </div> -->
+    <?php require 'mySidenav.php' ?>
+
     <header id="header2" style="padding-top: 15px; transition: top 0.5s; background: #f1f1f1; position: sticky;z-index: 1;">
       <div class="container">
         <div class="row">
@@ -177,8 +49,8 @@
               <a hidden href="analisis.html">Análisis de datos</a>
               <a hidden href="entradas.html">Entradas</a>
               <!--a href="perfil.html" style="background-color: silver;">Perfil</a-->
-              <a href="Historial.html">Historial</a>
-              <a href="publicaciones.html">Publicaciones</a>
+              <a href="Historial">Historial</a>
+              <a href="Publicaciones">Publicaciones</a>
             </nav>
           </div>
         </div>
@@ -233,7 +105,7 @@
 
 
 <div class="w3-content" style="background: #f1f1f1;">
-  <div class="chip" onclick="window.location.href='perfil.html'">
+  <div class="chip" onclick="window.location.href='Perfil'">
     <img src="./imagenes/perfil3.jpg" alt="Person" width="96" height="96" data-toggle="collapse" href="#collapseChipNombre">
     <!--div class="collapse" id="collapseChipNombre"> Alfredo Maussa</div-->
     <span>Ver mi CV</span>
@@ -332,7 +204,7 @@ border-radius: 5px;">
       </div>
     </div>
     <!-- /.row -->
-  <hr>
+    <br>
 
 <p style="position: fixed;
 left: 28%;
@@ -348,19 +220,8 @@ z-index: -1;">Nota: Esta página web es a modo de aprendizaje, el contenido en g
 
 
 
-<p style="position: relative;
-left: 20%;
-bottom: 8%;">Nota: Esta página web es a modo de aprendizaje, el contenido en general es una prueba.</p>
+<?php require 'footerphp.php' ?>
 
-<footer class="page-footer font-small blue" style="left: 40%;
-bottom: 0;">
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://alfredomaussa.com"> AlfredoMaussa.com</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
 </div>
 
 

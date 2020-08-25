@@ -1,2 +1,2 @@
-<?php include 'blog.html';?>
+<?php include 'blog.php';?>
 
