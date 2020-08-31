@@ -25,7 +25,7 @@
       cursor: pointer;
     }
 
-    .btn-outline-dark {
+    .btn-light {
       border-top-left-radius: 0%;
       border-top-right-radius: 0%;
     }
@@ -43,11 +43,12 @@ clip-path: inset(0px 0px 0px 0px);
 }
 
 div.card span {
-              background-color: #272728;
-              color: white;
+              background-color: #a8daae;
+              /* background-color: #d4d4d4; */
+              color: black;
               text-align: -webkit-center;
               height: 210pp;
-              color: #dadada;
+              /* color: #dadada; */
               border-top-right-radius:3px;
               border-top-left-radius:3px;
               cursor: pointer;
@@ -83,7 +84,7 @@ div.card span {
         <div class="row">
           <div class="col-lg-6 col-md-4 col-sm-6 mb-4">
             <div class="card h-10">
-              <span style="font-size: xx-large;" onclick="window.location = 'matematicas';"><br>
+              <span class="shadow" style="font-size: xx-large;" onclick="window.location = 'matematicas';"><br>
           <h1 style="font-size: larger;">Matemática</h1>
           
           <br></span>
@@ -108,14 +109,14 @@ div.card span {
 
               </div>
               </div>
-              <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseMatematica" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <a class="btn btn-light" data-toggle="collapse" href="#collapseMatematica" role="button" aria-expanded="false" aria-controls="collapseExample">
                 Expandir
               </a>
             </div>
           </div>
           <div class="col-lg-6 col-md-4 col-sm-6 mb-4">
             <div class="card h-10">
-              <span style="font-size: xx-large;" onclick="window.location = 'fisica';"><br>
+              <span class="shadow" style="font-size: xx-large;" onclick="window.location = 'fisica';"><br>
           <h1 style="font-size: larger;">Física</h1>
           
           <br></span>               <!--h4 class="card-title">
@@ -123,14 +124,14 @@ div.card span {
                 </h4---->
 
                 <div class="list-group list-group-flush collapse" id="collapseFisica">
-                <a href="fisica/mecanicaclasica.html" class="list-group-item list-group-item-action"><span>Mecánica clásica</span></a>
-                <a href="fisica/estatica.html" class="list-group-item list-group-item-action"><span>Estática</span></a>
-                <a href="fisica/dinamica.html" class="list-group-item list-group-item-action"><span>Dinámica</span></a>
-                <a href="fisica/campos.html" class="list-group-item list-group-item-action"><span>Campos</span></a>
-                <a href="fisica/ondas.html" class="list-group-item list-group-item-action"><span>Ondas</span></a>
+                <a href="fisica/mecanicaclasica.html" class="list-group-item list-group-item-action">Mecánica clásica</a>
+                <a href="fisica/estatica.html" class="list-group-item list-group-item-action">Estática</a>
+                <a href="fisica/dinamica.html" class="list-group-item list-group-item-action">Dinámica</a>
+                <a href="fisica/campos.html" class="list-group-item list-group-item-action">Campos</a>
+                <a href="fisica/ondas.html" class="list-group-item list-group-item-action">Ondas</a>
             <a></a>
           </div>
-          <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseFisica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+          <a class="btn btn-light" data-toggle="collapse" href="#collapseFisica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
             </div>
           </div>
@@ -138,7 +139,7 @@ div.card span {
           <br>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span onclick="window.location = 'mecanica';"><br>
+              <span class="shadow" onclick="window.location = 'mecanica';"><br>
           <h1>Mecánica</h1>
           
           <br></span>               <div class="list-group list-group-flush collapse" id="collapseMecanica">
@@ -153,13 +154,13 @@ div.card span {
                 <a href="mecanica/mecanicadelagrangeyhamilton.html" class="list-group-item list-group-item-action">Mecánica lagrange y Hamilton</a>
             <a></a>
           </div>
-          <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseMecanica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+          <a class="btn btn-light" data-toggle="collapse" href="#collapseMecanica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span onclick="window.location = 'electronica';"><br>
+              <span class="shadow" onclick="window.location = 'electronica';"><br>
           <h1>Electrónica</h1>
           
           <br></span> 
@@ -172,13 +173,13 @@ div.card span {
                 <a href="electronica/electronicadigital.html" class="list-group-item list-group-item-action">Electrónica digital</a>
             <a></a>
           </div>
-          <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseElectronica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+          <a class="btn btn-light" data-toggle="collapse" href="#collapseElectronica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span onclick="window.location = 'informatica';"><br>
+              <span class="shadow" onclick="window.location = 'informatica';"><br>
           <h1>Informática</h1>
           
           <br></span>   
@@ -191,14 +192,14 @@ div.card span {
             <a href="informatica/paginasweb.html" class="list-group-item list-group-item-action">Páginas web</a>
             <a></a>
               </div>
-              <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseInformatica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+              <a class="btn btn-light" data-toggle="collapse" href="#collapseInformatica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span onclick="window.location = 'control';"><br>
+              <span class="shadow" onclick="window.location = 'control';"><br>
           <h1>Control</h1>
           
           <br></span> 
@@ -215,7 +216,7 @@ div.card span {
                 <a href="control/sistemasinteligentes.html" class="list-group-item list-group-item-action">Sistemas inteligentes</a>
             <a></a>
           </div>
-          <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseControl" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+          <a class="btn btn-light" data-toggle="collapse" href="#collapseControl" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
             </div>
           </div>
@@ -224,7 +225,7 @@ div.card span {
  
         <div class="card">
           <!--a href=""><img class="card-img-top" src="" height="90" alt=""></a-->
-          <span onclick="window.location = 'otros';"><br>
+          <span class="shadow" onclick="window.location = 'otros';"><br>
 <h1>Inteligencia artificial</h1>
 
 <br></span>
@@ -246,7 +247,7 @@ div.card span {
         <a href="https://www.coursera.org/professional-certificates/ai-engineer#courses" class="list-group-item list-group-item-action">Certificado profesional de IBM AI Engineering</a>
         <a href="https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome" class="list-group-item list-group-item-action">Neural Networks and Deep Learning</a>
           </div>
-<a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseOtros" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
+<a class="btn btn-light" data-toggle="collapse" href="#collapseOtros" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
         </div>
         <hr>
@@ -260,16 +261,16 @@ div.card span {
               </h1>
               <div class="row">
                 <!-- <h3 class="col-3">Lenguajes</h3> -->
-                  <button type="button" class="btn btn-outline-dark col-2">Python</button>
-                  <button type="button" class="btn btn-outline-dark col-3">Assembler</button>
-                  <button type="button" class="btn btn-outline-dark col-2">Grafcet</button>
-                  <button type="button" class="btn btn-outline-dark col-3">Ladder</button>
+                  <button type="button" class="btn btn-light col-2">Python</button>
+                  <button type="button" class="btn btn-light col-3">Assembler</button>
+                  <button type="button" class="btn btn-light col-2">Grafcet</button>
+                  <button type="button" class="btn btn-light col-3">Ladder</button>
                   
               <!-- <h3 class="col-3">Programas</h3> -->
-                <button type="button" class="btn btn-outline-dark col-2">Matlab</button>
-                <button type="button" class="btn btn-outline-dark col-3">Simulink</button>
-                <button type="button" class="btn btn-outline-dark col-2">Labview</button>
-                <button type="button" class="btn btn-outline-dark col-3">Visual studio</button>
+                <button type="button" class="btn btn-light col-2">Matlab</button>
+                <button type="button" class="btn btn-light col-3">Simulink</button>
+                <button type="button" class="btn btn-light col-2">Labview</button>
+                <button type="button" class="btn btn-light col-3">Visual studio</button>
 
 <?php 
 //Blocke2('informatica/MATLAB','https://d1d1c1tnh6i0t6.cloudfront.net/wp-content/uploads/2018/01/matlab-logo.jpg','MATLAB combina un entorno de escritorio perfeccionado para el análisis iterativo y los procesos de diseño con un lenguaje de programación que expresa las matemáticas de matrices y arrays directamente.','https://www.mathworks.com/products/matlab.html');
@@ -279,11 +280,10 @@ div.card span {
 
 ?>  
               <!-- <h3 class="col-3">Diseño asistido por computadora (CAD)</h3> -->
-                <button type="button" class="btn btn-outline-dark col-2">Autodesk Inventor</button>
-                <button type="button" class="btn btn-outline-dark col-3">Siemens NX</button>
-                <button type="button" class="btn btn-outline-dark col-2">Solid edge</button>
-                <button type="button" class="btn btn-outline-dark col-3">Solid work</button>
-                <p class="col-12" style="background-color: currentcolor;">a</p>
+                <button type="button" class="btn btn-light col-2">Autodesk Inventor</button>
+                <button type="button" class="btn btn-light col-3">Siemens NX</button>
+                <button type="button" class="btn btn-light col-2">Solid edge</button>
+                <button type="button" class="btn btn-light col-3">Solid work</button>
 
                 <?php 
 
@@ -303,18 +303,17 @@ div.card span {
         <h1 id="certificados" style="position: sticky;top: 0;z-index: 1;background-color: white;">Certificados</h1>
         <hr>
         <div class="row">
-          <button type="button" class="btn btn-outline-dark col-3">OnRamp | Matlab</button>
-          <button type="button" class="btn btn-outline-dark col-3">OnRamp | Simulink</button>
-          <button type="button" class="btn btn-outline-dark col-3">Python | Kaggle</button>
-          <button type="button" class="btn btn-outline-dark col-3">Intro to Machine learning | Kaggle</button>
-          <button type="button" class="btn btn-outline-dark col-3">Visualización de datos | Kaggle</button>
-          <button type="button" class="btn btn-outline-dark col-3">Bases de datos con Panda | Kaggle</button>
-          <button type="button" class="btn btn-outline-dark col-3">Machine learning intermedio | Kaggle</button>
-          <button type="button" class="btn btn-outline-dark col-3">Deep learning | Kaggle</button>
-          <button type="button" class="btn btn-outline-dark col-4">Neural_Networks_and_Deep_Learning | Coursera</button>
-          <button type="button" class="btn btn-outline-dark col-4">Improving Deep Neural Networks | Coursera</button>
-          <button type="button" class="btn btn-outline-dark col-4">Structuring Machine Learning Projects | Coursera</button>
-          <p class="col-12" style="background-color: currentcolor;">a</p>
+          <button type="button" class="btn btn-light col-3">OnRamp | Matlab</button>
+          <button type="button" class="btn btn-light col-3">OnRamp | Simulink</button>
+          <button type="button" class="btn btn-light col-3">Python | Kaggle</button>
+          <button type="button" class="btn btn-light col-3">Intro to Machine learning | Kaggle</button>
+          <button type="button" class="btn btn-light col-3">Visualización de datos | Kaggle</button>
+          <button type="button" class="btn btn-light col-3">Bases de datos con Panda | Kaggle</button>
+          <button type="button" class="btn btn-light col-3">Machine learning intermedio | Kaggle</button>
+          <button type="button" class="btn btn-light col-3">Deep learning | Kaggle</button>
+          <button type="button" class="btn btn-light col-4">Neural_Networks_and_Deep_Learning | Coursera</button>
+          <button type="button" class="btn btn-light col-4">Improving Deep Neural Networks | Coursera</button>
+          <button type="button" class="btn btn-light col-4">Structuring Machine Learning Projects | Coursera</button>
           <hr>
         </div>
         <div class="row">

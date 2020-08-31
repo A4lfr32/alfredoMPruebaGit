@@ -1,175 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
  <contenido> 
  <subcontenido id='Main_0'>
-        <!-- Portfolio Item Row -->
-        <div class="row">
-      
-          <div class="col-md-8">
-            <img class="img-fluid" src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt=""></img>
-          </div>
-      
-          <div class="col-md-4">
-            <h3 class="my-3">Descripción</h3>
-<p>Es una herramienta de la cual se sirve la ingeniería, a partir de esta se puede modelar cuantitativamente las relaciones de varias variables</p>
-
-            
-            <h3 class="my-3">Contenido</h3>
-            <ul>
-            <li>Algebra lineal</li>
-            <li>Análisis numérico</li>
-            <li>Cálculo diferencial</li>
-            <li>Cálculo integral</li>
-            <li>Cálculo de varias variables</li>
-            <li>Ecuaciones diferenciales</li>
-            <li>Geometría</li>
-            <li>Matemáticas especiales</li>
-            <li>Probabilidad y estadística</li>
-      </ul>
-          </div>
-      
-        </div>
-        <!-- /.row -->
-      
-        <!-- Related Projects Row -->
-        <h3 class="my-4">Contenidos relacionados</h3>
-      
-        <div class="row">
-      
-
-
-        <!-- Entradas del blog -->
-
-
-          <div class="card col-md-3 col-sm-6 mb-4" onclick="location.href='MATLAB';">
-                  <span style="
-    background-color: #272728;
-    color: white;
-    text-align: -webkit-center;
-    height: 210pp;
-    color: #dadada;
-    border-radius: 3px;
-    cursor: pointer;
-"><br></br>
-<h3>MATLAB</h3>
 
 <br></br>
-</span>
-          </div>
-      
-          <div class="card col-md-3 col-sm-6 mb-4">
-              <span style="
-              background-color: #272728;
-              color: white;
-              text-align: -webkit-center;
-              height: 210pp;
-              color: #dadada;
-              border-radius: 3px;
-              cursor: pointer;
-          "><br></br>
-          <h3>Arduino</h3>
-          
-          <br></br></span>
-          </div>
-      
-          <div class="card col-md-3 col-sm-6 mb-4">
-            <span style="
-            background-color: #272728;
-            color: white;
-            text-align: -webkit-center;
-            height: 210pp;
-            color: #dadada;
-            border-radius: 3px;
-            cursor: pointer;
-        "><br></br>
-        <h3>Javascript</h3>
-        
-        <br></br></span>
-          </div>
-      
-          <div class="card col-md-3 col-sm-6 mb-4">
-            <span style="
-            background-color: #272728;
-            color: white;
-            text-align: -webkit-center;
-            height: 210pp;
-            color: #dadada;
-            border-radius: 3px;
-            cursor: pointer;
-        "><br></br>
-        <h3>kjsfrf</h3>
-        
-        <br></br></span>
-          </div>
-      
-        </div>
-        <!-- /.row -->
-<hr style="border: 5px solid #717171;
-border-radius: 5px;"></hr>
-      <!-- Page Heading -->
-<h1 class="my-4">Entradas
-  <small>Informática</small>
-</h1>
-
-  <!-- Project One -->
-  <br></br>
-  <article>
-  <div class="row">
-    <div class="col-md-5">
-      <a href="#">
-        <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/robotCablesApp.PNG" alt=""></img>
-      </a>
-    </div>
-    <div class="col-md-7">
-      <h3>Aplicación web de robot por cables</h3> <small>04/01/2020</small>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-      <a class="btn btn-primary" href="#">Ver más</a>
-      <div style="float: right;" class="row">
-      <span>tags: </span>
-    <div class="card text-white bg-dark m-1">Matemáticas </div>
-    <div class="card text-white bg-dark m-1">matemáticas </div>
-    </div>
-    </div>
-  </div>
+<article>
+<div class="row">
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/robotCablesApp.PNG" alt=""></img>
+  </a>
+</div>
+<div class="col-md-7">
+  <h3>Aplicación web de robot por cables</h3> <small>04/01/2020</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+  <div style="float: right;" class="row">
+  <span>tags: </span>
+<div class="card text-white bg-dark m-1">Matemáticas </div>
+<div class="card text-white bg-dark m-1">matemáticas </div>
+</div>
+</div>
+</div>
 </article>
-  <!-- /.row -->
-  <hr></hr>
+<!-- /.row -->
+<hr></hr>
 
-  <!-- Project Two -->
-  <br></br>
-  <div class="row">
-   
-    <div class="col-md-7">
-      <h3>Contenido de academia</h3><small>04/01/2020</small>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-      <a class="btn btn-primary" href="#">Ver más</a>
-    </div>
-    <div class="col-md-5">
-      <a href="#">
-        <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/ContenidoAcademia.PNG" alt=""></img>
-      </a>
-    </div>
-  </div>
-  <!-- /.row -->
-  <hr></hr>
-  <!-- Project One -->
-  <br></br>
-  <article>
-  <div class="row">
-    <div class="col-md-5">
-      <a href="#">
-        <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/CursoJavascript.PNG" alt=""></img>
-      </a>
-    </div>
-    <div class="col-md-7">
-      <h3>Apuntes del curso: Javascript, Jquery, and JSON (Coursera: Universidad de Míchigan)</h3> <small>17/04/2020</small>
-      <p>Comparto en esta entrada, los apuntes que he tomado en códigos </p>
-      <a class="btn btn-primary" href="#">Ver más</a>
-    </div>
-  </div>
+<!-- Project Two -->
+<br></br>
+<div class="row">
+
+<div class="col-md-7">
+  <h3>Contenido de academia</h3><small>04/01/2020</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+</div>
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/ContenidoAcademia.PNG" alt=""></img>
+  </a>
+</div>
+</div>
+<!-- /.row -->
+<hr></hr>
+<!-- Project One -->
+<br></br>
+<article>
+<div class="row">
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/CursoJavascript.PNG" alt=""></img>
+  </a>
+</div>
+<div class="col-md-7" id="home">
+  <h3>Apuntes del curso: Javascript, Jquery, and JSON (Coursera: Universidad de Míchigan)</h3> <small>17/04/2020</small>
+  <p>Comparto en esta entrada, los apuntes que he tomado en códigos </p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+</div>
+</div>
 </article>
 <hr></hr>
 <br></br>
-  <!-- /.row -->
+<!-- /.row -->
 
  </subcontenido>
 

@@ -206,6 +206,10 @@ border-radius: 5px;">
     <!-- /.row -->
     <br>
 
+
+
+
+
 <p style="position: fixed;
 left: 28%;
 bottom: 8%;
@@ -253,16 +257,24 @@ z-index: -1;">Nota: Esta página web es a modo de aprendizaje, el contenido en g
 
 
 <script>
+  let mostrarNavSuave=0
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos -1) {
-      document.getElementById("header2").style.top = "0";
+      mostrarNavSuave += prevScrollpos - currentScrollPos
+    if (mostrarNavSuave < -85){mostrarNavSuave=-85;} else if (mostrarNavSuave>0) {mostrarNavSuave=0;}
+    console.log(mostrarNavSuave);
+    if (prevScrollpos > currentScrollPos ) {
+      document.getElementById("header2").style.top = 1.1*mostrarNavSuave+"px";
+      // mostrarNavSuave=0;
     } else {
-      document.getElementById("header2").style.top = "-85px";
+      document.getElementById("header2").style.top = 1.1*mostrarNavSuave+"px";
+      // document.getElementById("header2").style.top = "-85px";
     }
     prevScrollpos = currentScrollPos;
   }
   </script>
+
+  
 </body>
 </html>

@@ -57,12 +57,14 @@
  <!-- Page Content -->
 <div class="w3-content">
  <article>
+   <br>
   <div class="row">
     <h3>Trabajo de grado:</h3>
     <h3 class="col-12"> Sistema autocalibrable para plataforma
       robótica maniobrada mediante cables
       </h3>
     <div class="col-md-6">
+      <br>
       <p style="text-align: justify;"><b>Abstract:</b> There are some difficulties in streaming or recording activities, based on a solution given in
         the state of the art, cable robots are considered as a solution. Given the low accessibility of
         this solution, a cause is identified in the initial installation, which requires technical
@@ -75,28 +77,25 @@
         <p style="text-align: justify;">
         A three-level design methodology is proposed; at the conceptual level; at preliminary or
         basic level and finally detailed level. In this process, some alternative tools for the solution
-        of inverse kinematics and dynamics are reviewed. A modular design with coupled motors is
-        proposed, and an algorithm based on neural networks is developed to find the location of
-        the fixed supports.</p>
-        <p style="text-align: justify;">
+        of inverse kinemat...</p>
+        <!-- <p style="text-align: justify;">
         Finally, an experiment is carried out with data taken in a workspace, it is evaluated in several
         subsets: The estimation of force through the current measurements in the motors, the
         estimation of directions through the previous forces calculated, and finally the estimation of
         the location of the fixed supports through the history of relative movement points and their
         corresponding directions previously calculated and stored.
-        Keywords: cable driven parallel robots, self-calibration, modular design, parametric model.</p>
+        Keywords: cable driven parallel robots, self-calibration, modular design, parametric model.</p> -->
       <a hidden class="btn btn-primary" href="#">Ver más</a>
+      <h6>Documento completo: <a href="https://sabio.eia.edu.co/">Biblioteca EIA</a> o <a href="https://www.researchgate.net/publication/343268337_SISTEMA_AUTOCALIBRABLE_PARA_PLATAFORMA_ROBOTICA_MANIOBRADA_MEDIANTE_CABLES">AlfredoMaussa@researchgate</a>.</h6>
+
     </div>
     <div class="col-md-6" style="    text-align: -webkit-right;">
       <br>
-      <br>
       <a href="#">
       <!-- <iframe src="imagenes/FORMULACIÓN DE PROYECTOS.pdf" style="width:600px; height:500px;" frameborder="0"></iframe> -->
-        <embed src="imagenes/FORMULACIÓN DE PROYECTOS.pdf" width="600" height="350" type="application/pdf">
+        <embed src="imagenes/FORMULACIÓN DE PROYECTOS.pdf#toolbar=0" width="500" height="350" type="application/pdf">
       </a>
       <br>
-      <br>
-      <h6>Doc. completo: <a href="https://sabio.eia.edu.co/">Biblioteca EIA</a> o <a href="https://www.researchgate.net/publication/343268337_SISTEMA_AUTOCALIBRABLE_PARA_PLATAFORMA_ROBOTICA_MANIOBRADA_MEDIANTE_CABLES">AlfredoMaussa@researchgate</a></h6>
       <hr>
     </div>
   </div>
