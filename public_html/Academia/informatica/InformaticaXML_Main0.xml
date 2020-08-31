@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <contenido> 
+ <subcontenido id='Main_0'>
+
+<hr></hr>
+<article>
+<div class="row">
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/robotCablesApp.PNG" alt=""></img>
+  </a>
+</div>
+<div class="col-md-7">
+  <h3>Aplicación web de robot por cables</h3> <small>04/01/2020</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+  <div style="float: right;" class="row">
+  <span>tags: </span>
+<div class="card text-white bg-dark m-1">Matemáticas </div>
+<div class="card text-white bg-dark m-1">matemáticas </div>
+</div>
+</div>
+</div>
+</article>
+<!-- /.row -->
+<hr></hr>
+
+<!-- Project Two -->
+<hr></hr>
+<div class="row">
+
+<div class="col-md-7">
+  <h3>Contenido de academia</h3><small>04/01/2020</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+</div>
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/ContenidoAcademia.PNG" alt=""></img>
+  </a>
+</div>
+</div>
+<!-- /.row -->
+<hr></hr>
+<!-- Project One -->
+<hr></hr>
+<article>
+<div class="row">
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/CursoJavascript.PNG" alt=""></img>
+  </a>
+</div>
+<div class="col-md-7" id="home">
+  <h3>Apuntes del curso: Javascript, Jquery, and JSON (Coursera: Universidad de Míchigan)</h3> <small>17/04/2020</small>
+  <p>Comparto en esta entrada, los apuntes que he tomado en códigos </p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+</div>
+</div>
+</article>
+<hr></hr>
+<hr></hr>
+<!-- /.row -->
+
+ </subcontenido> 
+ <subcontenido id="Fundamentos de programacion_1"> 
+<!-- Fundamentos de programacion -->
+  <h2 id="Tema-0">Introducción a los algoritmos</h2>
+  <hr/>
+  <h2 id="Tema-1">Estructuras algorítmicas</h2>
+  <hr/>
+  <h2 id="Tema-2">Arreglos de datos</h2>
+  <hr/>
+  <h2 id="Tema-3">Programación modular</h2>
+  <hr/>
+ </subcontenido>
+
+ <subcontenido id="Programación y algoritmos_2"> 
+ <!-- Programación y algoritmos -->
+  <h2 id="Tema-0">Conceptos de ingeniería de software</h2>
+  <hr/>
+  <h2 id="Tema-1">Introducción a la programación OO</h2>
+  <hr/>
+  <h2 id="Tema-2">Fundamentos de la programación orientada a objetos (POO)</h2>
+  <hr/>
+  <h2 id="Tema-3">Introducción a Estructuras de datos usando POO</h2>
+  <hr/>
+  <h2 id="Tema-4">Bases de datos relacionales y su conexión con lenguaje OO</h2>
+  <hr/>
+ </subcontenido>
+
+ <subcontenido id="Desarrollo web_3"> 
+ <!-- Desarrollo web -->
+  <h2 id="Tema-0">HTML</h2>
+  <hr/>
+  <h2 id="Tema-1">Javascript</h2>
+  <hr/>
+  <h2 id="Tema-2">CSS</h2>
+  <hr/>
+  <h2 id="Tema-3">PHP</h2>
+  <hr/>
+  <h2 id="Tema-4">Reat js</h2>
+  <hr/>
+  <h2 id="Tema-5">Angular js</h2>
+  <hr/>
+  <h2 id="Tema-6">Vue js</h2>
+  <hr/>
+ </subcontenido>
+
+
+ </contenido> 

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <contenido> 
+ <subcontenido id='Main_0'>
+
+<hr></hr>
+<article>
+<div class="row">
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/robotCablesApp.PNG" alt=""></img>
+  </a>
+</div>
+<div class="col-md-7">
+  <h3>Aplicación web de robot por cables</h3> <small>04/01/2020</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+  <div style="float: right;" class="row">
+  <span>tags: </span>
+<div class="card text-white bg-dark m-1">Matemáticas </div>
+<div class="card text-white bg-dark m-1">matemáticas </div>
+</div>
+</div>
+</div>
+</article>
+<!-- /.row -->
+<hr></hr>
+
+<!-- Project Two -->
+<hr></hr>
+<div class="row">
+
+<div class="col-md-7">
+  <h3>Contenido de academia</h3><small>04/01/2020</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+</div>
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/ContenidoAcademia.PNG" alt=""></img>
+  </a>
+</div>
+</div>
+<!-- /.row -->
+<hr></hr>
+<!-- Project One -->
+<hr></hr>
+<article>
+<div class="row">
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/CursoJavascript.PNG" alt=""></img>
+  </a>
+</div>
+<div class="col-md-7" id="home">
+  <h3>Apuntes del curso: Javascript, Jquery, and JSON (Coursera: Universidad de Míchigan)</h3> <small>17/04/2020</small>
+  <p>Comparto en esta entrada, los apuntes que he tomado en códigos </p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+</div>
+</div>
+</article>
+<hr></hr>
+<hr></hr>
+<!-- /.row -->
+
+ </subcontenido> 
+
+<!-- Mecanica clasica -->
+ <subcontenido id="Mecanica clasica_1"> 
+  <h2 id="Tema-0">Cinemática de partículas</h2>
+  <hr/>
+  <h2 id="Tema-1">Dinámica de partículas</h2>
+  <hr/>
+  <h2 id="Tema-2">Trabajo y energía (partícula)</h2>
+  <hr/>
+  <h2 id="Tema-3">Dinámica en sistema de particulas</h2>
+  <hr/>
+  <h2 id="Tema-4">Sistemas vibrantes u oscilatorios</h2>
+  <hr/>
+  <h2 id="Tema-8">Notacion de MAchine learning - Deep learning</h2>
+ </subcontenido>
+
+<!-- Estática -->
+ <subcontenido id="Estatica_2"> 
+  <h2 id="Tema-0">Equilibrio de fuerzas</h2>
+  <hr/>
+  <h2 id="Tema-1">Sistemas de fuerzas</h2>
+  <hr/>
+  <h2 id="Tema-2">Análisis de estructura</h2>
+  <hr/>
+  <h2 id="Tema-3">Fuerza de rozamiento</h2>
+  <hr/>
+ </subcontenido>
+
+ <subcontenido id="Dinamica_3"> 
+  <h2 id="Tema-0">Movimiento impulsivo</h2>
+  <hr/>
+  <h2 id="Tema-1">Cinemática de cuerpo rígido</h2>
+  <hr/>
+  <h2 id="Tema-2">Dinámica de cuerpos rígidos (Fuerza y aceleraciones)</h2>
+  <hr/>
+  <h2 id="Tema-3">Dinámica de cuerpos rígidos (Energía y cantidad de movimiento)</h2>
+  <hr/>
+ </subcontenido>
+
+ 
+<subcontenido id="Campos_4"> 
+  <h2 id="Tema-0">Interacción gravitacional</h2>
+  <hr/>
+  <h2 id="Tema-1">Interacción eléctrica</h2>
+  <hr/>
+  <h2 id="Tema-2">Interacción magnética</h2>
+  <hr/>
+  <h2 id="Tema-3">Inducción electromagnética</h2>
+  <hr/>
+</subcontenido>
+
+
+ 
+<subcontenido id="Ondas_5"> 
+  <h2 id="Tema-0">Ondas mecánica</h2>
+  <br/>
+  <h2 id="Tema-1">Ondas eletromagnéticas</h2>
+  <br/>
+  <h2 id="Tema-2">Óptica geométrica</h2>
+  <br/>
+  <h2 id="Tema-3">Ondas de materia y gravitacionales</h2>
+  <br/> 
+</subcontenido>
+
+ 
+ 
+ </contenido> 

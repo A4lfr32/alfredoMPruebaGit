@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Matematica -->
+<!-- Inteligencia artificial -->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     <title>Mecánica</title>
+     <title>Inteligencia artificial</title>
 
      <style>
          .list-group-item {
@@ -74,9 +74,9 @@ cursor: pointer;
      </style>
 </head>
 <body onscroll="scrollingF()" style=" overflow-x: hidden;">
-<span onclick="window.location = '../fisica';" class="shadow-sm pt-5 left-row">&lt;&lt;</span>
+<span onclick="window.location = '../control';" class="shadow-sm pt-5 left-row">&lt;&lt;</span>
 
-<span onclick="window.location = '../electronica';" class="shadow-sm pt-5 right-row">&gt;&gt;</span>
+<span onclick="window.location = '../matematicas';" class="shadow-sm pt-5 right-row">&gt;&gt;</span>
 
       <!-- Navigation -->
       <button class="btn btn-outline-secondary" onclick="window.location = '../';" style="
@@ -94,8 +94,8 @@ cursor: pointer;
     <!-- Portfolio Item Heading -->
 <div class="pt-5 container" style="text-align: -webkit-center;">
 <div>
-<h1>Mecánica
-    <br><h6 style="color: darkgray;">La mecánica es la rama de la física que estudia y analiza el movimiento y reposo de los cuerpos, y su evolución en el tiempo, bajo la acción de fuerzas.</h6>
+<h1>Inteligencia artificial
+    <br><h6 style="color: darkgray;">La inteligencia artificial es la inteligencia llevada a cabo por máquinas. En ciencias de la computación, una máquina «inteligente» ideal es un agente flexible que percibe su entorno y lleva a cabo acciones que maximicen sus posibilidades de éxito en algún objetivo o tarea</h6>
 
   <hr class="mt-5" style="border: 1px solid #717171;border-radius: 5px;box-shadow: 0px 2px 7px lightsteelblue;">
 </div></div>
@@ -111,13 +111,10 @@ cursor: pointer;
     z-index: 1;">
      <select class="custom-select" id="mySelect" style="border: aliceblue;border-bottom: inset;font-size: xx-large;text-align-last: center;" onchange="SelectChanged(this.value)">
     <option selected value="0">Ver contenidos</option>
-    <option value="1">Ciencia de materiales</option>
-    <option value="2">Mecánica de materiales</option>
-    <option value="3">Procesos de transformación industrial</option>
-    <option value="4">Sistemas mecánicos</option>
-    <option value="5">Termodinámica</option>
-    <option value="6">Lagrange</option>
-    <option value="7">Hamilton</option>
+    <option value="1">Machine learning</option>
+    <option value="2">Deteccion de objetos</option>
+    <option value="3">Clasificacion de imagenes</option>
+    <option value="4">Deep learning</option>
   </select>  </div>
 
           <div id="Main" style="position: relative;top: -3%;">
@@ -128,7 +125,7 @@ cursor: pointer;
           <div class="sticky-top pt-4">
             <h4 class="my-3" style="color:grey;">Contenido</h4>
             <div class="list-group list-group-flush" style="border-left: outset;" id="contenido">
-                <a href="#" class="list-group-item-action list-group-item">Algebra lineal</a>
+                <!-- <a href="#" class="list-group-item-action list-group-item">Algebra lineal</a>
                 <a href="#" class="list-group-item-action list-group-item">Análisis numérico</a>
                 <a href="#" class="list-group-item-action list-group-item">Cálculo diferencial</a>
                 <a href="#home" class="list-group-item-action list-group-item">Cálculo integral</a>
@@ -136,7 +133,7 @@ cursor: pointer;
                 <a href="#" class="list-group-item-action list-group-item">Ecuaciones diferenciales</a>
                 <a href="#" class="list-group-item-action list-group-item">Geometría</a>
                 <a href="#" class="list-group-item-action list-group-item">Matemáticas especiales</a>
-                <a href="#" class="list-group-item-action list-group-item">Probabilidad y estadística</a>
+                <a href="#" class="list-group-item-action list-group-item">Probabilidad y estadística</a> -->
             </div>
         </div>    
       </div>
@@ -152,7 +149,7 @@ cursor: pointer;
   function SelectChanged(tag) {
     // alert(tag)
     // var x = document.getElementById("mySelect").value;
-		sessionStorage.setItem("cookie_mecanica", tag); 
+		sessionStorage.setItem("cookie_AI", tag); 
     document.getElementById("Main").innerHTML = loadXMLDoc(tag);
   }
 
@@ -189,7 +186,7 @@ cursor: pointer;
 <script>
 
 window.onload = function() {
-  var storedValue = sessionStorage.getItem("cookie_mecanica"); 
+  var storedValue = sessionStorage.getItem("cookie_AI"); 
   if (storedValue !== null) {
     $("#mySelect").val(storedValue); 
     loadXMLDoc(storedValue);
@@ -208,7 +205,7 @@ window.onload = function() {
         myFunction(this,tag);
       }
     };
-    xmlhttp.open("GET", "MecanicaXML_Main0.xml", true);
+    xmlhttp.open("GET", "AIXML_Main0.xml", true);
     xmlhttp.send();
   }
 

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <contenido> 
+ <subcontenido id='Main_0'>
+
+<hr></hr>
+<article>
+<div class="row">
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/robotCablesApp.PNG" alt=""></img>
+  </a>
+</div>
+<div class="col-md-7">
+  <h3>Aplicación web de robot por cables</h3> <small>04/01/2020</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+  <div style="float: right;" class="row">
+  <span>tags: </span>
+<div class="card text-white bg-dark m-1">Matemáticas </div>
+<div class="card text-white bg-dark m-1">matemáticas </div>
+</div>
+</div>
+</div>
+</article>
+<!-- /.row -->
+<hr></hr>
+
+<!-- Project Two -->
+<hr></hr>
+<div class="row">
+
+<div class="col-md-7">
+  <h3>Contenido de academia</h3><small>04/01/2020</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+</div>
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/ContenidoAcademia.PNG" alt=""></img>
+  </a>
+</div>
+</div>
+<!-- /.row -->
+<hr></hr>
+<!-- Project One -->
+<hr></hr>
+<article>
+<div class="row">
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/CursoJavascript.PNG" alt=""></img>
+  </a>
+</div>
+<div class="col-md-7" id="home">
+  <h3>Apuntes del curso: Javascript, Jquery, and JSON (Coursera: Universidad de Míchigan)</h3> <small>17/04/2020</small>
+  <p>Comparto en esta entrada, los apuntes que he tomado en códigos </p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+</div>
+</div>
+</article>
+<hr></hr>
+<hr></hr>
+<!-- /.row -->
+
+ </subcontenido> 
+ <subcontenido id="Algehra lineal_1"> 
+<!-- Algehra lineal -->
+  <h2 id="Tema-0">Vectores</h2>
+  <hr/>
+  <h2 id="Tema-1">Matrices</h2>
+  <hr/>
+  <h2 id="Tema-2">Espacios vectoriales</h2>
+  <hr/>
+  <h2 id="Tema-3">Transformaciones lineales</h2>
+  <hr/>
+  <h2 id="Tema-4">Determinantes</h2>
+  <hr/>
+  <h2 id="Tema-5">Producto interno(punto) y producto cruz</h2>
+  <hr/>
+  <h2 id="Tema-6">Diagonalización</h2>
+  <hr/>
+  <h2 id="Tema-7">Otros conceptos</h2>
+  <hr/>
+  <h2 id="Tema-8">Notacion de MAchine learning - Deep learning</h2>
+ </subcontenido>
+
+ <subcontenido id="Análisis numérico_2"> 
+  <h2 id="Tema-0">Teoría de Errores y Programación en MATLAB (OCTAVE)</h2>
+  <hr/>
+  <h2 id="Tema-1">Solución de ecuaciones no lineales (repaso).</h2>
+  <hr/>
+  <h2 id="Tema-2">Solución de sistemas de ecuaciones.</h2>
+  <hr/>
+  <h2 id="Tema-3">Interpolación numérica e Integración numérica.</h2>
+  <hr/>
+  <h2 id="Tema-4">Métodos de Runge-Kutta e Introducción al Método de los Elementos Finitos (MEF). </h2>
+  <hr/>
+  <h2 id="Tema-5">Método de Euler, método de Runge-Kutta 4, método de diferencias finitas, método de los elementos finitos.</h2>
+ </subcontenido>
+
+ <subcontenido id="Cálculo diferencial_3"> 
+  <h2 id="Tema-0">Definición formal</h2>
+  <hr/>
+  <h2 id="Tema-1">Continuidad</h2>
+  <hr/>
+  <h2 id="Tema-2">Serie de Taylor y aproximación</h2>
+  <hr/>
+  <h2 id="Tema-3">Singularidades</h2>
+  <hr/>
+  <h2 id="Tema-4">Entender definición</h2>
+  <hr/>
+ </subcontenido>
+
+ 
+ <subcontenido id="Cálculo integral_4"> 
+
+
+<h2 id="Tema-0">Aplicaciones de la integración</h2>
+<hr/>
+<h2 id="Tema-1">La integral definida</h2>
+<hr/>
+<h2 id="Tema-2">Integral impropia</h2>
+<hr/>
+<h2 id="Tema-3">Series.</h2>
+<hr/>
+ </subcontenido>
+
+
+ 
+ <subcontenido id="Cálculo de varias variables_5"> 
+
+<h2 id="Tema-0">Diferenciación e integración en varias variables</h2>
+<br/>
+<h2 id="Tema-1">Continuidad y diferenciación para funciones de varias variables.</h2>
+<br/>
+<h2 id="Tema-2">Integración múltiple</h2>
+<br/>
+<h2 id="Tema-3">Campos Vectoriales</h2>
+<br/> </subcontenido>
+
+ 
+ <subcontenido id="Ecuaciones diferenciales_6"> 
+
+<h2 id="Tema-0">Ecuaciones Diferenciales de Primer Orden</h2>
+<hr/>
+<h2 id="Tema-1">Ecuaciones Diferenciales de Orden Superior</h2>
+<hr/>
+<h2 id="Tema-2">Soluciones en Forma de Series de Potencias de Ecuaciones Diferenciales Lineales</h2>
+<hr/>
+<h2 id="Tema-3">Transformada de Laplace Y sus Aplicaciones</h2>
+<hr/>
+<h2 id="Tema-4">El método de eliminación (Sustitución).</h2>
+<hr/> </subcontenido>
+
+ 
+ <subcontenido id="Geometría_7"> 
+
+<h2 id="Tema-0">Geometría euclidiana</h2>
+<hr/>
+<h2 id="Tema-1">Principios de demostración geográfica</h2>
+<hr/>
+<h2 id="Tema-2">Congruencia de triángulos: Critrerios de congruencia de triangulos</h2>
+<hr/>
+<h2 id="Tema-3">Paralelismo</h2>
+<hr/>
+<h2 id="Tema-4">Cuadriláteros</h2>
+<hr/>
+<h2 id="Tema-5">Trapecios</h2>
+<hr/>
+<h2 id="Tema-6">Circunferencias</h2>
+<hr/>
+<h2 id="Tema-7">Proporcionalidad y semejanza</h2>
+<hr/>
+<h2 id="Tema-8">Areas</h2>
+<hr/> </subcontenido>
+
+
+ <subcontenido id="Matemáticas especiales_8"> 
+<br/>
+  <h2 id="Tema-0">Función de variable compleja</h2>
+  <hr/>
+  <h2 id="Tema-1">Diferenciación e integración de funciones de variable compleja.</h2>
+  <hr/>
+  <h2 id="Tema-2">El teorema del residuo y series complejas</h2>
+  <hr/>
+  <h2 id="Tema-3">Mapeos conformes y sus aplicaciones</h2>
+  <hr/>
+  <h2 id="Tema-4">Series y transformadas de Fourier</h2>
+  <hr/>
+  <h2 id="Tema-5">Serie trigonométrica y compleja de Fourier de tiempo continuo. </h2>
+  <hr/>
+  <h2 id="Tema-6">Transformada Continúa de Fourier. </h2>
+  <hr/>
+  <h2 id="Tema-7"> El teorema de Parseval</h2>
+  <hr/>
+  <h2 id="Tema-8"> Análisis en frecuencia </h2>
+  <hr/>
+  <h2 id="Tema-9">Solución de las ecuaciones diferenciales en derivadas parciales.</h2>
+  <hr/>
+  <h2 id="Tema-10">Ecuación del calor</h2>
+  <hr/>
+  <h2 id="Tema-11">Ecuación de la onda</h2>
+  <hr/>
+  <h2 id="Tema-12">El Laplaciano</h2>
+  <hr/>
+  <h2 id="Tema-13">La ecuación de Poisön</h2>
+  <hr/>
+  <h2 id="Tema-14">La transformada Z. </h2>
+  <hr/>
+  <h2 id="Tema-15">La transformada rápida de Fourier.</h2>
+<hr/>
+<!-- <h3>Bibliografía</h3>
+<p>CHURCHILL, Ruel V, hrOWN, James W. Variable compleja y aplicaciones. Séptima edición.
+McGraw-Hill. España, 2004.</p>
+<p>Goerge B. Arfken, Hans J. Weber. Mathematical Methods for Physicists. Fifth Edition. Harcourt-Adademic Press, San Diego. USA, 2001.</p>
+<p>Alan V. Oppenheim. Sistemas y Señales. Quinta Edición, Pearson Education, México, 1998. </p>
+<p>HSU, Hwi P. Análisis de Fourier. México : Addison Wesley Iberoamericana, Delawere, 1987. 
+</p>
+<p>JAMES, Glyn. Matemáticas avanzadas para ingeniería. 2 ed. Prentice Hall, 2002.</p>
+<p>KREYSZIG, Erwin. Matemáticas avanzadas para ingeniería.3 ed. Limusa. México. 2003.</p>
+<p>O.Neal, Peter. Matemáticas avanzadas para ingeniería. 6 ed. Cengage Learnig, 2008. </p> -->
+ </subcontenido>
+
+ 
+ <subcontenido id="Probabilidad y estadística_9"> 
+  
+  <h2 id="Tema-0">Introducción</h2>
+  <hr/>
+  <h2 id="Tema-1">Estadística</h2>
+  <hr/>
+  <h2 id="Tema-2">Probabilidad</h2>
+  <hr/>
+  <h2 id="Tema-3">Variables aleatorias y distribuciones de probabilidad</h2>
+  <hr/>
+  <h2 id="Tema-4">Esperanza matemática</h2>
+  <hr/>
+  <h2 id="Tema-5">Variables aleatorias: discretas, continuas  y funciones de variables aleatorias</h2>
+  <hr/>
+  <h2 id="Tema-6">Distribuciones de muestreo</h2>
+  <hr/>
+  <h2 id="Tema-7">Estimacion de 1 o 2 muestras</h2>
+  <hr/>
+  <h2 id="Tema-8">Prueba de hipotesis de 1 o 2 muestras</h2>
+  <hr/>
+  <h2 id="Tema-9">Regresiones: lineal, multi lineal y no lineal</h2>
+  <hr/>
+  <h2 id="Tema-10">Experimentos de un solo factor, y factoriales (dos o mas)</h2>
+  <hr/>
+  <h2 id="Tema-11">Estadìstica no paramétrica</h2>
+  <hr/>
+  <h2 id="Tema-12">Control estadístico de calidad</h2>
+  <hr/>
+  <h2 id="Tema-13">Estadística bayesiana</h2>
+<hr/>
+ </subcontenido>
+
+ </contenido> 

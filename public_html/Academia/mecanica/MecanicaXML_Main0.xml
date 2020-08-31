@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <contenido> 
+ <subcontenido id='Main_0'>
+
+<hr></hr>
+<article>
+<div class="row">
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/robotCablesApp.PNG" alt=""></img>
+  </a>
+</div>
+<div class="col-md-7">
+  <h3>Aplicación web de robot por cables</h3> <small>04/01/2020</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+  <div style="float: right;" class="row">
+  <span>tags: </span>
+<div class="card text-white bg-dark m-1">Matemáticas </div>
+<div class="card text-white bg-dark m-1">matemáticas </div>
+</div>
+</div>
+</div>
+</article>
+<!-- /.row -->
+<hr></hr>
+
+<!-- Project Two -->
+<hr></hr>
+<div class="row">
+
+<div class="col-md-7">
+  <h3>Contenido de academia</h3><small>04/01/2020</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+</div>
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/ContenidoAcademia.PNG" alt=""></img>
+  </a>
+</div>
+</div>
+<!-- /.row -->
+<hr></hr>
+<!-- Project One -->
+<hr></hr>
+<article>
+<div class="row">
+<div class="col-md-5">
+  <a href="#">
+    <img class="img-fluid rounded mb-3 mb-md-0" src="../../imagenes/CursoJavascript.PNG" alt=""></img>
+  </a>
+</div>
+<div class="col-md-7" id="home">
+  <h3>Apuntes del curso: Javascript, Jquery, and JSON (Coursera: Universidad de Míchigan)</h3> <small>17/04/2020</small>
+  <p>Comparto en esta entrada, los apuntes que he tomado en códigos </p>
+  <a class="btn btn-primary" href="#">Ver más</a>
+</div>
+</div>
+</article>
+<hr></hr>
+<hr></hr>
+<!-- /.row -->
+
+ </subcontenido> 
+ <subcontenido id="Ciencia materiales_1"> 
+<!-- Ciencia de materiales -->
+  <h2 id="Tema-0">Introducción a la ciencia de materiales</h2>
+  <hr/>
+  <h2 id="Tema-1">Generalidades de los arreglos atómicos y microestructura de los materiales</h2>
+  <hr/>
+  <h2 id="Tema-2">Comportamiento mecánico de materiales</h2>
+  <hr/>
+  <h2 id="Tema-3">Soluciones solidas y equilibrios de fases</h2>
+  <hr/>
+  <h2 id="Tema-4">Selecionar el indicado para una aplicación</h2>
+  <hr/>
+ </subcontenido>
+
+ <subcontenido id="Mecanica de materiales_2"> 
+ <!-- Mecanica de materiales -->
+  <h2 id="Tema-0">Concepto de esfuerzos y deformaciones unitarias</h2>
+  <hr/>
+  <h2 id="Tema-1">Esfuerzos por carga axial, torsión, flexión, cortante, pandeo</h2>
+  <hr/>
+  <h2 id="Tema-2">Desplazamiento axial, torsión, flexión, cortante, pandeo</h2>
+  <hr/>
+  <h2 id="Tema-3">Estado de esfuerzos, transformación de esfuerzos y Circulo de Mohr </h2>
+  <hr/>
+ </subcontenido>
+
+ <subcontenido id="Procesos de transformacion industrial_3"> 
+ <!-- Procesos de transformacion industrial -->
+  <h2 id="Tema-0">Introducción a la manufactura -Clasificación de los procesos productivos</h2>
+  <hr/>
+  <h2 id="Tema-1">Fabricación de piezas por soldadura y adhesión</h2>
+  <hr/>
+  <h2 id="Tema-2">Procesos de moldeo por fundición</h2>
+  <hr/>
+  <h2 id="Tema-3">Conformación de materiales por deformación plástica</h2>
+  <hr/>
+  <h2 id="Tema-4">Conformación de materiales por remoción de material</h2>
+  <hr/>
+  <h2 id="Tema-5">Procesos de manufactura involucrados en la producción de polímeros, cerámicos y compuestos.</h2>
+  <hr/>
+  <h2 id="Tema-6">Producción de prototipos rápidos</h2>
+  <hr/>
+ </subcontenido>
+
+ 
+ <subcontenido id="Sistemas mecanicos_4"> 
+<!-- Sistemas mecanicos -->
+
+<h2 id="Tema-0">Análisis de Cargas y Esfuerzos</h2>
+<hr/>
+<h2 id="Tema-1">Lubricación</h2>
+<hr/>
+<h2 id="Tema-2">Transmisiones Mecánicas</h2>
+<hr/>
+ </subcontenido>
+
+
+ 
+ <subcontenido id="Termodinamica_5"> 
+<!-- Termodinamica -->
+<h2 id="Tema-0">Sistemas cerrados y abiertos</h2>
+<br/>
+<h2 id="Tema-1">Conservación de energía</h2>
+<br/>
+<h2 id="Tema-2">Estática de fluidos</h2>
+<br/>
+<h2 id="Tema-3">Cinemática de fluidos</h2>
+<br/> 
+<h2 id="Tema-4">Dinámica de fluidos</h2>
+<br/> 
+<h2 id="Tema-5">Conservación de energía</h2>
+<br/> 
+
+</subcontenido>
+
+ 
+ 
+
+ </contenido> 

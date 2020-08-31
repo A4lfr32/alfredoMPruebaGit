@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Academia -->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -84,7 +85,7 @@ div.card span {
         <div class="row">
           <div class="col-lg-6 col-md-4 col-sm-6 mb-4">
             <div class="card h-10">
-              <span class="shadow" style="font-size: xx-large;" onclick="window.location = 'matematicas';"><br>
+              <span class="shadow" style="font-size: xx-large;" onclick="sessionStorage.setItem('cookie_matematicas', 0);window.location = 'matematicas';"><br>
           <h1 style="font-size: larger;">Matemática</h1>
           
           <br></span>
@@ -94,17 +95,17 @@ div.card span {
                 </h4------>
               <div class="row">
                   <div class="col-6 list-group list-group-flush">
-                    <a href="matematicas/algebralineal.html" class="list-group-item list-group-item-action">Algebra lineal</a>
-                    <a href="matematicas/analisisnumerico.html" class="list-group-item list-group-item-action">Análisis numérico</a>
-                    <a href="matematicas/calculodiferencial.html" class="list-group-item list-group-item-action">Cálculo diferencial</span</a>
-                    <a href="matematicas/calculointegral.html" class="list-group-item list-group-item-action">Cálculo integral</a>
-                    <a href="matematicas/calculovariasvariables.html" class="list-group-item list-group-item-action">Cálculo varias variables</a>
+                    <a onclick="sessionStorage.setItem('cookie_matematicas', 1);" href="matematicas" class="list-group-item list-group-item-action">Algebra lineal</a>
+                    <a onclick="sessionStorage.setItem('cookie_matematicas', 2);" href="matematicas" class="list-group-item list-group-item-action">Análisis numérico</a>
+                    <a onclick="sessionStorage.setItem('cookie_matematicas', 3);" href="matematicas" class="list-group-item list-group-item-action">Cálculo diferencial</span</a>
+                    <a onclick="sessionStorage.setItem('cookie_matematicas', 4);" href="matematicas" class="list-group-item list-group-item-action">Cálculo integral</a>
+                    <a onclick="sessionStorage.setItem('cookie_matematicas', 5);" href="matematicas" class="list-group-item list-group-item-action">Cálculo varias variables</a>
                   </div>
                   <div class="col-6 list-group list-group-flush">
-                    <a href="matematicas/ecuacionesdiferenciales.html" class="list-group-item list-group-item-action" style="border-top: 0">Ecuaciones diferenciales</a>
-                    <a href="matematicas/geometria.html" class="list-group-item list-group-item-action">Geometría</a>
-                    <a href="matematicas/matematicasespeciales.html" class="list-group-item list-group-item-action">Matemáticas especiales</a>
-                    <a href="matematicas/probabilidadyestadistica.html" class="list-group-item list-group-item-action">Probabilidad y estadistica</a>
+                    <a onclick="sessionStorage.setItem('cookie_matematicas', 6);" href="matematicas" class="list-group-item list-group-item-action" style="border-top: 0">Ecuaciones diferenciales</a>
+                    <a onclick="sessionStorage.setItem('cookie_matematicas', 7);" href="matematicas" class="list-group-item list-group-item-action">Geometría</a>
+                    <a onclick="sessionStorage.setItem('cookie_matematicas', 8);" href="matematicas" class="list-group-item list-group-item-action">Matemáticas especiales</a>
+                    <a onclick="sessionStorage.setItem('cookie_matematicas', 9);" href="matematicas" class="list-group-item list-group-item-action">Probabilidad y estadistica</a>
               </div>
 
               </div>
@@ -116,7 +117,7 @@ div.card span {
           </div>
           <div class="col-lg-6 col-md-4 col-sm-6 mb-4">
             <div class="card h-10">
-              <span class="shadow" style="font-size: xx-large;" onclick="window.location = 'fisica';"><br>
+              <span class="shadow" style="font-size: xx-large;" onclick="sessionStorage.setItem('cookie_fisica', 0);window.location = 'fisica';"><br>
           <h1 style="font-size: larger;">Física</h1>
           
           <br></span>               <!--h4 class="card-title">
@@ -124,12 +125,11 @@ div.card span {
                 </h4---->
 
                 <div class="list-group list-group-flush collapse" id="collapseFisica">
-                <a href="fisica/mecanicaclasica.html" class="list-group-item list-group-item-action">Mecánica clásica</a>
-                <a href="fisica/estatica.html" class="list-group-item list-group-item-action">Estática</a>
-                <a href="fisica/dinamica.html" class="list-group-item list-group-item-action">Dinámica</a>
-                <a href="fisica/campos.html" class="list-group-item list-group-item-action">Campos</a>
-                <a href="fisica/ondas.html" class="list-group-item list-group-item-action">Ondas</a>
-            <a></a>
+                <a onclick="sessionStorage.setItem('cookie_fisica', 1);" href="fisica" class="list-group-item list-group-item-action">Mecánica clásica</a>
+                <a onclick="sessionStorage.setItem('cookie_fisica', 2);" href="fisica" class="list-group-item list-group-item-action">Estática</a>
+                <a onclick="sessionStorage.setItem('cookie_fisica', 3);" href="fisica" class="list-group-item list-group-item-action">Dinámica</a>
+                <a onclick="sessionStorage.setItem('cookie_fisica', 4);" href="fisica" class="list-group-item list-group-item-action">Campos</a>
+                <a onclick="sessionStorage.setItem('cookie_fisica', 5);" href="fisica" class="list-group-item list-group-item-action">Ondas</a>
           </div>
           <a class="btn btn-light" data-toggle="collapse" href="#collapseFisica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
@@ -139,19 +139,19 @@ div.card span {
           <br>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span class="shadow" onclick="window.location = 'mecanica';"><br>
+              <span class="shadow" onclick="sessionStorage.setItem('cookie_mecanica', 0);window.location = 'mecanica';"><br>
           <h1>Mecánica</h1>
           
           <br></span>               <div class="list-group list-group-flush collapse" id="collapseMecanica">
                 <!--h4 class="card-title">
                   <a href="/mecanica">Mecánica</a>
                 </h4---->
-                <a href="mecanica/cienciademateriales.html" class="list-group-item list-group-item-action">Ciencia de materiales</a>
-                <a href="mecanica/mecanicademateriales.html" class="list-group-item list-group-item-action">Mecanica de materiales</a>
-                <a href="mecanica/procesosdetransformacionindustrial.html" class="list-group-item list-group-item-action">Procesos de transformación industrial</a>
-                <a href="mecanica/sistemasmecanicos.html" class="list-group-item list-group-item-action">Sistemas mecánicos</a>
-                <a href="mecanica/mecanicaclasica.html" class="list-group-item list-group-item-action">Mecánica clásica</a>
-                <a href="mecanica/mecanicadelagrangeyhamilton.html" class="list-group-item list-group-item-action">Mecánica lagrange y Hamilton</a>
+                <a onclick="sessionStorage.setItem('cookie_mecanica', 1);" href="mecanica" class="list-group-item list-group-item-action">Ciencia de materiales</a>
+                <a onclick="sessionStorage.setItem('cookie_mecanica', 2);" href="mecanica" class="list-group-item list-group-item-action">Mecanica de materiales</a>
+                <a onclick="sessionStorage.setItem('cookie_mecanica', 3);" href="mecanica" class="list-group-item list-group-item-action">Procesos de transformación industrial</a>
+                <a onclick="sessionStorage.setItem('cookie_mecanica', 4);" href="mecanica" class="list-group-item list-group-item-action">Sistemas mecánicos</a>
+                <a onclick="sessionStorage.setItem('cookie_mecanica', 5);" href="mecanica" class="list-group-item list-group-item-action">Mecánica clásica</a>
+                <a onclick="sessionStorage.setItem('cookie_mecanica', 6);" href="mecanica" class="list-group-item list-group-item-action">Mecánica lagrange y Hamilton</a>
             <a></a>
           </div>
           <a class="btn btn-light" data-toggle="collapse" href="#collapseMecanica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
@@ -160,7 +160,7 @@ div.card span {
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span class="shadow" onclick="window.location = 'electronica';"><br>
+              <span class="shadow" onclick="sessionStorage.setItem('cookie_electronica', 0);window.location = 'electronica';"><br>
           <h1>Electrónica</h1>
           
           <br></span> 
@@ -168,9 +168,9 @@ div.card span {
                 <!--h4 class="card-title">
                   <a href="/electronica">Electrónica</a>
                 </h4-->
-                <a href="electronica/circuitoselectronicosymaquinas.html" class="list-group-item list-group-item-action">Circuitos electricos y máquinas</a>
-                <a href="electronica/electronicaanalogadepotencia.html" class="list-group-item list-group-item-action">Electrónica análoga de potencia</a>
-                <a href="electronica/electronicadigital.html" class="list-group-item list-group-item-action">Electrónica digital</a>
+                <a onclick="sessionStorage.setItem('cookie_electronica', 1);" href="electronica" class="list-group-item list-group-item-action">Circuitos electricos y máquinas</a>
+                <a onclick="sessionStorage.setItem('cookie_electronica', 2);" href="electronica" class="list-group-item list-group-item-action">Electrónica análoga de potencia</a>
+                <a onclick="sessionStorage.setItem('cookie_electronica', 3);" href="electronica" class="list-group-item list-group-item-action">Electrónica digital</a>
             <a></a>
           </div>
           <a class="btn btn-light" data-toggle="collapse" href="#collapseElectronica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
@@ -179,7 +179,7 @@ div.card span {
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span class="shadow" onclick="window.location = 'informatica';"><br>
+              <span class="shadow" onclick="sessionStorage.setItem('cookie_informatica', 0);window.location = 'informatica';"><br>
           <h1>Informática</h1>
           
           <br></span>   
@@ -187,9 +187,9 @@ div.card span {
                 <!--h4 class="card-title">
                   <a href="/informatica">Informática</a>
                 </h4---->
-            <a href="informatica/fundamentosdeprogramacion.html" class="list-group-item list-group-item-action">Fundamentos de programación</a>
-            <a href="informatica/programacion.html" class="list-group-item list-group-item-action">Programación</a>
-            <a href="informatica/paginasweb.html" class="list-group-item list-group-item-action">Páginas web</a>
+            <a onclick="sessionStorage.setItem('cookie_informatica', 1);" href="informatica" class="list-group-item list-group-item-action">Fundamentos de programación</a>
+            <a onclick="sessionStorage.setItem('cookie_informatica', 2);" href="informatica" class="list-group-item list-group-item-action">Programación y algoritmos</a>
+            <a onclick="sessionStorage.setItem('cookie_informatica', 3);" href="informatica" class="list-group-item list-group-item-action">Desarrollo web</a>
             <a></a>
               </div>
               <a class="btn btn-light" data-toggle="collapse" href="#collapseInformatica" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
@@ -199,7 +199,7 @@ div.card span {
           
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span class="shadow" onclick="window.location = 'control';"><br>
+              <span class="shadow" onclick="sessionStorage.setItem('cookie_Control', 0);window.location = 'control';"><br>
           <h1>Control</h1>
           
           <br></span> 
@@ -207,13 +207,15 @@ div.card span {
                 <!--h4 class="card-title">
                   <a href="/control">Control</a>
                 </h4-->
-                <a href="control/modelosysimulacion.html" class="list-group-item list-group-item-action">Señales y sistemas</a>
-                <a href="control/modelosysimulacion.html" class="list-group-item list-group-item-action">Modelos y simulación</a>
-                <a href="control/controlanalogo.html" class="list-group-item list-group-item-action">Control analógico</a>
-                <a href="control/controldigital.html" class="list-group-item list-group-item-action">Control digital</a>
-                <a href="control/robotica.html" class="list-group-item list-group-item-action">Robótica</a>
-                <a href="control/comunicacionyredes.html" class="list-group-item list-group-item-action">Comunicación y redes industriales</a>
-                <a href="control/sistemasinteligentes.html" class="list-group-item list-group-item-action">Sistemas inteligentes</a>
+                <a onclick="sessionStorage.setItem('cookie_Control', 1);" href="control" class="list-group-item list-group-item-action">Señales y sistemas</a>
+                <a onclick="sessionStorage.setItem('cookie_Control', 2);" href="control" class="list-group-item list-group-item-action">Modelos y simulación</a>
+                <a onclick="sessionStorage.setItem('cookie_Control', 3);" href="control" class="list-group-item list-group-item-action">Instrumentación industrial</a>
+                <a onclick="sessionStorage.setItem('cookie_Control', 4);" href="control" class="list-group-item list-group-item-action">Comunicación y redes industriales</a>
+                <a onclick="sessionStorage.setItem('cookie_Control', 5);" href="control" class="list-group-item list-group-item-action">Control analógico</a>
+                <a onclick="sessionStorage.setItem('cookie_Control', 6);" href="control" class="list-group-item list-group-item-action">Control digital</a>
+                <a onclick="sessionStorage.setItem('cookie_Control', 7);" href="control" class="list-group-item list-group-item-action">Robótica</a>
+                <a onclick="sessionStorage.setItem('cookie_Control', 8);" href="control" class="list-group-item list-group-item-action">Automatización industrial</a>
+                <a onclick="sessionStorage.setItem('cookie_Control', 9);" href="control" class="list-group-item list-group-item-action">Sistemas inteligentes</a>
             <a></a>
           </div>
           <a class="btn btn-light" data-toggle="collapse" href="#collapseControl" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
@@ -225,7 +227,7 @@ div.card span {
  
         <div class="card">
           <!--a href=""><img class="card-img-top" src="" height="90" alt=""></a-->
-          <span class="shadow" onclick="window.location = 'otros';"><br>
+          <span class="shadow" onclick="sessionStorage.setItem('cookie_AI', 0);window.location = 'AI';"><br>
 <h1>Inteligencia artificial</h1>
 
 <br></span>
@@ -233,19 +235,20 @@ div.card span {
             <!--h4 class="card-title">
               <a href="/informatica">Informática</a>
             </h4---->
-        <a href="./otros/machinelearning.html" class="list-group-item list-group-item-action">Machine learning</a>
-        <a href="#" class="list-group-item list-group-item-action">Detección de objetos</a>
-        <a href="#" class="list-group-item list-group-item-action">Clasificación de imágenes: ¿cómo reconocer el contenido de una imagen?</a>
-        <a href="./otros/BlockChain.html" class="list-group-item list-group-item-action">BlockChain</a>
-        <a href="./otros/Javascript.html" class="list-group-item list-group-item-action">Javascript, JQuey, and JSON</a>
-        <a href="https://www.coursera.org/learn/fitting-statistical-models-data-python/home/welcome" class="list-group-item list-group-item-action">Fitting Statistical Models to Data with Python</a>
-        <a href="https://www.coursera.org/learn/deep-neural-networks-with-pytorch/home/welcome" class="list-group-item list-group-item-action">Deep Neural Networks with PyTorch</a>
-        <a href="https://www.edx.org/es/professional-certificate/ibm-deep-learning" class="list-group-item list-group-item-action">Professional Certificate en Deep Learning</a>
-        <a href="https://courses.edx.org/courses/course-v1:IBM+DL0110EN+3T2019/course/" class="list-group-item list-group-item-action">Deep Learning with Python and PyTorch</a>
-        <a href="https://www.coursera.org/learn/data-analysis-with-python" class="list-group-item list-group-item-action">Análisis de datos con Python</a>
-        <a href="https://www.coursera.org/learn/introduction-to-deep-learning-with-keras/home/welcome" class="list-group-item list-group-item-action">Introduction to Deep Learning & Neural Networks with Keras</a>
-        <a href="https://www.coursera.org/professional-certificates/ai-engineer#courses" class="list-group-item list-group-item-action">Certificado profesional de IBM AI Engineering</a>
-        <a href="https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome" class="list-group-item list-group-item-action">Neural Networks and Deep Learning</a>
+        <a onclick="sessionStorage.setItem('cookie_AI', 1);" href="AI" class="list-group-item list-group-item-action">Machine learning</a>
+        <a onclick="sessionStorage.setItem('cookie_AI', 2);" href="AI" class="list-group-item list-group-item-action">Detección de objetos</a>
+        <a onclick="sessionStorage.setItem('cookie_AI', 3);" href="AI" class="list-group-item list-group-item-action">Clasificación de imágenes: ¿cómo reconocer el contenido de una imagen?</a>
+        <a onclick="sessionStorage.setItem('cookie_AI', 4);" href="AI" class="list-group-item list-group-item-action">Deep learning</a>
+        <a hidden href="./otros/BlockChain.html" class="list-group-item list-group-item-action">BlockChain</a>
+        <a hidden href="./otros/Javascript.html" class="list-group-item list-group-item-action">Javascript, JQuey, and JSON</a>
+        <a hidden href="https://www.coursera.org/learn/fitting-statistical-models-data-python/home/welcome" class="list-group-item list-group-item-action">Fitting Statistical Models to Data with Python</a>
+        <a hidden href="https://www.coursera.org/learn/deep-neural-networks-with-pytorch/home/welcome" class="list-group-item list-group-item-action">Deep Neural Networks with PyTorch</a>
+        <a hidden href="https://www.edx.org/es/professional-certificate/ibm-deep-learning" class="list-group-item list-group-item-action">Professional Certificate en Deep Learning</a>
+        <a hidden href="https://courses.edx.org/courses/course-v1:IBM+DL0110EN+3T2019/course/" class="list-group-item list-group-item-action">Deep Learning with Python and PyTorch</a>
+        <a hidden href="https://www.coursera.org/learn/data-analysis-with-python" class="list-group-item list-group-item-action">Análisis de datos con Python</a>
+        <a hidden href="https://www.coursera.org/learn/introduction-to-deep-learning-with-keras/home/welcome" class="list-group-item list-group-item-action">Introduction to Deep Learning & Neural Networks with Keras</a>
+        <a hidden href="https://www.coursera.org/professional-certificates/ai-engineer#courses" class="list-group-item list-group-item-action">Certificado profesional de IBM AI Engineering</a>
+        <a hidden href="https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome" class="list-group-item list-group-item-action">Neural Networks and Deep Learning</a>
           </div>
 <a class="btn btn-light" data-toggle="collapse" href="#collapseOtros" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
 
