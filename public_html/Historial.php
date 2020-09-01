@@ -121,7 +121,7 @@
                     <li>
                         <div class="content">
                             <h3>Sin trabajo, ¿Qué viene ahora?</h3>
-                            <p>Tomé una decisión difícil, sobretodo por que nadie me respaldó ni apoyó. Aunque supongo que desde hace mucho camino solo, de ahora en adelante procuraré encontrar un motivo o mas bien de construirlo para complir los deseos que alguna vez he tenido sin tratar de buscarle peros a los sueños.</p>
+                            <p>...</p>
               
                         </div>
                         <div class="time">

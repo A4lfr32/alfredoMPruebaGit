@@ -44,8 +44,9 @@ clip-path: inset(0px 0px 0px 0px);
 }
 
 div.card span {
-              background-color: #a8daae;
+              /* background-color: #a8daae; */
               /* background-color: #d4d4d4; */
+              background-image: linear-gradient(#a8daae , #f8f9fa);
               color: black;
               text-align: -webkit-center;
               height: 210pp;
@@ -57,7 +58,26 @@ div.card span {
     font-family: initial;
     /* font-size: -webkit-xxx-large; */
   }
-          
+
+  button {
+          border: double!important;
+          border-color: darkseagreen!important;
+        }  
+
+        button div {
+          position: absolute!important;
+          width: 10%;
+          height: 100%!important;
+          /* background: #a8daae!important; */
+          background-image: linear-gradient(to right, #f5f5f5 , #a9dbaf);
+          top: 0!important;
+          left: 0!important;
+          z-index: -1!important;
+        }
+
+        .progressiveBar {
+          background: transparent;
+        }
     </style>
     
     <title>Academia</title>
@@ -262,18 +282,42 @@ div.card span {
                 <small>Programas y software</small>
                 <hr>
               </h1>
-              <div class="row">
+              <div class="row m-1">
+                
+                <button type="button" class="btn btn-light col-1 progressiveBar"></button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 5%;"></div> C</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 20%;"></div> C++</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 5;"></div> C#</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 1%;"></div> Java</button>
                 <!-- <h3 class="col-3">Lenguajes</h3> -->
-                  <button type="button" class="btn btn-light col-2">Python</button>
-                  <button type="button" class="btn btn-light col-3">Assembler</button>
-                  <button type="button" class="btn btn-light col-2">Grafcet</button>
-                  <button type="button" class="btn btn-light col-3">Ladder</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 70%;"></div> Javascript</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 5%;"></div> Julia</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 0%;"></div> Lua</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 55%;"></div> PHP</button>
+
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 20%;"></div> R</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 60%;"></div> SQL</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"></button>
+
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 10%;"></div> Typescript</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 60%;"></div> Tensorflow</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 40%;"></div> Keras</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 10%;"></div> Pytorch</button>
+
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 75%;"></div> <span>Python</span></button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"></button>
+
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 80%;"></div> Assembler</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 70%;"></div> Grafcet</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 70%;"></div> Ladder</button>
                   
               <!-- <h3 class="col-3">Programas</h3> -->
-                <button type="button" class="btn btn-light col-2">Matlab</button>
-                <button type="button" class="btn btn-light col-3">Simulink</button>
-                <button type="button" class="btn btn-light col-2">Labview</button>
-                <button type="button" class="btn btn-light col-3">Visual studio</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 85%;"></div> Matlab</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 80%;"></div> Simulink</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 60%;"></div> Labview</button>
+                <button type="button" class="btn btn-light col-2 progressiveBar"> </button>
+
+                <button type="button" class="btn btn-light col-2 progressiveBar"><div style="width: 35%;"></div> Visual studio</button>
 
 <?php 
 //Blocke2('informatica/MATLAB','https://d1d1c1tnh6i0t6.cloudfront.net/wp-content/uploads/2018/01/matlab-logo.jpg','MATLAB combina un entorno de escritorio perfeccionado para el análisis iterativo y los procesos de diseño con un lenguaje de programación que expresa las matemáticas de matrices y arrays directamente.','https://www.mathworks.com/products/matlab.html');
@@ -283,10 +327,11 @@ div.card span {
 
 ?>  
               <!-- <h3 class="col-3">Diseño asistido por computadora (CAD)</h3> -->
-                <button type="button" class="btn btn-light col-2">Autodesk Inventor</button>
-                <button type="button" class="btn btn-light col-3">Siemens NX</button>
-                <button type="button" class="btn btn-light col-2">Solid edge</button>
-                <button type="button" class="btn btn-light col-3">Solid work</button>
+                <button type="button" class="btn btn-light col-2 progressiveBar"><div style="width: 90%;"></div> Autodesk Inventor</button>
+                <button type="button" class="btn btn-light col-2 progressiveBar"><div style="width: 70%;"></div> Siemens NX</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 70%;"></div> Solid edge</button>
+                <button type="button" class="btn btn-light col-1 progressiveBar"><div style="width: 70%;"></div> Solid work</button>
+                <button type="button" class="btn btn-light col-2 progressiveBar"></button>
 
                 <?php 
 
@@ -305,18 +350,18 @@ div.card span {
       <div>
         <h1 id="certificados" style="position: sticky;top: 0;z-index: 1;background-color: white;">Certificados</h1>
         <hr>
-        <div class="row">
-          <button type="button" class="btn btn-light col-3">OnRamp | Matlab</button>
-          <button type="button" class="btn btn-light col-3">OnRamp | Simulink</button>
-          <button type="button" class="btn btn-light col-3">Python | Kaggle</button>
-          <button type="button" class="btn btn-light col-3">Intro to Machine learning | Kaggle</button>
-          <button type="button" class="btn btn-light col-3">Visualización de datos | Kaggle</button>
-          <button type="button" class="btn btn-light col-3">Bases de datos con Panda | Kaggle</button>
-          <button type="button" class="btn btn-light col-3">Machine learning intermedio | Kaggle</button>
-          <button type="button" class="btn btn-light col-3">Deep learning | Kaggle</button>
-          <button type="button" class="btn btn-light col-4">Neural_Networks_and_Deep_Learning | Coursera</button>
-          <button type="button" class="btn btn-light col-4">Improving Deep Neural Networks | Coursera</button>
-          <button type="button" class="btn btn-light col-4">Structuring Machine Learning Projects | Coursera</button>
+        <div class="row m-1">
+          <button type="button" class="btn btn-light col-3 progressiveBar"><div style="width: 100%;"></div> OnRamp | Matlab</button>
+          <button type="button" class="btn btn-light col-3 progressiveBar"><div style="width: 100%;"></div> OnRamp | Simulink</button>
+          <button type="button" class="btn btn-light col-3 progressiveBar"><div style="width: 100%;"></div> Python | Kaggle</button>
+          <button type="button" class="btn btn-light col-3 progressiveBar"><div style="width: 100%;"></div> Intro to Machine learning | Kaggle</button>
+          <button type="button" class="btn btn-light col-3 progressiveBar"><div style="width: 100%;"></div> Visualización de datos | Kaggle</button>
+          <button type="button" class="btn btn-light col-3 progressiveBar"><div style="width: 100%;"></div> Bases de datos con Panda | Kaggle</button>
+          <button type="button" class="btn btn-light col-3 progressiveBar"><div style="width: 100%;"></div> Machine learning intermedio | Kaggle</button>
+          <button type="button" class="btn btn-light col-3 progressiveBar"><div style="width: 100%;"></div> Deep learning | Kaggle</button>
+          <button type="button" class="btn btn-light col-4 progressiveBar"><div style="width: 100%;"></div> Neural_Networks_and_Deep_Learning | Coursera</button>
+          <button type="button" class="btn btn-light col-4 progressiveBar"><div style="width: 100%;"></div> Improving Deep Neural Networks | Coursera</button>
+          <button type="button" class="btn btn-light col-4 progressiveBar"><div style="width: 100%;"></div> Structuring Machine Learning Projects | Coursera</button>
           <hr>
         </div>
         <div class="row">
@@ -334,6 +379,15 @@ div.card span {
           Blocke('Improving Deep Neural Networks:Hyperparameter tuning, Regularization and Optimization','14/06/2020','Improving_Deep_Neural_Networks.PNG','...'); 
           Blocke('Structuring Machine Learning Projects','14/06/2020','Structuring_Machine_Learning_Projects.PNG','...'); 
           ?> -->
+        </div>
+      </div>
+
+      <div>
+        <h1 id="reconocimientos" style="position: sticky;top: 0;z-index: 1;background-color: white;">Reconocimientos</h1>
+        <hr>
+        <div class="row m-1">
+          <button type="button" class="btn btn-light col-6 progressiveBar"><div style="width: 100%;"></div> Top 1% | Lista MEJOR SABER PRO Nacional</button>
+          <button type="button" class="btn btn-light col-6 progressiveBar"><div style="width: 100%;"></div> Top 4% | SABER 11 Nacional</button>
         </div>
       </div>
                 
