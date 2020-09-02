@@ -261,9 +261,9 @@
     <div class="w3-twothird">
 
       <div class="w3-container w3-card w3-white">
-        <img class="no-print" src="imagenes/flip_icon.PNG" alt="" style="left: 98.3%;
+        <img hidden class="no-print" src="imagenes/flip_icon.PNG" alt="" style="left: 98.3%;
         top: 0px;">
-        <h2 class="w3-text-grey w3-padding-16" style="text-align-last: justify; cursor:pointer;" onclick="location.href='http://academia.alfredomaussa.com/';"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-dark-gray"></i>Educación <i id="Aux11" class="no-print fa fa-eye w3-margin-right w3-xxlarge w3-text-light-green" onmousemove="openAcademico()" onmouseleave="closeAcademico()"><p id="Aux12">Acá!</p></i></h2>
+        <h2 class="w3-text-grey w3-padding-16" style="text-align-last: justify; cursor:pointer;" onclick="location.href='http://academia.alfredomaussa.com/';"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-dark-gray"></i>Educación <i hidden id="Aux11" class="no-print fa fa-eye w3-margin-right w3-xxlarge w3-text-light-green" onmousemove="openAcademico()" onmouseleave="closeAcademico()"><p id="Aux12">Acá!</p></i></h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Universidad EIA</b> <span class="w3-tag w3-light-green w3-round">Actualmente</span></h5>
           <h6 class="w3-text-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2020</h6>
@@ -284,9 +284,9 @@
       </div>
 <br>
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <img class="no-print" src="imagenes/flip_icon.PNG" alt="" style="left: 98.3%;
+        <img hidden class="no-print" src="imagenes/flip_icon.PNG" alt="" style="left: 98.3%;
         top: -1px;">
-        <h2 class="w3-text-grey w3-padding-16" style="text-align-last: justify; cursor:pointer;" onclick="location.href='http://proyectos.alfredomaussa.com/';"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-dark-gray"></i>Proyectos <i class="no-print fa fa-eye w3-margin-right w3-xxlarge w3-text-dark-gray" onmousemove="openProyectos()" onmouseleave="closeProyectos()""></i></h2>
+        <h2 class="w3-text-grey w3-padding-16" style="text-align-last: justify; cursor:pointer;" onclick="location.href='http://proyectos.alfredomaussa.com/';"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-dark-gray"></i>Proyectos <i hidden class="no-print fa fa-eye w3-margin-right w3-xxlarge w3-text-dark-gray" onmousemove="openProyectos()" onmouseleave="closeProyectos()""></i></h2>
           <div class="w3-container">
             <h5 class="w3-opacity"><b>Robot SCARA / Universidad</b></h5>
             <h6 class="w3-text-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ene 2019 - Jun 2019</h6>
@@ -309,9 +309,9 @@
          <!--   
 
         <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <img src="imagenes/flip_icon.PNG" alt="" style="left: 98.3%;
+          <img hidden src="imagenes/flip_icon.PNG" alt="" style="left: 98.3%;
           top: -1px;">
-          <h2 class="w3-text-grey w3-padding-16" style="text-align-last: justify; cursor:pointer;"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-dark-gray"></i>Proyectos <i class="fa fa-eye w3-margin-right w3-xxlarge w3-text-dark-gray"></i></h2>
+          <h2 class="w3-text-grey w3-padding-16" style="text-align-last: justify; cursor:pointer;"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-dark-gray"></i>Proyectos <i hidden class="fa fa-eye w3-margin-right w3-xxlarge w3-text-dark-gray"></i></h2>
             <div class="w3-container">
               <h5 class="w3-opacity"><b>Pendiente...</b></h5>
               <h6 class="w3-text-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ene 2020 - ...</h6>
@@ -342,14 +342,14 @@
 
   <footer class="w3-container w3-gray w3-center w3-margin-top">
     <br>
-  <p>Redes sociales.</p>
+  <p class="no-print">Redes sociales.</p>
 <!--  <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>-->
-  <a href="https://github.com/A4lfr32" class="w3-gray"><i class="fa fa-github w3-hover-opacity"></i></a>
-  <a href="https://www.linkedin.com/in/alfredo-maussa-62b6b2125"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <a href="https://github.com/A4lfr32" class="w3-gray no-print"><i class="fa fa-github w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/alfredo-maussa-62b6b2125" class="no-print"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   <p class="no-print">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
