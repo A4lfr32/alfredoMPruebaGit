@@ -1,0 +1,55 @@
+html{scroll-behavior:smooth}
+
+.list-group-item {
+padding: 0.0rem 0.85rem;
+border: none;
+color: grey;
+font-size: 12px;
+}
+
+.list-group-item:hover {
+border-left: solid;
+left: -3px;
+background-color: #d6d6d6;
+}
+
+.list-group-item hr{
+margin-top: 0.35rem;
+margin-bottom: 0.35rem;
+}
+
+h3, h2 {
+scroll-margin-top: 3em;
+}
+
+.right-row {
+background: lightgrey;
+width: 35px;
+height: 125px;
+float: right;
+text-align-last: center;
+font-family: monospace;
+border-radius: 15px;
+}
+.right-row:hover {
+box-shadow: -1px 1px 5px lightslategrey!important;
+cursor: pointer;
+}
+
+.left-row:hover {
+box-shadow: 1px 1px 5px lightslategrey!important;
+cursor: pointer;
+}
+.left-row {
+background: lightgrey;
+width: 35px;
+height: 125px;
+float: left;
+text-align-last: center;
+font-family: monospace;
+border-radius: 15px;
+}
+#Main hr {
+border: 2px solid #eeeeee;
+box-shadow: 1px 1px 20px cadetblue;
+}

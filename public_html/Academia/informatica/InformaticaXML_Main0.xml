@@ -66,26 +66,88 @@
  <subcontenido id="Fundamentos de programacion_1"> 
 <!-- Fundamentos de programacion -->
   <h2 id="Tema-0">Introducción a los algoritmos</h2>
+  <ul>
+    <li>Conceptos, características, campos, constantes, variables, expresión, operandos y operadores, tablas de verdad.</li>
+    <li>Fases para la solución de problemas por computador</li>
+    <li>¿Qué es un algoritmo? Características de los algoritmos.</li>
+    <li>Clasificación de algoritmos</li>
+    <li>Herramientas para la solución de algoritmos (Diagrama de Flujo, Pseudocódigo)</li>
+
+  </ul>
   <hr/>
   <h2 id="Tema-1">Estructuras algorítmicas</h2>
+  <ul>
+    <li>Estructura secuencial de asignación</li>
+    <li>Estructura condicional (Simple, Doble, Anidada, Múltiple (Caso))</li>
+    <li>Estructura repetitiva (Ciclo Mientras, Ciclo Para, Ciclo Repita)</li>
+  </ul>
   <hr/>
   <h2 id="Tema-2">Arreglos de datos</h2>
+  <ul>
+    <li>Concepto de Arreglo</li>
+    <li>Clasificación de los arreglos: Vectores, matrices y cubos</li>
+    <ul>
+      <li>Dimensionamiento.</li>
+      <li>Operaciones entre arreglos.</li>
+      <li>Ordenamiento y búsqueda.</li>
+    </ul>
+
+  </ul>
   <hr/>
   <h2 id="Tema-3">Programación modular</h2>
+  <ul>
+    <li>Subprogramas: procedimientos y funciones.</li>
+    <ul>
+      <li>Comunicación entre los módulos</li>
+      <li>Parámetros de un subprograma</li>
+    </ul>
+  </ul>
   <hr/>
  </subcontenido>
 
  <subcontenido id="Programación y algoritmos_2"> 
  <!-- Programación y algoritmos -->
   <h2 id="Tema-0">Conceptos de ingeniería de software</h2>
+  <h3>Historia de la POO</h3>
+  <h3>Fases de desarrollo de software</h3>
+  <h3>Manejo interfaz gráfica</h3>
+  <h3>Tipo, declaración y asignación de variables</h3>
+  <h3>Estructuras del lenguaje (if, switch, for, while en c#)</h3>
+  <h3>Vectores y Matrices</h3>
+  <h3>Lenguaje UML (a mano)</h3>
+
   <hr/>
   <h2 id="Tema-1">Introducción a la programación OO</h2>
+  <h3>Objetos</h3>
+  <h3>Clases (atributos, métodos, propiedades, constructor)</h3>
+  <h3>Identidad</h3>
+  <h3>Encapsulamiento</h3>
+  <h3>Manejo de cadenas</h3>
+
   <hr/>
   <h2 id="Tema-2">Fundamentos de la programación orientada a objetos (POO)</h2>
+  <h3>Herencia (Clase abstracta e interfaces)</h3>
+  <h3>Modificadores de Acceso</h3>
+  <h3>Polimorfismo, relación y persistencia</h3>
+  <h3>Enumeradores</h3>
+  <h3>Fundamentos de diagramación UML</h3>
+  <h3>Manejo de errores (Excepciones) *</h3>
+  <h3>Implementación de eventos *</h3>
+
   <hr/>
   <h2 id="Tema-3">Introducción a Estructuras de datos usando POO</h2>
+  <h3>ArrayList</h3>
+  <h3>Listas</h3>
+  <h3>Colecciones</h3>
+  <h3>Patrones de diseño (singleton, factory - inyección de dependencia, strategy, observer)</h3>
   <hr/>
   <h2 id="Tema-4">Bases de datos relacionales y su conexión con lenguaje OO</h2>
+  <h3>Comunicación Serial</h3>
+  <h3>Introducción a las bases de datos relacionales</h3>
+  <h3>Lenguaje SQL</h3>
+  <h3>Conexión a BD</h3>
+  <h3>Consultas</h3>
+
   <hr/>
  </subcontenido>
 

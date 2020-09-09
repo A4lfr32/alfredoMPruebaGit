@@ -66,14 +66,71 @@
  <subcontenido id="Senales y sistemas_1"> 
 <!-- Senales y sistemas -->
   <h2 id="Tema-0">Señales y sistemas</h2>
+  <h3>Señales</h3>
+  <ul>
+    <li>Conceptos básicos.</li>
+    <li>Clasificación. Señales de tiempo continuo y de tiempo discreto. Señales analógicas y digitales. Señales reales y complejas. Señales determinísticas y aleatorias. Señales pares e impares. Muestreo. Señales periódicas y no periódicas.</li>
+    <li>Señales de energía y potencia. </li>
+    <li>Transformaciones de la variable independiente.</li>
+  </ul>
+  <h3>Sistemas</h3>
+  <ul>
+    <li>Conceptos básicos.</li>
+    <li>Propiedades. Memoria. Invertibilidad.. Causalidad. Estabilidad. Invariancia en el tiempo. Linealidad. </li>
+    <li>Clasificación. Sistemas determinísticos y estocásticos. Sistemas de tiempo contínuo y de tiempo discreto. Sistemas con memoria y sin memoria. Sistemas causales y no causales. Sistemas lineales y no lineales. Sistemas invariantes en el tiempo.</li>
+  </ul>
+  <h3>Sistemas lineales invariantes en el tiempo</h3>
+  <ul>
+    <li>Clasificación.</li>
+    <li>Propiedades. Sistemas descritos por Ecuaciones Diferenciales y Ecuaciones en diferencias</li>
+  </ul>
   <hr/>
   <h2 id="Tema-1">Series y transformadas de Fourier</h2>
+  <h3>Series Fourier</h3>
+  <ul>
+    <li>Representación de señales en términos de sus componentes de frecuencia.</li>
+    <li>Serie trigonométrica de Fourier. </li>
+    <li>Serie exponencial de Fourier.</li>
+  </ul>
+  <h3>Transformadas de Fourier</h3>
+  <ul>
+    <li>Serie discreta de Fourier.</li>
+    <li>Transformada discreta inversa de Fourier. Propiedades.</li>
+    <li>Espectro de frecuencia discreto y aplicaciones.</li>
+    <li>Diagramas de Bode.</li>
+    <li>Filtros pasivos.</li>
+  </ul>
+  <h2>Transformadas de Laplace y Z</h2>
+  <h3>Transformada de Laplace</h3>
+  <ul>
+    <li>Definición.</li>
+    <li>Propiedades.</li>
+    <li>Aplicaciones.</li>
+    <li>Transformada de Laplace inversa. Definición.</li>
+    <li>Transformada de Laplace inversa. Propiedades.</li>
+    <li>Funciones de transferencia.</li>
+    <li>Estabilidad.</li>
+  </ul>
+  <h3>Transformada Z</h3>
+  <ul>
+    <li>Definición.</li>
+    <li>Convergencia.</li>
+    <li>Propiedades.</li>
+    <li>Transformada Z inversa.</li>
+    <li>Discretización de señales.</li>
+  </ul>
   <hr/>
   <h2 id="Tema-2">Transformada de Laplace</h2>
   <hr/>
   <h2 id="Tema-3">Transformada Z</h2>
   <hr/>
   <h2 id="Tema-4">Filtros</h2>
+  <ul>
+    <li>Filtros pasivos.</li>
+    <li>Diseño de Filtros pasivos en Matlab.</li>
+    <li>Filtros IIR. Diseño.</li>
+    <li>Filtros FIR. Diseño.</li>
+  </ul>
   <hr/>
  </subcontenido>
 

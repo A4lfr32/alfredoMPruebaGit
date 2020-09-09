@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
      crossorigin="anonymous">
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
      <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163888921-1"></script>
 <script>
@@ -105,7 +105,7 @@ div.card span {
         <div class="row">
           <div class="col-lg-6 col-md-4 col-sm-6 mb-4">
             <div class="card h-10">
-              <span class="shadow" style="font-size: xx-large;" onclick="sessionStorage.setItem('cookie_matematicas', 0);window.location = 'matematicas';"><br>
+              <span class="shadow" style="font-size: xx-large;" onclick="sessionStorage.setItem('cookie_matematicas', 1);window.location = 'matematicas';"><br>
           <h1 style="font-size: larger;">Matemática</h1>
           
           <br></span>
@@ -137,7 +137,7 @@ div.card span {
           </div>
           <div class="col-lg-6 col-md-4 col-sm-6 mb-4">
             <div class="card h-10">
-              <span class="shadow" style="font-size: xx-large;" onclick="sessionStorage.setItem('cookie_fisica', 0);window.location = 'fisica';"><br>
+              <span class="shadow" style="font-size: xx-large;" onclick="sessionStorage.setItem('cookie_fisica', 1);window.location = 'fisica';"><br>
           <h1 style="font-size: larger;">Física</h1>
           
           <br></span>               <!--h4 class="card-title">
@@ -159,7 +159,7 @@ div.card span {
           <br>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span class="shadow" onclick="sessionStorage.setItem('cookie_mecanica', 0);window.location = 'mecanica';"><br>
+              <span class="shadow" onclick="sessionStorage.setItem('cookie_mecanica', 1);window.location = 'mecanica';"><br>
           <h1>Mecánica</h1>
           
           <br></span>               <div class="list-group list-group-flush collapse" id="collapseMecanica">
@@ -180,7 +180,7 @@ div.card span {
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span class="shadow" onclick="sessionStorage.setItem('cookie_electronica', 0);window.location = 'electronica';"><br>
+              <span class="shadow" onclick="sessionStorage.setItem('cookie_electronica', 1);window.location = 'electronica';"><br>
           <h1>Electrónica</h1>
           
           <br></span> 
@@ -199,7 +199,7 @@ div.card span {
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span class="shadow" onclick="sessionStorage.setItem('cookie_informatica', 0);window.location = 'informatica';"><br>
+              <span class="shadow" onclick="sessionStorage.setItem('cookie_informatica', 1);window.location = 'informatica';"><br>
           <h1>Informática</h1>
           
           <br></span>   
@@ -219,7 +219,7 @@ div.card span {
           
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-              <span class="shadow" onclick="sessionStorage.setItem('cookie_Control', 0);window.location = 'control';"><br>
+              <span class="shadow" onclick="sessionStorage.setItem('cookie_control', 1);window.location = 'control';"><br>
           <h1>Control</h1>
           
           <br></span> 
@@ -227,15 +227,15 @@ div.card span {
                 <!--h4 class="card-title">
                   <a href="/control">Control</a>
                 </h4-->
-                <a onclick="sessionStorage.setItem('cookie_Control', 1);" href="control" class="list-group-item list-group-item-action">Señales y sistemas</a>
-                <a onclick="sessionStorage.setItem('cookie_Control', 2);" href="control" class="list-group-item list-group-item-action">Modelos y simulación</a>
-                <a onclick="sessionStorage.setItem('cookie_Control', 3);" href="control" class="list-group-item list-group-item-action">Instrumentación industrial</a>
-                <a onclick="sessionStorage.setItem('cookie_Control', 4);" href="control" class="list-group-item list-group-item-action">Comunicación y redes industriales</a>
-                <a onclick="sessionStorage.setItem('cookie_Control', 5);" href="control" class="list-group-item list-group-item-action">Control analógico</a>
-                <a onclick="sessionStorage.setItem('cookie_Control', 6);" href="control" class="list-group-item list-group-item-action">Control digital</a>
-                <a onclick="sessionStorage.setItem('cookie_Control', 7);" href="control" class="list-group-item list-group-item-action">Robótica</a>
-                <a onclick="sessionStorage.setItem('cookie_Control', 8);" href="control" class="list-group-item list-group-item-action">Automatización industrial</a>
-                <a onclick="sessionStorage.setItem('cookie_Control', 9);" href="control" class="list-group-item list-group-item-action">Sistemas inteligentes</a>
+                <a onclick="sessionStorage.setItem('cookie_control', 1);" href="control" class="list-group-item list-group-item-action">Señales y sistemas</a>
+                <a onclick="sessionStorage.setItem('cookie_control', 2);" href="control" class="list-group-item list-group-item-action">Modelos y simulación</a>
+                <a onclick="sessionStorage.setItem('cookie_control', 3);" href="control" class="list-group-item list-group-item-action">Instrumentación industrial</a>
+                <a onclick="sessionStorage.setItem('cookie_control', 4);" href="control" class="list-group-item list-group-item-action">Comunicación y redes industriales</a>
+                <a onclick="sessionStorage.setItem('cookie_control', 5);" href="control" class="list-group-item list-group-item-action">Control analógico</a>
+                <a onclick="sessionStorage.setItem('cookie_control', 6);" href="control" class="list-group-item list-group-item-action">Control digital</a>
+                <a onclick="sessionStorage.setItem('cookie_control', 7);" href="control" class="list-group-item list-group-item-action">Robótica</a>
+                <a onclick="sessionStorage.setItem('cookie_control', 8);" href="control" class="list-group-item list-group-item-action">Automatización industrial</a>
+                <a onclick="sessionStorage.setItem('cookie_control', 9);" href="control" class="list-group-item list-group-item-action">Sistemas inteligentes</a>
             <a></a>
           </div>
           <a class="btn btn-light" data-toggle="collapse" href="#collapseControl" role="button" aria-expanded="false" aria-controls="collapseExample">Expandir</a>
@@ -247,7 +247,7 @@ div.card span {
  
         <div class="card">
           <!--a href=""><img class="card-img-top" src="" height="90" alt=""></a-->
-          <span class="shadow" onclick="sessionStorage.setItem('cookie_AI', 0);window.location = 'AI';"><br>
+          <span class="shadow" onclick="sessionStorage.setItem('cookie_AI', 1);window.location = 'AI';"><br>
 <h1>Inteligencia artificial</h1>
 
 <br></span>

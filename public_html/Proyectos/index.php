@@ -21,7 +21,6 @@
 
 
 <link rel="stylesheet" href="../css/mySidenav.css">
-    
     <title>Proyectos</title>
 </head>
 <body>
@@ -67,7 +66,7 @@
         <li>Construcción de prototipo</li>
       </ul>
       <div class="card">
-                  <a href="trabajodegrado/gradTheta.html" class="list-group-item list-group-item-action">App web: Geogebra 2D</a>
+                  <a id="webApp" href="trabajodegrado/gradTheta.html" class="btn btn-outline-dark" autofocus>App web: Geogebra 2D</a>
               </div>
 
       <a hidden class="btn btn-info" href="./trabajodegrado" style="float: right;">Ver más</a>
@@ -75,13 +74,13 @@
     </div>
     <div class="col-6">
     <br>
-    <a style="float: right;" class="btn btn-dark" href="https://grabcad.com/library/planar-cable-suspended-parallel-robot-model-1" data-size="large" aria-label="Follow @a4lfr32 on GitHub"><b> GRAB<span style="color: red;">CAD</span>@Planar</b></a>
+    <a style="float: right;font-family: system-ui;text-shadow: 2px 2px 3px black;position:relative;top:49px;z-index:1;" class="btn btn-dark" href="https://grabcad.com/library/planar-cable-suspended-parallel-robot-model-1" data-size="large" aria-label="Follow @a4lfr32 on GitHub"><b>Planar@GRAB<span style="color: #db2b22;">CAD</span></b></a>
       <h3 style="text-align: center;">Diseño planar</h3>
       <div class="card" id="Planar_CAD" style="height:180px;margin:0 auto;"></div>
     </div>
     <div class="col-6">
     <br>
-    <a style="float: right;" class="btn btn-dark" href="https://grabcad.com/library/spatial-cable-suspended-parallel-robot-model-1" data-size="large" aria-label="Follow @a4lfr32 on GitHub"><b> GRAB<span style="color: red;">CAD</span>@Spatial</b></a>
+    <a style="float: right;font-family: system-ui;text-shadow: 2px 2px 3px black;position:relative;top:49px;z-index:1;" class="btn btn-dark" href="https://grabcad.com/library/spatial-cable-suspended-parallel-robot-model-1" data-size="large" aria-label="Follow @a4lfr32 on GitHub"><b>Spatial@GRAB<span style="color: #db2b22;">CAD</span></b></a>
       <h3 style="text-align: center;">Diseño espacial</h3>
       <div class="card" id="Spatial_CAD" style="height:180px;margin:0 auto;"></div>
     </div>
@@ -114,9 +113,9 @@ border-radius: 5px;">
 </article>
 
 
-  <h3 class="my-4">Otros proyectos</h3>
+  <h3 hidden class="my-4">Otros proyectos</h3>
 
-  <div class="row" id="cartas">
+  <div hidden class="row" id="cartas">
     
 <!-------------------------------------------------------------------->
     <div class="col-md-6 col-sm-6 mb-4">

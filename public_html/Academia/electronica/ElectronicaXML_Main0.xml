@@ -2,7 +2,6 @@
  <contenido> 
  <subcontenido id='Main_0'>
 
-<hr></hr>
 <article>
 <div class="row">
 <div class="col-md-5">
@@ -63,33 +62,288 @@
 <!-- /.row -->
 
  </subcontenido> 
+
  <subcontenido id="Circuitos electricos y de maquinas_1"> 
 <!-- Circuitos electricos y de maquinas -->
   <h2 id="Tema-0">Circuitos eléctricos de corriente directa</h2>
+  <h3>Teoría de circuitos electrónicos</h3>
+  <p>Variables de los circuitos eléctricos. Elementos de los circuitos eléctricos. Potencia y Energía eléctricas. Fuentes de voltaje en serie. Divisores de voltaje. Fuentes de corriente en paralelo. Divisores de corriente. Redes en serie-paralelo. Redes en escalera. Transformación de fuentes.</p>
+  <h3>Métodos de análisis de circuitos eléctricos resistivos</h3>
+  <p>Análisis por corrientes de Malla. Análisis por voltajes de Nodo. Redes puente. Conversiones Y-Δ y Δ-Y. Teorema de superposición. Teorema de Thévenin. Teorema de Norton. Teorema de la máxima transferencia de potencia. Teorema de sustitución.</p>
+  <h3>Circuitos electrónicos reactivos CorrienteDirecta, RC y RL</h3>
+  <p>Tipos de Capacitores. Transitorios en redes RC. Fase de carga y fase de descarga. Valores iniciales. Valores instantáneos. Equivalente de Thévenin en redes RC. Autoinductancia. Tipos de inductores. Transitorios en redes RL. Equivalente de Thévenin en redes RL. Inductores en serie y en paralelo. Energía almacenada por un inductor.</p>
   <hr/>
   <h2 id="Tema-1">Circuitos eléctricos de corriente alterna</h2>
+  <h3>Circuitos eléctricos de CA reactivos</h3>
+  <h4>Circuitos eléctricos no senoidales</h4>
+  <p>Razón de repetición de pulso. Ciclo de trabajo de pulso. Valor promedio. Redes RC transitorias. Respuesta RC a entradas de onda cuadrada. El integrador RC. Respuesta de un integrador RC a un solo pulso y a pulsos repetitivos. Respuesta de un diferenciador RC a un solo pulso y a pulsos repetitivos. Respuesta de un integrador RL a un solo pulso y a pulsos repetitivos. Respuesta de un diferenciador RL a un solo pulso y a pulsos repetitivos.</p>
+  <h4>Circuitos eléctricos senoidales</h4>
+  <p>La onda senoidal. Relaciones de fase. Valor promedio. Valor efectivo (rms). Componentes básicos en el Dominio del tiempo. Fasores. Forma rectangular y polar de los Fasores.Componentes básicos en el Dominio de la frecuencia. Fasores. Respuesta en frecuencia del circuito RLC. Impedancia. Diagramas fasoriales y de Impedancias. Circuitos de CA en serie y en paralelo. Circuitos de CA en serie-paralelo. Potencias activa, reactiva y aparente. Factor de potencia.</p>
+
   <hr/>
   <h2 id="Tema-2">Máquinas eléctricas</h2>
+  <h3>Conmutadores electromecánicos</h3>
+  <p>Circuitos magnéticos. Relevos y Contactores.</p>
+  <h3>Transformadores</h3>
+  <p>Transformadores. Inductancia mutua. El transformador básico. Impedancia reflejada y potencia. Circuito equivalente. Tipos de Transformadores. Transformadores con devanados múltiples. Aplicaciones de los transformadores.</p>
+  <h3>Sistemas trifásicos</h3>
+  <p>El generador trifásico. El generador conectado en Y. Secuencia de fase. El generador conectado en Y con carga conectada en Y. El sistema Y-Δ. El generador conectado en Δ. Los sistemas trifásicos Δ-Δ, Δ-Y. Potencia trifásica.</p>
+  <h3>Motores eléctricos</h3>
+  <p>Motores de CD. Funcionamiento y Características eléctricas y mecánicas de los motores de CD. Tipos de motores de CD. Modelos de los motores de CD. Arranque y parada de los motores de CD. Aplicaciones de los motores de CD. Motores de CA. Funcionamiento y Características eléctricas y mecánicas de los motores de CA. Tipos de motores de CA. Modelos de los motores de CA. Arranque y parada de los motores de CA. Aplicaciones de los motores de CA. Motores de Paso. Funcionamiento y Características eléctricas y mecánicas de los motores de Paso. Tipos de motores de paso. Modelos de los motores de Paso. Arranque y parada de los motores de Paso. Aplicaciones de los motores de Paso.</p>
+
   <hr/>
  </subcontenido>
 
  <subcontenido id="Electronica analoga y de potencia_2"> 
  <!-- Electronica analoga y de potencia -->
   <h2 id="Tema-0">Electrónica análoga y de potencia</h2>
+  <h3>Reseña histórica</h3>
+  <h3>Electrónica análogica</h3>
+  <h3>Electrónica de potencia</h3>
+  <h3>Ecuaciones básicas</h3>
   <hr/>
   <h2 id="Tema-1">Dispositivos básicos de estado sólidos</h2>
+  <h3>Diodos semiconductores</h3>
+  <ul>
+     <li>El diodo ideal</li>
+     <li>Diodos reales</li>
+     <li>Semiconductores. Átomos y tipos de enlaces: conducción en cistrales semiconductores; semiconductor tipo P; semiconductor tipo N; uniones PN</li>
+     <li>Diodo polarizado directamente</li>
+     <li>Diodo polarizado indirectamente</li>
+     <li>Características V-I</li>
+     <li>Circuitos con diodos</li>
+        <ul>
+          <li>Rectificador de media onda</li>
+          <li>Rectificador de onda completa</li>
+          <li>Rectificadores y fijadores</li>
+          <li>Duplicadores y fijadores de voltaje</li>
+        </ul>
+     <li>Diodos especiales</li>
+        <ul>
+          <li>El diodo zener</li>
+          <li>El LED</li>
+          <li>El fotodiodo</li>
+          <li>El optocoplador</li>
+          <li>El diodo Schottky</li>
+        </ul>
+  </ul>
+  <h3>Transistores</h3>
+  <ul>
+    <li>Transistores de unión bipolar (BJT)</li>
+    <ul>
+      <li>Estructura y funcionamiento</li>
+        <ul><li>Tipos de transistores PNP y NPN</li></ul>
+      <li>Configuraciones de polarización</li>
+      <li>Características V-I</li>
+      <li>Análisis gráfico de BJT</li>
+      <li>Análisis en C.D de BJT</li>
+        <ul><li>Conexiones Darlington</li><li>Seguidores de Emisión</li></ul>
+      <li>Análisis de pequeña señal del BJT</li>
+      <li>Analisis de gran señal del BJT</li>
+      <li>Optotransistores</li>
+      <li>El transistor BJT como conmutador</li>
+        <ul><li>Carga resistiva</li><li>Carga reactiva</li></ul>
+      <li>Redes de protección para circuitos de conmutación. </li>
+      <li>Aplicaciones del BJT. </li>
+        <ul><li>Reguladores de voltaje en serie y en paralelo</li></ul>
+      <li>El transistor BJT de potencia y aplicaciones.</li>
+    </ul>
+    <li>Transistores de efecto de campo</li>
+      <ul>
+        <li>Estructura y funcionamiento del MOSFET.</li>
+          <ul>
+            <li>Tipos de MOSFET: canal N y canal P</li>
+          </ul>
+        <li>Configuraciones de polarización del MOSFET.</li>
+        <li>Características V-I. </li>
+        <li>Análisis grafico del MOSFET. </li>
+        <li>Análisis en C.D del MOSFET.</li>
+          <ul>
+            <li>Seguidor de fuente</li>
+          </ul>
+        <li>Análisis de pequeña señal del MOSFET. </li>
+        <li>El MOSFET como conmutador</li>
+          <ul>
+            <li>Con carga resistiva. </li>
+            <li>CMOS </li>
+            <li>Con carga reactiva.</li>
+          </ul>
+        <li>Redes de protección para circuitos de conmutación.</li>
+        <li>Aplicaciones del MOSFET.</li>
+        <li>El MOSFET de potencia y aplicaciones.</li>
+          <ul><li>Puente H.</li></ul>
+        <li>El JFET</li>
+      </ul>
+  </ul>
+  <h3>Otros dispositivos de estado sólido</h3>
+  <ul>
+    <li>IGBT.</li>
+    <li>Tiristores: SCR, DIAC y TRIAC. </li>
+    <li>Fototiristores. </li>
+    <li>Relés de estado sólido. </li>
+    <li>Características de conmutación, requerimientos de los circuitos de disparo, formas de disparar, disparo de TRIACs.</li>
+    <li>Circuitos con tiristores.</li>
+    <li>Aplicaciones de los tiristores.</li>
+  </ul>
   <hr/>
   <h2 id="Tema-2">Amplificadores operacionales</h2>
+  <h3>Amplificador diferencial</h3>
+  <h3>Amplificador operacional</h3>
+  <ul>
+    <li>Amplificador operacional ideal. </li>
+    <li>Estructura del OP-AMP. </li>
+    <li>Características del OP-AMP. </li>
+    <li>Modelo eléctrico del OP-AMP.</li>
+  </ul>
+  <h3>Circuitos OP-AMP</h3>
+  <ul>
+    <li>Lineales</li>
+    <ul>
+      <li>Amplificador inversor. </li>
+      <li>Circuito no inversor. </li>
+      <li>seguidor (buffer). </li>
+      <li>Sumador. </li>
+      <li>Restadores. </li>
+      <li>Fuentes de voltaje de referencia. </li>
+      <li>Fuentes de corriente. </li>
+      <li>Convertidores corriente-voltaje y voltaje-corriente. </li>
+      <li>El Integrador. </li>
+      <li>El Diferenciador.</li>
+    </ul>
+    <li>No lineales</li>
+    <ul>
+      <li>Comparadores.</li>
+      <li>Disparador de Smith trigger </li>
+      <li>Circuitos Activos con Diodos.</li>
+    </ul>
+  </ul>
+
+  <h3>Amplicaciones de OP-AMP</h3>
+  <ul>
+    <li>Convertidores de Forma de Onda. </li>
+    <li>Generadores de Señal. </li>
+    <li>Filtros activos de primer orden: pasa-bajas, pasa-altas, pasa-bandas y rechazabandas. </li>
+    <li>Fuentes reguladas de voltajes.</li>
+  </ul>
+  <ul>
+    <li>Convertidores de Forma de Onda. </li>
+    <li>Generadores de Señal. </li>
+    <li>Filtros activos de primer orden: pasa-bajas, pasa-altas, pasa-bandas y rechazabandas. </li>
+    <li>Fuentes reguladas de voltajes.</li>
+  </ul>
   <hr/>
   <h2 id="Tema-3">Osciladores</h2>
+  <h3>Teoría de los osciladores sinusoidales</h3>
+  <h3>Osciladores RC</h3>
+  <h3>Osciladores LC</h3>
+  <h3>Osciladores discretos</h3>
+  <h3>Osciladores integrados</h3>
   <hr/>
  </subcontenido>
 
  <subcontenido id="Electronica digital_3"> 
  <!-- Electronica digital -->
   <h2 id="Tema-0">Sistemas digitales</h2>
+    <h3>Introducción</h3>
+    <ul>
+      <li>Diagrama general de un sistema de procesamiento digital de señales</li>
+      <li>Muestreo y retención </li>
+      <li>Conversión de datos A/D, D/A</li>
+    </ul>
+    <h3>Sistemas numéricos y códigos</h3>
+    <h3>Aritmética binaria, compuertas logicas y algebra booleana</h3>
+    <ul>
+      <li>Compuertas lógicas </li>
+      <li>Algebra booleana</li>
+    </ul>
+    <h3>Desarrollo de circuitos basados en FPGA</h3>
+    <ul>
+      <li>Introducción a las FPGA´s en diseño esquemático empleando Altium Designer.</li>
+    </ul>
+    <h3>Expresiones booleanas y sistemas combinacionales</h3>
+    <ul>
+      <li>Forma canónica de funciones de Boole en miniterms y maxiterms </li>
+      <li>Simplificación de expresiones boolenas.</li>
+    </ul>
+    <h3>VHDL</h3>
+    <ul>
+      <li>Representación de sistemas digitales en VHDL.</li>
+      <li>Edición y simulación de sistemas combinacionales en VHDL.</li>
+    </ul>
+    <h3>Mapas de Karnaugh</h3>
+    <ul>
+      <li>Método de mapas de Karnaugh </li>
+      <li>Minimización de problemas de más de cuatro variables.</li>
+    </ul>
+    <h3>Circuitos combinacionales</h3>
+    <ul>
+      <li>Comparadores </li>
+      <li>Sumadores y otros circuitos aritméticos </li>
+      <li>Decodificadores </li>
+      <li>Codificadores </li>
+      <li>Multiplexores </li>
+      <li>Demultiplexores </li>
+      <li>Compuertas de tres estados </li>
+      <li>Conversores de códigos </li>
+      <li>Diseño de aplicaciones o Edición y simulación de sistemas combinacionales MSI en VHDL.</li>
+    </ul>
+    <h3>Latch y flipflop</h3>
+    <h3>Registros de memoria y de desplazamientos</h3>
+    <h3>Contadores síncronos y asíncronos</h3>
+    <h3>Circuitos secuenciales</h3>
+    <ul>
+      <li>Tablas y diagramas de estado </li>
+      <li>Análisis de sistemas secuenciales </li>
+      <li>Máquinas de estados finitos </li>
+      <li>Diseño de sistemas con lógica secuencial. </li>
+      <li>Edición y simulación de sistemas secuenciales en VHDL.</li>
+    </ul>
+    <h3>Converción: A/D - D/A</h3>
   <hr/>
   <h2 id="Tema-1">Microcontroladores</h2>
+  <h3>Introducción</h3>
+  <ul>
+    <li>Introducción a los microcontroladores y microprocesadores </li>
+    <li>Definición de microcontrolador </li>
+    <li>Familias de microcontroladores: RISC, CISC</li>
+    <li>Partes de un microcontrolador </li>
+    <li>Familia de microcontroladores de Microchip </li>
+    <li>Arquitectura interna</li>
+  </ul>
+  <h3>Microcontroladores PIC</h3>
+  <ul>
+    <li>Organización de la memoria de programa </li>
+    <li>Organización de la memoria de datos </li>
+    <li>Arquitectura externa </li>
+    <li>El reset, el reloj </li>
+    <li>Recursos fundamentales de los microcontroladores PIC </li>
+    <li>Recursos especiales de los microcontroladores PIC </li>
+    <li>Juego de instrucciones: Formatos y tipos de operaciones</li>
+  </ul>
+  <h3>Microcontroladores PIC (Assembler)</h3>
+  <ul>
+    <li>Programación de un microcontrolador </li>
+    <li>Implementación de una aplicación con microcontroladores </li>
+    <li>Aplicaciones básicas en lenguaje ensamblador </li>
+    <li>Manejo de software MPLAB y programador </li>
+    <li>Simulación con Proteus</li>
+  </ul>
+  <h3>Microcontroladores PIC (C)</h3>
+  <ul>
+    <li>Desarrollo de aplicaciones con microcontroladores</li>
+    <ul>
+      <li>Conversión A/D </li>
+      <li>Control de LCD’s</li>
+      <li>Comunicación serial </li>
+      <li>Modulación de anchura de pulsos, PWM</li>
+    </ul>
+  </ul>
+  <h3>Sistemas de desarrollo (Arduino)</h3>
+  <ul>
+    <li>Características. </li>
+    <li>Programación. </li>
+    <li>Desarrollo de aplicaciones básicas con Arduino.</li>
+  </ul>
   <hr/>
  </subcontenido>
 
