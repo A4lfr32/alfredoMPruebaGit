@@ -51,7 +51,7 @@
     <!-- onclick="location.href='./trabajodegrado';" -->
     <div class="card-text col-md-8">
       <!-- <img class="img-fluid card-img-left" src="Presentacion.jpg" alt=""> -->
-      <iframe style="width: -webkit-fill-available;
+      <iframe class="shadow-lg" style="width: -webkit-fill-available;
       height: 100%;" src="https://www.youtube.com/embed/kMVvjO18S4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 

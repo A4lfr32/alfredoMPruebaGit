@@ -165,11 +165,9 @@
         <a href="http://Academia.alfredomaussa.com/" id="Academia">Academia</a>
         <a href="http://Proyectos.alfredomaussa.com/" id="Proyectos">Proyectos</a>
       </div>
-      <button class="btn btn-outline-secondary no-print" onclick="history.back();" style="
-      position: absolute;
-      left: 38px;
-      top: 23px;
-      ">Atrás</button>
+<!-- Navigation -->
+    <button class="btn btn-outline-secondary pl-5 no-print" onclick="window.location = '../';" style="position: fixed;left: -30px;top: 12px;z-index: 1;">Atrás</button>
+ 
     <header style="padding-top: 15px">
         <div class="container">
           <div class="row">
