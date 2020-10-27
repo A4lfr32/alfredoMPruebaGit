@@ -3,7 +3,6 @@
 RewriteEngine on
 RewriteCond %{HTTPS} ^alfredomaussa.com [NC]
 RewriteCond %{HTTP_HOST} ^alfredomaussa.com [NC]
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteRule ^(.*)$ http://www.alfredomaussa.com/$1 [L,R=301]
 # DO NOT REMOVE THIS LINE AND THE LINES ABOVE SSL_REDIRECT:alfredomaussa.com
 <IfModule mod_rewrite.c>
