@@ -1,2 +1,4 @@
-<?php include 'blog.php';?> 
-
+<?php
+Header( "HTTP/1.1 301 Moved Permanently" ); 
+Header( "Location: /public_html" ); 
+?>

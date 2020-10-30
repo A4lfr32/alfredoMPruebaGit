@@ -30,11 +30,17 @@
 
 </head>
 <body class="w3-light-gray">
+<<<<<<< HEAD:index.html
   <div id="mySidenav" class="sidenav no-print">
       <a href="https://www.alfredomaussa.com/" id="Blog">Blog</a>
+=======
+    <!-- <div id="mySidenav" class="sidenav no-print">
+      <a href="" id="Blog">Blog</a>
+>>>>>>> parent of 48ad25f... .:public_html/blog.php
       <a href="https://academia.alfredomaussa.com/" id="Academia">Academia</a>
       <a href="https://proyectos.alfredomaussa.com/" id="Proyectos">Proyectos</a>
-  </div>
+    </div> -->
+    <?php require 'mySidenav.php' ?>
 
     <header id="header2" style="padding-top: 15px; transition: top 0.5s; background: #f1f1f1; position: sticky;z-index: 1;">
       <div class="container">
@@ -223,22 +229,7 @@ z-index: -1;">Nota: Esta página web es a modo de aprendizaje, el contenido en g
 
 
 
-
-      <footer class="page-footer font-small blue" style="left: 40%;bottom: 0;">
-<br>
-<br>
-<hr>
-<p style="position: absolute;left: 50%;/* bottom: 0%; */transition: -50%;transform: translateX(-50%);">Nota: Esta página web es a modo de aprendizaje, el contenido en general es una prueba.</p>
-<br>    
-<!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://alfredomaussa.com"> AlfredoMaussa.com</a>
-    </div>
-<!-- Copyright -->
-
-</footer>
-
-
+<?php require 'footerphp.php' ?>
 
 </div>
 
