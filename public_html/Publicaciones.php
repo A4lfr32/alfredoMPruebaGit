@@ -29,11 +29,8 @@
 </head>
 <body class="w3-light-gray">
     <!-- Navigation -->
-    <div id="mySidenav" class="sidenav no-print">
-    <a href="https://alfredomaussa.com/" id="Blog">Blog</a>
-    <a href="https://academia.alfredomaussa.com/" id="Academia">Academia</a>
-    <a href="https://proyectos.alfredomaussa.com/" id="Proyectos">Proyectos</a>
-</div>
+    <?php require 'mySidenav.php' ?>
+
 
 
         <header id="header2" style="padding-top: 15px; transition: top 0.5s; background: #f1f1f1; position: sticky;z-index: 1;">
