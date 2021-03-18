@@ -117,16 +117,7 @@
                             <h4>17  Abril 2020</h4>
                         </div> 
                     </li>
-                    <li>
-                        <div class="content">
-                            <h3>Sin trabajo, ¿Qué viene ahora?</h3>
-                            <p>...</p>
-              
-                        </div>
-                        <div class="time">
-                            <h4>Julio 2020</h4>
-                        </div> 
-                    </li>
+
                     <!-- <li>
                         <div class="content">
                             <h3>What is a lorem</h3>

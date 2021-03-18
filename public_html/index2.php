@@ -11,6 +11,7 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="icon" type="image/png" href="icon.png">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163888921-1"></script>
@@ -37,7 +38,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
-            <h1 class="col-sm">Alfredo Maussa</h1>
+            <h1 class="col-sm">Alfredo Maussa <small>Freelance</small></h1>
           </div>
           <div class="col-sm" style="text-align: -webkit-right;">
             <nav class="topnav" style="width: fit-content;" >
@@ -68,7 +69,7 @@
         Hoja de vida
       </div>
     </div>
-    <div class="card shadow-lg" style="background: rgb(104, 156, 104); cursor:pointer;" onmousemove="openAcademico()" onmouseleave="closeAcademico()" onclick="location.href='https://alfredomaussa.com/academia';">
+    <div class="card shadow-lg" style="background: rgb(104, 156, 104); cursor:pointer;" onmousemove="openAcademico()" onmouseleave="closeAcademico()" onclick="location.href='https://academia.alfredomaussa.com/';">
       <div class="card-body text-center">
         <h3>Academia</h3>
         <p class="card-text">Se encuentra el contenido visto en la universidad, algunos cursos realizados y posiblemente sus certificados.</p>
